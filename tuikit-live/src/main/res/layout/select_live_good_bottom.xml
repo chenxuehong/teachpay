@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/select_live_good_bottom_tv_select_num"
+        android:text="已选0件"
+        android:textSize="@dimen/sp_15"
+        android:textColor="@color/color_666666"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="80dp"
+        android:lines="1"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/dp_60"/>
+    <TextView
+        android:id="@+id/select_live_good_bottom_tv_sure"
+        android:text="确认添加"
+        android:textColor="@color/white"
+        android:layout_marginRight="@dimen/dp_12"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
+        android:background="@drawable/shape_bg_radius_5_color_maincolor"
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_height="@dimen/dp_40"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/dp_20"
+        android:orientation="vertical">
+        <!--推荐-->
+        <TextView
+            android:id="@+id/language_tv_history_title"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:text="@string/history"
+            android:layout_marginRight="@dimen/dp_24"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+            android:id="@+id/language_rv_history_list"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/dp_24"
+            android:layout_height="wrap_content"/>
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:layout_height="@dimen/dp_50"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:id="@+id/head_history_tv_language"-->
+<!--                android:layout_marginLeft="@dimen/dp_12"-->
+<!--                android:paddingLeft="@dimen/dp_12"-->
+<!--                android:paddingRight="@dimen/dp_12"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingTop="@dimen/dp_3"-->
+<!--                android:paddingBottom="@dimen/dp_3"-->
+<!--                android:background="@drawable/shape_bg_radius_5_color_e6e6e6"-->
+<!--                android:text="中文"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/head_history_tv_no_limit"-->
+<!--                android:layout_marginLeft="@dimen/dp_12"-->
+<!--                android:paddingLeft="@dimen/dp_12"-->
+<!--                android:paddingRight="@dimen/dp_12"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingTop="@dimen/dp_3"-->
+<!--                android:paddingBottom="@dimen/dp_3"-->
+<!--                android:background="@drawable/shape_bg_radius_5_color_e6e6e6"-->
+<!--                android:text="@string/no_limit"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--        </LinearLayout>-->
+
+        <View
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/line"/>
+        <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+            android:id="@+id/language_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <com.huihe.base_lib.ui.widget.indexBar.widget.LetterSideBar
+        android:id="@+id/language_letterSideBar"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12" />
+
+    <TextView
+        android:id="@+id/language_tvSideBarHint"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_side_bar_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:visibility="gone" />
+
+</FrameLayout>
+
+

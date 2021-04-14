@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/fragment_create_live_et_title"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_50"
+        android:hint="输入直播标题"
+        android:textSize="@dimen/sp_15"
+        android:gravity="center"
+        android:textColor="@color/color_666666"
+        android:background="@drawable/shape_bg_radius_30_color_fff2f2f2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_59"/>
+
+    <TextView
+        android:id="@+id/fragment_create_live_tv_course"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@drawable/shape_bg_radius_30_color_fff2f2f2"
+        android:textSize="@dimen/sp_15"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:hint="请选择直播橱窗课程"
+        android:paddingRight="@dimen/dp_12"
+        android:textColor="@color/color_666666"
+        android:drawableRight="@mipmap/down_pop"
+        android:layout_height="@dimen/dp_59"/>
+
+    <TextView
+        android:id="@+id/fragment_create_live_tv_create"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:background="@drawable/shape_bg_radius_15_color_maincolor"
+        android:layout_marginTop="@dimen/dp_60"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/sp_16"
+        android:gravity="center"
+        android:text="创建"
+        android:textColor="@color/white"
+        android:layout_height="@dimen/dp_44"/>
+</LinearLayout>

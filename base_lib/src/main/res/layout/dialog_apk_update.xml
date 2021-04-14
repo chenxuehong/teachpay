@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/dialog_apk_update_ll"
+        android:layout_marginTop="@dimen/dp_35"
+        android:background="@drawable/shape_bg_radius_10_color_fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/include_appupdate_1" />
+
+        <include
+            layout="@layout/include_updateapp_2" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/dialog_apk_update_iv_close"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_below="@+id/dialog_apk_update_ll"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="@dimen/dp_24"
+        android:src="@mipmap/close" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/apk_update_arrow" />
+
+</RelativeLayout>

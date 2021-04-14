@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eghuihe.module_dynamic">
+
+    <application android:theme="@style/BaseTheme">
+        <activity android:name=".ui.activity.PlayerActivity" />
+        <activity android:name=".ui.activity.DynamicDetailActivity" />
+        <activity android:name=".ui.activity.TeachPayStudentSelectSchedulePackageActivity" />
+        <activity android:name=".ui.activity.InterestAllianceActivity" android:launchMode="singleTask" />
+        <activity android:name=".ui.activity.ResearchInstituteActivity" android:launchMode="singleTask" />
+    </application>
+</manifest>

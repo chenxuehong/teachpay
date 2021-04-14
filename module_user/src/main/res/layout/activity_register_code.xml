@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="33sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:id="@+id/register_tv_code1"
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/dp_52"
+                    android:layout_height="@dimen/dp_52"
+                    android:background="@drawable/shape_bg_color_fff5f5f5_radius_5" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="33sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:id="@+id/register_tv_code2"
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/dp_52"
+                    android:layout_height="@dimen/dp_52"
+                    android:background="@drawable/shape_bg_color_fff5f5f5_radius_5" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="33sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:id="@+id/register_tv_code3"
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/dp_52"
+                    android:layout_height="@dimen/dp_52"
+                    android:background="@drawable/shape_bg_color_fff5f5f5_radius_5" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="33sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:id="@+id/register_tv_code4"
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/dp_52"
+                    android:layout_height="@dimen/dp_52"
+                    android:background="@drawable/shape_bg_color_fff5f5f5_radius_5" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/register_et_enter_code"
+            android:cursorVisible="false"
+            android:textColor="@color/transparent"
+            android:inputType="number"
+            android:background="@color/transparent"
+            android:maxLength="4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_52"/>
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/register_tv_get_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_12"
+        android:background="@drawable/shape_bg_radius_12_color_ffe776"
+        android:gravity="center"
+        android:text="@string/get_code"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16" />
+</LinearLayout>

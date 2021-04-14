@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="daguerre_all">全部</string>
+    <string name="Album">相册</string>
+
+    <string name="daguerre_not_found_camera_app">找不到相机应用</string>
+    <string name="daguerre_max_select">最多选择%1$d项</string>
+    <string name="daguerre_select">已选择%1$d项</string>
+    <string name="daguerre_albums_member_count">%1$d项</string>
+    <string name="selector_image">图片</string>
+    <string name="selector_send">确定</string>
+    <string name="preview">预览</string>
+</resources>

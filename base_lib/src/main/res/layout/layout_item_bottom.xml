@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="49dp"
+    android:paddingBottom="3dp"
+    android:paddingTop="3dp">
+
+    <LinearLayout
+        android:id="@+id/item_bottom_ll"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/item_bottom_iv_icon"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/add_blue"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_bottom_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:text="底部title" />
+    </LinearLayout>
+
+    <com.huihe.base_lib.ui.widget.CommonRoundOvalView
+        android:id="@+id/item_bottom_cycle_point"
+        android:layout_alignRight="@id/item_bottom_ll"
+        android:layout_marginLeft="-20dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp" />
+</RelativeLayout>

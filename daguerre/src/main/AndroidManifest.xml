@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jay.daguerre">
+
+    <application
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".internal.DaguerreActivity"
+            android:label="@string/Album"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Daguerre.Activity.Theme" />
+
+        <activity
+            android:name=".internal.PreviewResourceActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Daguerre.PreviewPictureActivity.Theme" />
+
+        <activity
+            android:name=".internal.ClipImageActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Daguerre.PreviewPictureActivity.Theme" />
+
+        <provider
+            android:name=".provider.DaguerreFileProvider"
+            android:authorities="${applicationId}.daguerre.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/daguerre_file_provider" />
+        </provider>
+    </application>
+</manifest>

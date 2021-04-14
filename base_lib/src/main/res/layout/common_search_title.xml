@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mTitleBar"
+    style="@style/title_style"
+    android:clickable="true">
+
+    <View
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#AAAAAA" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/status">
+
+        <ImageView
+            android:id="@+id/mImgLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@mipmap/icon_back"
+            />
+
+        <SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/txt_cancel"
+            android:layout_toRightOf="@+id/mImgLeft"
+            android:gravity="center"
+            android:background="@null"
+            android:iconifiedByDefault="false"
+            android:imeOptions="actionSearch"
+            android:queryHint="@string/im_search" />
+
+        <TextView
+            android:id="@+id/txt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="@string/cancel"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_marginRight="@dimen/dp_12"
+            android:id="@+id/common_search_title_iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/ic_delete" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

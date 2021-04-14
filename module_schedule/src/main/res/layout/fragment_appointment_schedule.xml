@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16">
+
+            <TextView
+                android:id="@+id/fragment_appointment_schedule_tv_selectYMD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableRight="@mipmap/down_pop"
+                android:drawablePadding="@dimen/dp_10"
+                android:text="2012-12"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fragment_appointment_schedule_tv_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="周一"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_17" />
+        </RelativeLayout>
+
+        <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+            android:id="@+id/fragment_appointment_schedule_rv_daylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_3"
+            android:background="@color/white" />
+
+        <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+            android:id="@+id/fragment_appointment_schedule_rv_course"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.huihe.base_lib.ui.widget.DragFloatActionButton
+        android:id="@+id/fragment_appointment_schedule_dragFloatActionBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_44"
+        android:src="@mipmap/icon_add_orange_48pt"
+        app:backgroundTint="@color/transparent"
+        app:backgroundTintMode="screen"
+        app:borderWidth="10dp"
+        app:elevation="0dp"
+        app:maxImageSize="@dimen/dp_65"
+        app:rippleColor="@color/white" />
+</FrameLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eghuihe.module_user">
+
+    <application android:theme="@style/BaseTheme">
+
+        <activity
+            android:name=".login.ui.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".login.ui.activity.ForgetPasswordActivity" />
+        <activity android:name=".login.ui.activity.ResettingLoginPasswordActivity" />
+        <activity android:name=".login.ui.activity.PasswordBackActivity" />
+        <activity android:name=".login.ui.activity.ResettingPayPasswordActivity" />
+        <activity android:name=".login.ui.activity.QuickRegisterPwSettingctivity" />
+        <activity android:name=".login.ui.activity.EditUserInfo1Activity" />
+        <activity android:name=".login.ui.activity.RegisterActivity" />
+        <activity android:name=".login.ui.activity.QuickRegisterCodeActivity" />
+        <activity android:name=".login.ui.activity.WxLoginBindingPhoneNumberActivity" />
+        <activity android:name=".me.activity.SwitchIdentityActivity" />
+        <activity android:name=".me.activity.EditUserInfoActivity" />
+        <activity android:name=".me.activity.LanguageMultiSelectActivity" />
+        <activity android:name=".me.activity.LanguageActivity" />
+        <activity android:name=".me.activity.InsertCompanyExperienceActivity" />
+        <activity android:name=".me.activity.InsertSchoolExperienceActivity" />
+        <activity android:name=".me.activity.MyQRCodeActivity" />
+        <activity android:name=".me.activity.MyRewardActivity" />
+        <activity android:name=".me.activity.TeachPayMechanismTeacherListActivity" />
+        <activity android:name=".me.activity.InsertMechanismTeacherActivity" />
+        <activity android:name=".me.activity.FeedBackActivity" />
+        <activity android:name=".me.activity.AccountSecurityActivity" />
+        <activity android:name=".me.activity.PhoneNumberActivity" />
+        <activity android:name=".me.activity.BindingPhoneNumberActivity" />
+        <activity android:name=".me.activity.SetPasswordActivity" />
+        <activity android:name=".me.activity.NewsNofityActivity" />
+        <activity android:name=".me.activity.PrivacyActivity" />
+        <activity android:name=".me.activity.CommonActivity" />
+        <activity android:name=".me.activity.AutoDownloadUnderTrafficActivity" />
+        <activity android:name=".me.activity.AbountWeActivity" />
+        <activity android:name=".me.activity.SettleMechanismTeachPayStep1Activity" />
+        <activity android:name=".me.activity.SettleMechanismTeachPayStep2Activity" />
+        <activity android:name=".me.activity.SettleMechanismTeachPayStep3Activity" />
+        <activity android:name=".me.activity.TeachPayWindowActivity" />
+        <activity android:name=".me.activity.MyRewardListActivity" />
+        <activity
+            android:name=".me.activity.InsertMechanismCourseActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".me.activity.TeachPayIntroduceActivity" />
+        <activity android:name=".me.activity.EditSchoolExperienceActivity" />
+        <activity android:name=".me.activity.EditCompanyExperienceActivity" />
+        <activity android:name=".me.activity.SettingActivity" />
+        <activity android:name=".me.activity.TeachPayMechanismCourseDetailActivity" />
+        <activity android:name=".me.activity.TeachPayMechanismCourseDetail2Activity" />
+        <activity android:name=".me.activity.UpdateMechanismTeacherActivity" />
+        <activity android:name=".me.activity.IncomeCenterActivity" />
+        <activity android:name=".me.activity.MechanismCourseCommentListActivity" />
+        <activity android:name=".me.activity.EditMechanismInfoActivity" />
+        <activity android:name=".me.activity.TeachPayMechanismDetailActivity" />
+        <activity android:name=".me.activity.MyCardActivity" />
+        <activity android:name=".me.activity.ClassRoomManagerActivity" />
+        <activity android:name=".me.activity.CustomerManagerActivity" />
+        <activity android:name=".me.activity.MotherTongueSettingActivity" />
+        <activity android:name=".me.activity.SelectMechanismCourseTypeActivity" />
+        <activity android:name=".me.activity.SetMechanismCourseSyllabusActivity" />
+        <activity android:name=".me.activity.UpdateMechanismCourseSyllabusActivity" />
+        <activity android:name=".me.activity.LiveManagerActivity" />
+        <activity android:name=".me.activity.LiveCreateActivity" />
+        <activity android:name=".activities.activity.ActivitiesListActivity" />
+        <activity android:name=".activities.activity.ActivityDetailActivity" />
+        <activity android:name=".activities.activity.SelectActivityCourseActivity" />
+        <activity android:name=".activities.activity.UseCouponActivitiesListActivity" />
+        <activity android:name=".activities.activity.UseCouponMechanismCourseDetailActivity" />
+        <activity
+            android:name=".me.activity.UpdateTeachPayMechanismCourseActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".login.ui.activity.SplashActivity"
+            android:fitsSystemWindows="true"
+            android:theme="@style/Theme.welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <!--表示该页面可以被隐式调用，必须加上该项-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--如果希望该应用可以通过浏览器的连接启动，则添加该项-->
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="main.app"
+                    android:scheme="teachpay" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

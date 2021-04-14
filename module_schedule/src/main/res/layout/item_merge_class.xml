@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_30"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/item_merge_class_rbtn"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/item_merge_class_tv_name"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/sp_13"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/color_333333"
+        android:text="1班"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,117 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion rootProject.ext.versions.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.versions.minSdkVersion
+        targetSdkVersion rootProject.ext.versions.targetSdkVersion
+        versionCode rootProject.ext.versions.versionCode
+        versionName rootProject.ext.versions.versionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //MultiDex分包方法
+        multiDexEnabled true
+
+        //Arouter路由配置
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+                includeCompileClasspath = true
+            }
+        }
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', "armeabi"
+        }
+        resConfigs "zh"
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+            jni.srcDirs = []    //disable automatic ndk-build
+            assets.srcDirs = ['src/main/assets', 'assets']
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+        google()
+    }
+    //防止编译的时候oom、GC
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    api rootProject.ext.dependencies["appcompat_v7"]
+    api rootProject.ext.dependencies["support-v4"]
+    implementation rootProject.ext.dependencies["junit"]
+    implementation rootProject.ext.dependencies["runner"]
+    implementation rootProject.ext.dependencies["espresso"]
+
+    implementation rootProject.ext.dependencies["glide"]
+    annotationProcessor rootProject.ext.dependencies["glide_compiler"]
+
+    implementation rootProject.ext.dependencies["fastjson"]
+    api rootProject.ext.dependencies["okhttp"]
+    api rootProject.ext.dependencies["gson"]
+    api rootProject.ext.dependencies["retrofit"]
+    implementation rootProject.ext.dependencies["umeng_integration"]
+    implementation rootProject.ext.dependencies["multidex"]
+    implementation rootProject.ext.dependencies["orhanobutlogger"]
+    implementation rootProject.ext.dependencies["notificationLib"]
+
+    api rootProject.ext.dependencies["rxjava2"]
+    api rootProject.ext.dependencies["rxjava"]
+    api rootProject.ext.dependencies["rxandroid"]
+    api rootProject.ext.dependencies["pinyin4j"]
+    api rootProject.ext.dependencies["eventbus"]
+    api rootProject.ext.dependencies["recyclerview-v7"]
+    api(rootProject.ext.dependencies["zxing"]) {
+        exclude group: 'com.android.support'
+    }
+    api rootProject.ext.dependencies["plist"]
+    api rootProject.ext.dependencies["roundedimageview"]
+    api rootProject.ext.dependencies["SmartRefreshLayout"]
+    api rootProject.ext.dependencies["SmartRefreshHeader"]
+    api rootProject.ext.dependencies["design"]
+    api rootProject.ext.dependencies["ExpandableTextView"]
+    api rootProject.ext.dependencies["photoview"]
+    api rootProject.ext.dependencies["qiniu"]
+    api rootProject.ext.dependencies["flowlayout-lib"]
+
+    api rootProject.ext.dependencies["cardview-v7"]
+
+    api project(path: ':daguerre')
+
+    // 黄油刀
+    api rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife_compiler"]
+
+    //Arouter路由
+    annotationProcessor rootProject.ext.dependencies["arouter_compiler"]
+    api rootProject.ext.dependencies["arouter_api"]
+    api rootProject.ext.dependencies["arouter_annotation"]
+
+    //lombok 注解
+    api rootProject.ext.dependencies["lombok"]
+    api rootProject.ext.dependencies["lombokJavax"]
+    // 百度地图
+    implementation files('libs/BaiduLBS_Android.jar')
+    // 支付宝
+    implementation files('libs/alipaySdk-15.6.8-20191021122514.aar')
+
+    // 播放器
+    api project(':nicevideoplayer')
+    // 动画
+    api rootProject.ext.dependencies["gif_drawable"]
+    api 'androidx.constraintlayout:constraintlayout:1.1.3' // 约束布局
+
+}
+repositories {
+    mavenCentral()
+}

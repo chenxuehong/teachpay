@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_8"
+    android:id="@+id/activity_mechanism_master_detail_ll_mechanism_Teacher_strength"
+    android:background="@drawable/shape_bg_radius_10_color_fff"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_mechanism_master_detail">
+
+    <TextView
+        android:id="@+id/activity_mechanism_master_detail_tv_mechanism_Teacher_strength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:text="@string/Teacher_strength"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold" />
+
+    <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+        android:id="@+id/activity_mechanism_master_detail_rv_mechanism_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="@dimen/dp_12" />
+</LinearLayout>

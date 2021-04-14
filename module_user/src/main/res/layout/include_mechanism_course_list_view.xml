@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_8"
+    android:background="@drawable/shape_bg_radius_10_color_fff"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_mechanism_master_detail">
+
+    <TextView
+        android:id="@+id/activity_mechanism_master_detail_tv_mechanism_course_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:text="机构课程"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold" />
+
+    <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+        android:id="@+id/activity_mechanism_master_detail_rv_mechanism_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_12" />
+
+    <TextView
+        android:id="@+id/activity_mechanism_master_detail_tv_more_mechanism_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:drawableRight="@mipmap/right_arrow"
+        android:drawablePadding="@dimen/dp_6"
+        android:text="查看更多课程"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_13" />
+</LinearLayout>

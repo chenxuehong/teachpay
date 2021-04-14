@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--搜索框-->
+    <include layout="@layout/country_select_search"/>
+
+    <!--热门（默认选中）-->
+    <TextView
+        android:text="热门(默认选中)"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"/>
+
+    <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+        android:id="@+id/language_multiselect_rv_rm_languages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--语言列表-->
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+            android:id="@+id/language_multiselect_rv_all_languages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.huihe.base_lib.ui.widget.indexBar.widget.LetterSideBar
+            android:id="@+id/language_multiselect_letterSideBar"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12" />
+
+        <TextView
+            android:id="@+id/language_tvSideBarHint"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_side_bar_bg"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/language_multiselect_complete"
+        android:layout_margin="@dimen/dp_24"
+        android:background="@drawable/shape_radius_5_color_ee7b30"
+        android:text="@string/finish"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+       android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"/>
+</LinearLayout>

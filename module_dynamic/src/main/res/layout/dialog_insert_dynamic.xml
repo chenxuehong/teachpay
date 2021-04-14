@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/dialog_insert_dynamic_ll"
+    android:background="@drawable/shape_bg_radius_15_color_white"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_12">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44">
+
+        <TextView
+            android:id="@+id/dialog_insert_dynamic_tv_cancel"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发布圈子"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dialog_insert_dynamic_tv_fuba"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_insert_dynamic_tv_selectCourse"
+        android:layout_marginTop="@dimen/dp_24"
+        android:text="请选择相应的课程(可选)"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/sp_14"
+        android:drawablePadding="@dimen/dp_12"
+        android:drawableLeft="@mipmap/insert_note_loc"
+        android:drawableRight="@mipmap/insert_note_right_arow"
+        android:textColor="@color/color_333333"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_44"/>
+
+    <EditText
+        android:layout_marginTop="@dimen/dp_12"
+        android:id="@+id/dialog_insert_dynamic_et_content"
+        android:textColor="@color/color_666666"
+        android:background="@drawable/shape_bg_radius_15_color_color_fff2f2f2"
+        android:layout_width="match_parent"
+        android:padding="@dimen/dp_12"
+        android:hint="说说你的学习心得吧！"
+        android:textSize="@dimen/sp_13"
+        android:gravity="top|left"
+        android:minHeight="80dp"
+        android:layout_height="wrap_content"/>
+
+    <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+        android:id="@+id/dialog_insert_dynamic_rv_pics"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

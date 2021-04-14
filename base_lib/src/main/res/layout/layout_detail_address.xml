@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location_ll_show_detail_address"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--修改地址或填写门牌号等信息-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="@dimen/dp_12"
+        android:background="@drawable/shape_bg_radius_10_color_fff"
+        android:padding="@dimen/dp_12">
+
+        <TextView
+            android:id="@+id/layout_detail_address_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/location_tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_detail_address_tv_name"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_49"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/layout_detail_address_tv_update_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_radius_12_color_46cecf_stroke_dp_2"
+            android:padding="@dimen/dp_5"
+            android:text="@string/Update_Address"
+            android:textColor="@color/color_46CECF"
+            android:textSize="@dimen/sp_15" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:background="@drawable/shape_bg_radius_10_color_fff"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/House_number"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/layout_detail_address_et_detail_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:background="@color/white"
+                android:hint="@string/Detailed_address2"
+                android:lines="1"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginLeft="@dimen/dp_46"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/layout_detail_address_tv_save_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_24"
+            android:textStyle="bold"
+            android:background="@drawable/shape_bg_radius_5_color_47cecf"
+            android:gravity="center"
+            android:text="@string/Save_Address"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

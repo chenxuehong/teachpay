@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12">
+
+        <com.huihe.base_lib.ui.widget.CircleImageView
+            android:id="@+id/item_dynamic_comment_iv_head"
+            android:layout_width="@dimen/dp_34"
+            android:layout_height="@dimen/dp_34"
+            android:src="@drawable/head_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_dynamic_comment_tv_nickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_333333"
+                    android:textSize="11.97sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/item_dynamic_comment_iv_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:src="@mipmap/xingbie_nan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:background="@drawable/shape_bg_radius_6_color_999999"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/dp_5">
+
+                <com.huihe.base_lib.ui.widget.CircleImageView
+                    android:id="@+id/item_dynamic_comment_iv_national_flag"
+                    android:layout_width="@dimen/dp_14"
+                    android:layout_height="@dimen/dp_14"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/item_dynamic_comment_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_3"
+                    android:gravity="center_vertical"
+                    android:text="上午2:30"
+                    android:textColor="@color/color_FEFEFE"
+                    android:textSize="@dimen/sp_7" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/item_dynamic_comment_iv_translate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:paddingRight="8dp"
+            android:src="@mipmap/translate" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_dynamic_comment_tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拍的很好，漂亮"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_13" />
+
+            <TextView
+                android:id="@+id/item_dynamic_comment_tv_trans_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/sp_14"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/item_dynamic_comment_ll_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_11"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/item_dynamic_comment_iv_like"
+                android:layout_width="@dimen/sp_16"
+                android:layout_height="@dimen/dp_14"
+                android:src="@mipmap/gray_love" />
+
+            <TextView
+                android:id="@+id/item_dynamic_comment_tv_likeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="0" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_dynamic_comment_rl_child_comment_list"
+        android:paddingLeft="@dimen/dp_3"
+        android:paddingRight="@dimen/dp_3"
+        android:paddingBottom="@dimen/dp_3"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_radius_5_color_e6e6e6"
+        android:descendantFocusability="blocksDescendants">
+
+        <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+            android:id="@+id/item_dynamic_comment_child_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/line" />
+</LinearLayout>

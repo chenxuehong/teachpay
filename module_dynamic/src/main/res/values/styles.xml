@@ -1,0 +1,10 @@
+<resources>
+    <declare-styleable name="RoundPointViewStyle">
+        <!--  <attr name="pointNumber" format="integer" />-->
+        <attr name="pointColor" format="color" />
+        <attr name="fill" format="boolean" />
+        <attr name="stroke" format="boolean" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="radius" format="integer" />
+    </declare-styleable>
+</resources>

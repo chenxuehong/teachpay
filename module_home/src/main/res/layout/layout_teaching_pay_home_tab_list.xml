@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.huihe.base_lib.ui.widget.recyclerview.HorizontalRecyclerViewFix
+        android:id="@+id/layout_teaching_pay_home_tab_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_15"
+        android:background="@drawable/shape_bg_radius_12_color_fff"
+        android:padding="@dimen/dp_15" />
+</RelativeLayout>

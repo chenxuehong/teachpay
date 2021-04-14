@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RadarMapView">
+
+        <attr name="rmv_division" format="integer"/>
+        <attr name="rmv_textSize" format="dimension"/>
+        <attr name="rmv_textColor" format="color"/>
+        <attr name="rmv_lineColor" format="color"/>
+        <attr name="rmv_fillColor" format="color"/>
+        <attr name="rmv_strokeWidth" format="float"/>
+
+    </declare-styleable>
+</resources>

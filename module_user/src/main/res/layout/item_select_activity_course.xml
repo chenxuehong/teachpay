@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_12"
+    android:background="@drawable/shape_bg_radius_15_color_white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/item_select_activity_course_iv_cover"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            app:riv_corner_radius="@dimen/dp_6" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_select_activity_course_tv_title"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_height="wrap_content"
+                android:text="大木老师-小升初英语(精品课)"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_14" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_select_activity_course_tv_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/shape_radius_12_strokecolor_ffff6000"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:paddingLeft="@dimen/dp_6"
+                    android:paddingTop="@dimen/dp_3"
+                    android:paddingRight="@dimen/dp_6"
+                    android:paddingBottom="@dimen/dp_3"
+                    android:textColor="@color/color_ffff5a00"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/item_select_activity_course_tv_purchase_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:text="已有316人购买"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_select_activity_course_tv_discount_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:text="¥0"
+                android:textColor="@color/color_666666"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+  <RadioButton
+      android:id="@+id/item_select_activity_course_rbtn"
+      android:layout_marginLeft="@dimen/dp_12"
+      android:layout_gravity="center_vertical"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+</LinearLayout>

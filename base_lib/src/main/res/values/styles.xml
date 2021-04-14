@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- Input dialog theme. -->
+    <style name="customDialogTheme" parent="Theme.AppCompat.Dialog">
+
+        <!--边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--半透明-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--提示框背景（透明）-->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--变暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+
+    </style>
+    <style name="Theme.welcome" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="MainTheme">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="title_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/title_bar_height</item>
+        <!--<item name="android:paddingTop">@dimen/title_padding_top</item>-->
+    </style>
+
+    <style name="trans_theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--通用线条颜色  位于父布局底部-->
+    <style name="line_theme">
+        <item name="android:background">@color/color_line</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="showPopupAnimation" parent="android:Animation">
+        <item name="android:windowExitAnimation">@anim/bottom_enter</item>
+        <item name="android:windowEnterAnimation">@anim/bottom_exit</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="MainTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/mainColor</item>
+        <item name="colorPrimaryDark">@color/mainColor</item>
+        <item name="colorAccent">@color/mainColor</item>
+    </style>
+
+    <style name="ratingbar_style" parent="Widget.AppCompat.RatingBar.Small"></style>
+
+    <style name="style_text_im_unread">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">16dp</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:background">@drawable/shape_unread</item>
+        <item name="android:textColor">@color/unread_number_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:padding">1dp</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+    <!--Loading Dialog-->
+    <style name="LoadingDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

@@ -1,0 +1,1659 @@
+<resources>
+
+    <!--时间-->
+    <string name="just_now">刚刚</string>
+    <string name="Minutes_ago">分钟前</string>
+    <string name="Hours_before">小时前</string>
+    <string name="Days_ago">天前</string>
+    <string name="Months_ago">个月前</string>
+    <string name="years_ago">年前</string>
+    <string name="Today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="beforeyesterday">前天</string>
+    <!--时间-->
+
+    <string name="application_name">教付保</string>
+    <string name="Teach_Pay">教付保</string>
+    <string name="Arranged_Schedule">排课表</string>
+    <string name="Hot_courses_in_Institutions">机构热门课程</string>
+    <string name="Latest_entry_institutions">最新入驻机构</string>
+    <string name="No_hot_courses">暂无机构热门课程</string>
+    <string name="No_latest_resident_organization">暂无最新入驻机构</string>
+    <string name="title_back">返回</string>
+    <string name="login_success">登录成功</string>
+    <string name="sign">签到</string>
+    <string name="arts">艺术类</string>
+    <string name="Sport">体育类</string>
+    <string name="subject">学科类</string>
+    <string name="institution_settlement">机构入驻</string>
+    <string name="institution_teacher">机构老师</string>
+    <string name="Institution_window">机构橱窗</string>
+    <string name="Commodity_management">商品管理</string>
+    <string name="institution_income">机构收益</string>
+    <string name="Signed_in">已签到</string>
+    <string name="dialog_input_text_hint">说出你的想法</string>
+    <string name="send">发送</string>
+    <string name="Send_successfully">发送成功</string>
+    <string name="Real_pay">实付：</string>
+    <string name="give_in_return">回赠</string>
+    <string name="Check_the_coupon_code">查看券码</string>
+    <string name="tab_home">首页</string>
+    <string name="Classify_Sort">分类排序</string>
+    <string name="Distance_sorting">距离排序</string>
+    <string name="Latest_sorting">最新排序</string>
+    <string name="Search_org_name">搜索机构名</string>
+    <string name="Package_details">套餐详情</string>
+    <string name="See_more_courses">查看更多课程</string>
+    <string name="tab_study">学习</string>
+    <string name="tab_im">消息</string>
+    <string name="Recommend2">推荐</string>
+    <string name="tab_dynamic">动态</string>
+    <string name="tutor_class_evaluation_tip">老师已经离开,是否进入评价页面?</string>
+    <string name="tab_me">我的</string>
+    <string name="Zhou_Bang">周榜</string>
+    <string name="Monthly_list">月榜</string>
+    <string name="General_list">总榜</string>
+    <string name="Change_phone_number">修改手机号</string>
+    <string name="update">修改</string>
+    <string name="Gift_income">礼物收益</string>
+    <string name="Total_user_recharge">用户充值总额</string>
+    <string name="Expected_total_revenue">预计总收益</string>
+    <string name="Keep_going">干得漂亮！继续加油哦！</string>
+    <string name="Total_number_of_courses_sold">出售课程总额</string>
+    <string name="Tuition_income">学费收益</string>
+    <string name="mechanism_profit_param">收益:%s</string>
+    <string name="mechanism_earnings_params">总计:%s 直播:%s 私教:%s 外教:%s 课程:%s</string>
+    <string name="language_level_certificate">相关语言等级证书</string>
+    <string name="Please_upload_relevant_materials">请上传相关材料</string>
+    <string name="Relevant_material_certification">相关材料证明</string>
+    <string name="Business_license_and_mathematics_qualification_certificate_must_be_passed_on">营业执照与数学资格证必传</string>
+
+
+    <string name="border_supportin_aterials">相关跨境证明材料</string>
+    <string name="Please_upload_your_Avatar">请上传头像</string>
+    <string name="Relevant_work_certification_materials">相关工作证明材料</string>
+
+    <string name="no_Data">暂无数据</string>
+    <string name="Data_is_empty">数据为空</string>
+    <string name="Network_request_failed">网络请求失败</string>
+    <string name="Purchased">已购买</string>
+    <string name="Actual_payment">实付款：</string>
+    <string name="lecturer">讲师</string>
+    <string name="lecturer_Param">授课老师 %s</string>
+    <string name="Mechanism_to_be_allocated">机构待分配</string>
+
+    <string name="No_arrangement">暂无安排</string>
+    <string name="in_class">上课中</string>
+    <string name="time_remaining">剩余时间</string>
+
+    <!--study-->
+    <string name="click_see_detail">点击查看详情</string>
+    <string name="hot_assistant_teacher">热门外教</string>
+    <string name="Student_assistant">外教</string>
+
+    <!--Home-->
+    <string name="version_update">版本更新</string>
+    <string name="source">来源</string>
+    <string name="DeleteIsAndNot">删除？</string>
+    <string name="exit">退出</string>
+    <string name="Adult">成年人</string>
+    <string name="Total_Duration">总计时长: </string>
+    <string name="Childhood">儿童</string>
+    <string name="TeenAgers">青少年</string>
+    <string name="University_student">大学生</string>
+    <string name="time_zone_default">默认本时区，如没需求无需选择</string>
+    <string name="video_chat_group_exit">退出讨论组，将不再接收该讨论组消息，是否退出？</string>
+    <string name="Exit_discussion_group">退出讨论组</string>
+    <string name="reached_the_maximum">已经到达最大连麦人数</string>
+    <string name="Speaking_position_is_full">发言位置已满，您已进入等待列表</string>
+    <string name="Speaking_position_is_full2">发言位置已满，已将对方加入等待列表</string>
+    <string name="The_other_side_is_on_the_whea">对方已在麦上</string>
+
+
+    <string name="Waiting_for_the_host_to_accept">等待主播接受</string>
+    <string name="linkTimeOut">连麦请求超时，该老师没有做出回应</string>
+    <string name="The_teacher_accepted_your_request_for_Lian_Mai_and_began_to_Lian_Mai">老师接受了您的连麦请求，开始连麦</string>
+
+    <string name="on_the_wheat">已经在麦上</string>
+    <string name="Enter_Koi_code">输入锦鲤码</string>
+    <string name="no_signature">此人很赖,暂无签名</string>
+    <string name="signature">签名</string>
+    <string name="mute">静音</string>
+    <string name="kickout">踢出讨论组</string>
+    <string name="comment_tip">想评论点什么</string>
+    <string name="Receiving_voice">声音</string>
+    <string name="Say_what_you_think">说出你的想法</string>
+    <string name="city_select">城市</string>
+    <string name="frees_add_friend">免费加好友次数已用完</string>
+    <string name="add_friend_tip">你需要送1份见面礼表示诚意（每天3次加好友免费，还剩%s次)</string>
+    <string name="add_friend_tip1">每天3次加好友免费，还剩%s次</string>
+    <string name="Online_state_time">在线: %s</string>
+    <string name="Think_again">再想想</string>
+    <string name="Total_return_dividend">总收益分红</string>
+    <string name="live_course_appointment_selectlanguage">外教超市提醒您，为了用户更好的体验，请前往选择你想要学习的语言</string>
+
+    <string name="Appointment_modification_application_in_progress">修改预约中</string>
+    <string name="Appointment_Cancellation_Application_in_progress">取消预约中</string>
+    <string name="Online_number">在线人数: %s></string>
+    <string name="sure">确定</string>
+    <string name="allow">允许</string>
+    <string name="No_such_course">暂无该课程</string>
+    <string name="Recent_class_param">最近上课:%s</string>
+    <string name="zkh_param">【%s】</string>
+    <string name="Class_time_param">上课时间:%s</string>
+    <string name="Interactive_class_details">互动课详情</string>
+
+    <string name="Last_section">已上%s/%s节</string>
+    <string name="courses_purchased_param">已购买%s套课程</string>
+    <string name="Special_activities">活动专场</string>
+    <string name="Operate_successfully">操作成功</string>
+    <string name="closing_account">正在注销中</string>
+    <string name="closing_account_suc">注销成功</string>
+    <string name="login_suc">登录成功</string>
+    <string name="Please_set_your_nickname">请设置您的昵称</string>
+    <string name="Please_set_your_avatar">请设置您的头像</string>
+    <string name="Please_set_your_birthday">请设置您的生日</string>
+    <string name="Last_time">最近一次</string>
+    <string name="Private_education_I_recruited">我招募的外教</string>
+
+    <string name="Recruit_private_teachers_immediately">立即招募外教</string>
+    <string name="Recommend_mechanism_immediately">立即推荐机构</string>
+
+    <string name="No_revenue_record">暂无收益记录</string>
+    <string name="Call">呼叫</string>
+    <string name="Mechanism_teacher">机构老师</string>
+    <string name="tip_exit_oneonfour_class">课程还没结束！确定要退出吗？</string>
+    <string name="Incorrect_security_code">安全码不正确</string>
+
+    <string name="no_student">该班级没有学生</string>
+    <string name="No_anchor_on_Wheat">麦上没有主播</string>
+    <string name="overdue">已过期</string>
+    <string name="DueTime_Params">到期时间: %s</string>
+    <string name="Course_Comment">课程评分</string>
+    <string name="Set_successfully">设置成功</string>
+    <string name="Setting_center">设置中心</string>
+
+    <string name="history">历史记录</string>
+    <string name="single_class_evaluate_title">您对本节课程满意吗？</string>
+    <string name="tip_sure_clear_chat">确认清空聊天记录吗?</string>
+    <string name="tip_sure_exit_group_chat">确认退出群聊吗</string>
+    <string name="Resetting">重置</string>
+    <string name="sure_quit_live_room">你确认退出房间吗？</string>
+    <string name="Are_you_sure_to_dismiss_the_class">你确认解散班级吗？</string>
+    <string name="Are_you_sure_to_dismiss_the_room">你确认解散改房间吗？</string>
+    <string name="member_list">成员列表</string>
+    <string name="Relevant_mls">相关工作证明材料</string>
+    <string name="Online_state">在线</string>
+    <string name="OutLine_state">离线</string>
+    <string name="On_the_podium">在讲台上</string>
+    <string name="Lian_Mai">连麦中</string>
+    <string name="Member_center">会员中心</string>
+    <string name="vipmember">Vip会员</string>
+    <string name="languages_list">掌握语言:%s</string>
+    <string name="Language_mastered">掌握语言</string>
+    <string name="location_city">%s•%s</string>
+    <string name="Me">我</string>
+    <string name="Invite_you_to_class">邀请你上课</string>
+    <string name="send_gift_to_user">送%s 给%s</string>
+    <string name="enter_room">%s 进入房间</string>
+    <string name="exit_room">%s 退出房间</string>
+    <string name="Waiting_for_Review">等待审核</string>
+    <string name="Under_review">正在审核中</string>
+    <string name="Audit_rejected">审核已拒绝</string>
+    <string name="Online_time">在线: %s</string>
+    <string name="The_live_broadcast_has_ended_Do_you_want_to_exit">直播课程已经结束，您是否要退出吗？</string>
+    <string name="prompting">提醒</string>
+    <string name="who_Send_a_request_to_you">%s 向你发送连麦请求</string>
+    <string name="The_anchor_is_processing_other_people_request_for_linkMic">老师正在与其他人连麦</string>
+    <string name="Course_time_is_up_exit_or_not">课程已经结束，是否退出?</string>
+    <string name="Please_roadcast_first">请先开播</string>
+    <string name="Please_connect_first">请先连线</string>
+    <string name="connection">连线</string>
+    <string name="Sorry_you_were_kicked_out">对不起，你被主播踢出来了</string>
+    <string name="language">语言</string>
+    <string name="Courses">开课数</string>
+    <string name="Message_list">消息列表</string>
+    <string name="national_params">国籍:%s</string>
+    <string name="Country">国家</string>
+    <string name="Select_up_to_three_countries">最多选择三个国家英文</string>
+    <string name="certification">实名认证</string>
+    <string name="Unauthorized">未认证</string>
+    <string name="authenticated">已认证</string>
+    <string name="Resubmit">重新提交</string>
+    <string name="The_current_teacher_status_cannot_be_changed">当前老师状态无法更改</string>
+    <string name="preference_params">偏好: %s</string>
+    <string name="My_favorite_friends_list">我喜欢</string>
+    <string name="Like_my_friends_list">喜欢我</string>
+    <string name="List_of_friends_I_seed">我看过</string>
+    <string name="See_my_friends_list">看过我</string>
+    <string name="receive">领取</string>
+    <string name="twice_get_code_countdowntime">重新获取(%s)</string>
+    <string name="get_code">获取验证码</string>
+    <string name="get_num_coin">获得%s猫币</string>
+
+    <string name="Lock_the_platform">锁定讲台</string>
+    <string name="Unlocking_platform">解锁讲台</string>
+    <string name="Invite_to_the_stage">邀请上讲台</string>
+    <string name="Go_podium">上讲台</string>
+    <string name="waiting_up">待上麦</string>
+    <string name="thousand">千</string>
+
+
+    <string name="num_day">第%s天</string>
+    <string name="live_notice">欢迎来到直播间！Tmore提倡绿色健康直播。直播内容和评论内容严禁出现违法、违规、低俗色情、吸烟酗酒等内容。如有违反，将视情节严重程度对作者账号进行处罚。</string>
+    <string name="photo_video_and_files">照片, 视频和文件</string>
+    <string name="Live_settings">直播设置</string>
+    <string name="Class_settings">课堂设置</string>
+    <string name="close_live">关播</string>
+    <string name="open_live">开播</string>
+    <string name="cat_coin_params">猫币x%s</string>
+    <string name="Tmore_certified_student_assistant">外教超市认证外教</string>
+
+    <string name="Verification_code">验证码</string>
+    <string name="Order_number">订单号</string>
+    <string name="Order_number_param">订单号：</string>
+    <string name="Payment_time">付款时间：</string>
+
+    <string name="remark">备注</string>
+    <string name="Income_details">收益详情</string>
+
+    <string name="tip_enter_phone_or_email">请输入手机号或邮箱</string>
+    <string name="tip_enter_email">请输入邮箱</string>
+    <string name="tip_enter_comment">请输入评论</string>
+    <string name="tip_enter">请输入</string>
+    <string name="New_message_alert_notification">新消息提醒通知</string>
+    <string name="New_message_notification">新消息通知</string>
+    <string name="Notification_display_message_details">通知显示消息详情</string>
+    <string name="autoDownLoadUnderWifi">在WiFi下自动下载和播放</string>
+    <string name="Voice_Reminder">声音提醒</string>
+    <string name="Check_for_updates">检查更新</string>
+    <string name="version_is_no">版本: %s</string>
+    <string name="is_latest_version">已经是最新版本</string>
+    <string name="Vibration_reminder">震动提醒</string>
+    <string name="the_duration_is_NotAppointment_reminder_title">该时间段没有预约课程</string>
+    <string name="Appointment_course_not_available">未到课程时间</string>
+    <string name="the_duration_is_NotAppointment_reminder_content">提示：上课时间未到，是否需要新增课程或修改预约时间</string>
+    <string name="contact_me_through_phone">可以通过手机号码找到我</string>
+    <string name="contact_me_through_id">可以通过ID找到我</string>
+    <string name="contact_me_through_nick">可以通过昵称找到我</string>
+    <string name="contact_me_through_email">可以通过E-mail找到我</string>
+    <string name="Schooltime">上课时间</string>
+
+    <string name="tip_selete_phone_or_email">请选择手机号或邮箱</string>
+    <string name="tip_enter_phone">请输入手机号</string>
+    <string name="tip_enter_code">请输入验证码</string>
+    <string name="Please_enter_your_home_address">请输入上门地址</string>
+    <string name="Please_enter_the_number_of_students">请输入学生数量</string>
+    <string name="Maximum_student_param">学生数量最多%s人</string>
+    <string name="prompt">提示</string>
+    <string name="Class_hours">课时</string>
+    <string name="Student_num">学生数</string>
+    <string name="Visiting_time">上门时间</string>
+    <string name="Set_payment_password">设置支付密码</string>
+    <string name="Set_Login_password">设置登录密码</string>
+    <string name="Login_password">登录密码</string>
+
+    <string name="Please_input_password">请输入密码</string>
+
+    <string name="Confirm_Password">再次输入密码</string>
+    <string name="Change_Password">修改密码</string>
+    <string name="Please_input_Age">请输入年龄</string>
+    <string name="sex_nan">男</string>
+    <string name="sex_nv">女</string>
+    <string name="year">年</string>
+    <string name="Take_a_picture">拍照</string>
+    <string name="Select_from_the_album">从相册选择</string>
+    <string name="Select_picture_from_the_album">从相册选择图片</string>
+    <string name="Select_video_from_the_album">从相册选择视频</string>
+
+    <string name="Please_select_a_picture_source">请选择图片来源</string>
+    <string name="Please_select_a_picture_source_or_video_source">请选择图片或视频来源</string>
+
+
+    <string name="minutes_per_class">(30分钟每课时,共12课时)</string>
+    <string name="month">月</string>
+    <string name="this_live_total_profit">本次直播总收益</string>
+    <string name="Job_contents">职位详情</string>
+    <string name="Residence_requirements">入驻要求</string>
+
+    <string name="Forget_Password">忘记密码</string>
+    <string name="Please_choose_teacher_status">请选择老师身份</string>
+    <string name="Buy_Now">立即购买</string>
+    <string name="Refused">被拒绝</string>
+    <string name="Retrieve_password">找回密码</string>
+    <string name="day">日</string>
+    <string name="invitation_respose">同意您的邀请</string>
+    <string name="checkNet">请检查您的网络</string>
+    <string name="You_received_an_invitation_from_the_teacher">你接收到老师的上课邀请</string>
+
+    <string name="Application_for_cancellation">申请取消预约</string>
+    <string name="cancel_the_reservation">取消预约</string>
+    <string name="person">人</string>
+
+    <string name="Application_for_amendment_of_appointment">申请修改预约</string>
+    <string name="To_apply_for_an_appointment">申请预约</string>
+    <string name="wans_person_info_1">完善材料</string>
+    <string name="enter_real_info_must_qucik_know_friend">填写真实资料，认识新朋友的速度更快哦</string>
+    <string name="cancel">取消</string>
+    <string name="Request_permissions">权限申请</string>
+    <string name="Positioning_application">定位申请</string>
+    <string name="no_agreement_tip">若不同意协议，则无法继续使用哟</string>
+
+    <string name="Agree_and_continue">同意并继续</string>
+    <string name="Disagree_and_exit">不同意并退出</string>
+    <string name="disagree">不同意</string>
+    <string name="Cat_coin_surplus">猫币剩余:</string>
+    <string name="Permission_request_failed">权限请求失败</string>
+    <string name="Permission_request_successed">权限请求成功</string>
+
+    <string name="tutor_class_end_notice">外教课程已结束，是否退出?</string>
+
+    <string name="Click_copy">点击复制</string>
+    <string name="Classical_course">精品课程</string>
+    <string name="Mechanism_Classical_course">机构精品课程</string>
+    <string name="Interactive_course">互动课程</string>
+    <string name="Mechanism_Interactive_course">机构互动课程</string>
+
+    <string name="Mechanism_course">机构课程</string>
+    <string name="Sell_records">出售记录</string>
+    <string name="White_background_photo">白底证件照</string>
+    <string name="Photo">照片</string>
+    <string name="Location_fail">定位失败</string>
+
+    <string name="Please_select_the_white_list_you_want_to_delete">请选择您要删除的白名单</string>
+
+    <string name="user_appointment_title">确定选择此课时</string>
+    <string name="user_appointment_content">提示: 请谨慎根据自己时间预约</string>
+
+    <string name="Students_to_speak">待发言学员</string>
+    <string name="waiting_process">等待处理</string>
+    <string name="Class_number">课堂数量</string>
+    <string name="Course_number">课节数</string>
+    <string name="learned_course">上次学习到:%s</string>
+    <string name="Temporarily_not_to_learn">暂未学习</string>
+    <string name="sorry_you_are_kickedout">不好意思你被主播踢出房间</string>
+    <string name="Whether_to_get_off_the_platform">是否下讲台?</string>
+    <string name="Off_podium">下讲台</string>
+
+    <string name="enter_nick">输入昵称</string>
+    <string name="sex">性别</string>
+    <string name="tip_sex_uneditable">(编辑后不可修改)</string>
+    <string name="birthday">出生日期</string>
+    <string name="Date">日期</string>
+    <string name="finish">完成</string>
+    <string name="Completed">已完成</string>
+    <string name="to">到 : </string>
+    <string name="Verification_code_sent_successfully">验证码发送成功</string>
+    <string name="please_enter_pw">请输入密码</string>
+    <string name="please_swice_enter_pw">请再次输入密码</string>
+    <string name="two_pw_are_inconsistent">两次密码不一致</string>
+    <string name="The_two_security_codes_are_inconsistent">两次安全码不一致</string>
+    <string name="register">注册</string>
+    <string name="Upload_failed">上传失败</string>
+    <string name="Permission_not_applied">权限未申请</string>
+    <string name="location_tip">外教超市正在访问您的位置信息,该权限主要用于查询附近的私教、附近的机构和直播课程，请允许，否则无法使用上述功能</string>
+    <string name="Withdrawal_suc_tip">提现成功,请前往查看</string>
+    <string name="Has_been_selected">已经选中</string>
+    <string name="No_summary">暂无总结</string>
+    <string name="no_user_info_tip">查询不到该用户信息</string>
+    <string name="Wrong_order_data">订单数据有误</string>
+    <string name="enter">进入</string>
+    <string name="creating_classroom">创建班级</string>
+    <string name="creating_course">创建课程</string>
+    <string name="create_discussion_group">创建讨论组</string>
+    <string name="live_video_classroom">视频直播课堂</string>
+    <string name="Voice_live_classroom">语音直播课堂</string>
+    <string name="Video_live">视频直播</string>
+    <string name="Voice_live">语音直播</string>
+    <string name="Ordinary_speech">普通语音</string>
+    <string name="Voice_Chat">语音群聊</string>
+    <string name="Next_Step">下一步</string>
+    <string name="Hangouts">视频群聊</string>
+    <string name="General_classroom">普通课堂</string>
+    <string name="Multimedia_classroom">多媒体课堂</string>
+
+    <string name="delete_tip">你确定要删除吗</string>
+    <string name="Delete_success">删除成功</string>
+    <string name="Live_card_purchase">直播课程学习卡购买</string>
+
+
+    <string name="Live_broadcast_crossborder_scenes">跨境场景直播</string>
+    <string name="Live_entertainment">生活娱乐直播</string>
+    <string name="please_enter_discussion_group_name">请输入讨论组名称</string>
+    <string name="please_enter_category">请输入讨论组类别</string>
+    <string name="please_enter_language">请输入语言</string>
+    <string name="create">创建</string>
+    <string name="chat_group_name_tip">请输入讨论组名称</string>
+    <string name="chat_group_cover">讨论组封面</string>
+
+    <string name="Please_input_syllabus">请输入教学大纲</string>
+    <string name="Please_enter_text_introduction">请输入文字简介</string>
+    <string name="Course_cover">课程封面</string>
+    <string name="class_cover">班级封面</string>
+    <string name="Crowd_oriented">面向人群</string>
+    <string name="discussion_group">讨论组</string>
+    <string name="Label">标签</string>
+    <string name="max_lianmai">最大连麦人数</string>
+    <string name="select_max_lianmai">请选择最大连麦人数</string>
+    <string name="category">类别</string>
+    <string name="publicStr">公开</string>
+    <string name="classify">类别</string>
+    <string name="isfree">是否免费</string>
+    <string name="setting_pw">设置密码</string>
+    <string name="chat_group_person">人数限制</string>
+    <string name="Please_choose">请选择</string>
+    <string name="TheCurCourseNotStarted">当前课程尚未开始，请稍候再试</string>
+    <string name="Begin_Time">开播时间</string>
+    <string name="Number_participants">%s人参与</string>
+    <string name="Loading">正在加载</string>
+    <string name="foreign_teacher_manual">外教使用手册</string>
+    <string name="common_problem">常见问题</string>
+    <string name="Please_enter_the_detailed_address">请输入详细地址</string>
+    <string name="Course_Detail">课程详情</string>
+    <string name="Teaching_institutions">授课机构</string>
+    <string name="Logining">正在登录</string>
+    <string name="Mechanism_Type">机构类型</string>
+    <string name="Select_Date">选择日期</string>
+    <string name="Select_course_type">选择课程类型</string>
+    <string name="course_type">课程类型</string>
+    <string name="class_type2">课堂类型</string>
+    <string name="section_param">第%s节</string>
+
+    <string name="please_Select_course_type">请选择 课程类型</string>
+    <string name="Please_select_time_period">请选择 时间段</string>
+    <string name="Please_select_the_teacher">请选择 授课老师</string>
+
+    <!--Me-->
+    <string name="Receive">收到</string>
+    <string name="Contribution_list">贡献榜</string>
+    <string name="Platform_revenue_list">平台收入榜</string>
+    <string name="Platform_contribution_list">平台贡献榜</string>
+    <string name="no_limit">不限</string>
+    <string name="Service_Area">服务范围</string>
+    <string name="Age">年龄</string>
+    <string name="trade">贸易</string>
+    <string name="recruit">招聘</string>
+    <string name="Maximum_number_of_students">最多的学生数</string>
+    <string name="Job_wanted">求职</string>
+    <string name="donate">捐助</string>
+    <string name="Service_duration">服务时长</string>
+    <string name="Initial_sales">起售数</string>
+    <string name="investment">投资</string>
+    <string name="modify_successfully">修改成功</string>
+    <string name="Please_select_address">请选择 地址</string>
+    <string name="CourseOnSaleMechanismStatistics">在售课程总数:%s 联名课程数:%s 线下课程数:%s</string>
+    <string name="select_address">选择地址</string>
+    <string name="Returned_student">留学生</string>
+    <string name="Overseas_Chinese">华侨</string>
+    <string name="Ethnic_Chinese">华裔</string>
+    <string name="Overseas_work">境外工作</string>
+    <string name="Overseas_businessmen">境外商人</string>
+    <string name="cat_coin_puy_cooperation">购买猫币协议</string>
+    <string name="Tmore_Privacy_Policy">教付保隐私权政策</string>
+    <string name="Album">相册</string>
+    <string name="Message_push">消息推送</string>
+    <string name="My_dynamics">我的动态</string>
+    <string name="Mine_Order">我的订单</string>
+    <string name="Institutional_Order">机构订单</string>
+    <string name="to_now">至今</string>
+    <string name="Dynamic_info">动态消息</string>
+    <string name="gift_center">礼物中心</string>
+    <string name="My_window">我的橱窗</string>
+    <string name="window_revenue">橱窗收益</string>
+    <string name="Recommended_revenue">推荐收益</string>
+    <string name="identify_manager">认证管理</string>
+
+    <string name="type_authentication_identify">身份认证</string>
+    <string name="type_authentication_realName">实名认证</string>
+    <string name="real_name">姓名</string>
+    <string name="invite_cash_Reward_rules">1.每邀请1名好友注册成为外教超市用户,可获得300猫币\n2.每有1名好友成功购买Tmore互动课并支付成功后,可获得支付金额10%的现金奖励\n3.每有1名好友成功购买直播课(100次卡)并支付成功后,可获得支付金额的10%的现金奖励</string>
+    <string name="Scan_code_to_download">扫码下载</string>
+    <string name="Reward_rules">奖励规则</string>
+    <string name="Generate_posters_to_share_cash">生成海报  分享拿现金</string>
+    <string name="Tmore_APP">（外教超市APP）</string>
+    <string name="Limited_time_activities">限时活动</string>
+    <string name="Income_statement">收益账单明细</string>
+    <string name="yuan">(元)</string>
+    <string name="yuan_param">%s元</string>
+    <string name="Total_income_yuan">总收益(元)</string>
+    <string name="Total_today_income_yuan">今日总收益(元)</string>
+    <string name="no_recommended_mechanism">您还没有推荐任何机构</string>
+    <string name="no_recruited_foreign_teachers">您还没有招募任何外教</string>
+    <string name="Continue_to_recommend_mechanisms">继续推荐机构</string>
+    <string name="Continue_to_recruit_foreign_teachers">继续招募外教</string>
+
+    <string name="Reasons_for_rejection">拒绝理由</string>
+    <string name="real_name_tip">请输入姓名</string>
+    <string name="dynamic_interaction">动态互动</string>
+    <string name="real_id">证件号码</string>
+    <string name="real_id_tip">请输入证件号码</string>
+    <string name="nationality">国籍</string>
+    <string name="Save_as_a_draft">存为草稿</string>
+    <string name="Copy">复制</string>
+
+    <string name="Task">任务</string>
+    <string name="Please_select_service_type">请选择 服务类型</string>
+    <string name="Please_choose_nationality">请选择 国籍</string>
+    <string name="Please_select_service_time">请选择 服务时间</string>
+
+    <string name="Please_select_the_service_group">请选择 服务人群</string>
+    <string name="tip_service_group">请选择 服务人群(可多选)</string>
+    <string name="real_up_id_title">上传身份照片</string>
+    <string name="update_id_desc">上传证件必须清晰可见</string>
+    <string name="real_up_handle_id_title">上传手持身份证照片</string>
+    <string name="update_handle_id_desc">请确认照片中身份证信息清晰，露出手臂</string>
+    <string name="Sift">筛选</string>
+    <string name="Please_enter_the_correct_ID_number">请输入正确的身份证号</string>
+    <string name="identity">身份</string>
+    <string name="Student">学生</string>
+    <string name="Audience">观众</string>
+    <string name="xuexiaoname">学校名称</string>
+    <string name="xuexiaoname_tip">请输入学校名称</string>
+    <string name="Department">系</string>
+    <string name="Gifts_received">收到的礼物</string>
+    <string name="Department_tip">请输入系</string>
+    <string name="major">专业</string>
+    <string name="Please_choose_mother_tongue">请选择 母语</string>
+    <string name="major_tip">请输入专业</string>
+    <string name="Languages">语种</string>
+    <string name="Languages_tip">请选择 语种</string>
+    <string name="Native_place">籍贯</string>
+    <string name="Native_place_tip">请选择 籍贯</string>
+    <string name="life_city">所在城市</string>
+    <string name="life_city_tip">请选择 所在城市</string>
+    <string name="Personal_profile">个人简介</string>
+    <string name="Personal_profile_tip">请输入个人简介</string>
+    <string name="student_id_card_tip">请上传学生证正面照片</string>
+    <string name="holding_id_card_tip">请上传手持身份证照片</string>
+
+    <string name="up_xuesheng_card__fre_pic_title">上传学生证正面照片</string>
+    <string name="up_xuesheng_card__fre_pic_tip">上传证件必须清晰可见</string>
+    <string name="real_name_down_tip1">照片仅供后台审核使用，绝不对外展示</string>
+    <string name="real_name_down_tip2">为什么需要实名认证？如何保护隐私</string>
+    <string name="real_name_down_tip2_detail_desc">Tmore是一款跨境社交APP，有很多国外的用户，需要委托境外的身份认证
+认证机构进行认证。国内实名认证也会通过官方认证库进行比对认证，剔除
+有犯罪行为的人群，保证平台的安全性和真实性。您的身份信息仅供用于实
+名认证，不会被任何人看到，易出境平台会保障您的信息安全。</string>
+    <string name="shenfenbiaoshi">身份标识</string>
+    <string name="caifu">财富</string>
+    <string name="kefu">客服</string>
+    <string name="daly_fuli">每日福利</string>
+    <string name="goutong">沟通</string>
+    <string name="sousuo">搜索</string>
+    <string name="pipei">匹配</string>
+    <string name="trans">翻译</string>
+    <string name="member_baijin">白金会员</string>
+    <string name="member_zuanshi">钻石会员</string>
+    <string name="No_mechanism_data">暂无机构数据</string>
+    <string name="no_member_tip">您还不是%s</string>
+
+    <string name="member_chang">畅聊会员</string>
+    <string name="Positioning">正在定位...</string>
+
+    <string name="jiaoyijilu">交易记录</string>
+    <string name="Trade_Alert">交易提醒</string>
+    <string name="commit">提交</string>
+    <string name="Click_enter">点击进入</string>
+    <string name="In_class">正在上课中</string>
+    <string name="Class_time_is_up_click_continue">上课时间已到</string>
+    <string name="Registration_means_agreement_to_the_relevant_terms_of_service_and_its_privacy_policy">注册即代表同意相关的服务条款及其隐私策略</string>
+    <string name="Please_select_the_appointment_time">请选择预约时间</string>
+    <string name="mine_member">我的会员</string>
+    <string name="lijixufei">立即续费</string>
+    <string name="Not_locate">未定位</string>
+    <string name="Purchase_experience_course">购买体验课</string>
+    <string name="Immediately_opened">立即开通</string>
+    <string name="Give_a_like">点赞</string>
+    <string name="Cancel_likes">取消点赞</string>
+    <string name="Basic_information">基础信息</string>
+    <string name="Assistant_Details">外教详情</string>
+
+    <string name="member_rights">尊享八项特权</string>
+    <string name="more_member">更多会员</string>
+    <string name="no_teaching_language">暂无教学语言</string>
+    <string name="Live_class">直播课堂</string>
+    <string name="please_select_member_type">请选择会员类型</string>
+    <string name="add_yuan">%s元</string>
+    <string name="lijizhifu_add_yuan">立即支付%s元</string>
+    <string name="Immediate_entry">立即入驻</string>
+    <string name="Residence_status">入驻身份</string>
+    <string name="Please_select_the_Residence_status">请选择入驻身份</string>
+
+    <string name="telephone">电话</string>
+    <string name="Navigation">导航</string>
+    <string name="Baidu_Map">百度地图</string>
+    <string name="AMAP">高德地图</string>
+    <string name="I_agree">我同意</string>
+    <string name="shield">屏蔽</string>
+    <string name="Collect">收藏</string>
+    <string name="Course_title">课程标题</string>
+    <string name="Please_enter_content">请输入内容</string>
+    <string name="Instructions_for_the_resident_student_of_curious_earth">《外教超市入驻外教说明》</string>
+    <string name="shoufeishuoming">外教在外教超市平台入驻不收取任何费用，可获得30%-60%的课程费用收益。</string>
+    <string name="shoufeishuoming_name">收费说明</string>
+    <string name="select_member">选择会员</string>
+    <string name="lijizhifu">立即支付</string>
+    <string name="Experience">体验</string>
+    <string name="rights_shuoming">权益说明</string>
+    <string name="Charges">收费标准</string>
+    <string name="Offline_charging_standard">线下收费标准</string>
+    <string name="Online_charging_standard">线上收费标准</string>
+    <string name="Please_enter_the_amount">请输入金额</string>
+    <string name="Please_enter_the_offline_charging_standard">请输入线下收费标准</string>
+    <string name="Please_enter_the_online_charging_standard">请输入线上收费标准</string>
+
+    <string name="live_setting_explain">说明：创建普通语音讨论组不需要消耗猫币，创建在线语音或在线视频讨论组则需要消耗100猫币，在该房间所获得收益，平台将收取30%的管理费</string>
+    <string name="yinian">一年</string>
+    <string name="No_purchase_add">(未购买)</string>
+    <string name="Experience_add">(体验卡)</string>
+    <string name="detail">详情</string>
+    <string name="get_money">收入</string>
+    <string name="pay_money">支出</string>
+    <string name="type">类型</string>
+    <string name="Please_select_course_type">请选择 课程类型</string>
+    <string name="Please_select_class_type">请选择 课堂类型</string>
+    <string name="time">时间</string>
+    <string name="pay_no">交易单号</string>
+    <string name="beizhu">备注</string>
+    <string name="Red_packet_record">红包记录</string>
+    <string name="cat_money">猫币</string>
+    <string name="learning_live_platform">专业外语学习直播平台</string>
+    <string name="sign_get_fl">天连续签到领福利</string>
+    <string name="params_notenews">%s 新消息</string>
+    <string name="mingxi">明细</string>
+    <string name="Daily_task">日常任务</string>
+    <string name="Sign_now">立即签到</string>
+    <string name="addcatcoin">增加 %s猫币</string>
+    <string name="main_exit_app">再按一次退出</string>
+    <string name="downcatcoin">消耗 %s猫币</string>
+    <string name="You_have_new_friend_request">您有新的好友请求</string>
+    <string name="You_have_new_information">您有新的消息</string>
+
+    <string name="new_friend2">新朋友</string>
+    <string name="System_messages">系统消息</string>
+    <string name="beiweiguan">被围观</string>
+    <string name="weiguan">围观</string>
+    <string name="get_redpackage">收到红包</string>
+    <string name="send_redpackage">发送红包</string>
+    <string name="get_gift">收到礼物 - %s</string>
+    <string name="song_gift">发送礼物 - %s</string>
+    <string name="pay_chongzhi">充值</string>
+    <string name="task">任务</string>
+
+    <string name="mine_cat_bi">我的猫币</string>
+    <string name="Earn_money">赚现金</string>
+    <string name="Earn_cat_money">赚猫币</string>
+    <string name="Cat_money_surplus">猫币剩余</string>
+    <string name="No_Enough_cat_COINS">猫币不足</string>
+    <string name="No_Enough_cat_COINS_tip">猫币不足,是否前往充值猫币</string>
+    <string name="See_More">查看更多</string>
+    <string name="See">查看</string>
+    <string name="VIP_experience_course">VIP体验课</string>
+
+    <string name="See_All_arrow">查看全部 ></string>
+    <string name="All">全部</string>
+    <string name="Bind">绑定</string>
+    <string name="Detail_introduce">详情介绍</string>
+    <string name="Disconnect">断线</string>
+
+    <string name="Group_chat_name">群聊名称</string>
+    <string name="Group_QR_code">群二维码</string>
+    <string name="More">更多</string>
+    <string name="please_select_recharge_value">请选择充值数值</string>
+    <string name="Rulesfor_purchasing_cat_coins">购买猫币</string>
+    <string name="yuan_is_catcoins">1元=100猫币</string>
+    <string name="purchase_not_received_problem">购买未到账？对猫币余额有疑问？</string>
+    <string name="Purchase_means_agreement_on_purchase_of_q_money">购买即代表同意《外教超市猫币购买协议》</string>
+    <string name="chongzhi_params">充值%s</string>
+    <string name="pack_up">收起</string>
+    <string name="There_are_no_waiting_personnel">暂无等待上麦人员</string>
+    <string name="tixian">提现</string>
+    <string name="Ranking">名次</string>
+    <string name="Foreign_teachers">招募外教数</string>
+    <string name="Recommended_Mechanisms">推荐机构数</string>
+    <string name="Get_a_reward">获取奖励</string>
+    <string name="close">关闭</string>
+    <string name="Withdrawal_amount">提现金额</string>
+
+    <string name="leiji_tixian">累计满100元即可提现</string>
+
+    <string name="balance_is_not_enough">余额不足</string>
+    <string name="To_be_paid">待支付</string>
+    <string name="Stay_at_your_door">待上门</string>
+    <string name="Waiting_for_class">待上课</string>
+    <string name="Please_select_the_mechanism_logo">请选择机构Logo</string>
+    <string name="Mechanism">机构</string>
+    <string name="Mechanism_income">机构收益</string>
+    <string name="Foreign_Teacher_recommended_official_income">外教招募官收益</string>
+    <string name="Mechanism_recommended_official_income">机构推荐官收益</string>
+    <string name="balance_is_not_enough_to_go_renew">您的余额不足，请前往续费</string>
+
+    <string name="comment">评论</string>
+    <string name="comment_params">%s条评论</string>
+    <string name="Today_schedule">今日课表</string>
+    <string name="Detailed_address2">详细地址,例如1层101室</string>
+    <string name="Save_Address">保存地址</string>
+    <string name="View_courseware">查看课件</string>
+    <string name="course_Summary">课程小结</string>
+    <string name="All_Courses">全部课程</string>
+    <string name="All_Courses_params">全部课程(%s)</string>
+    <string name="Experiential_learning_card">体验学习卡</string>
+    <string name="Experience_interactive_courses">体验互动课</string>
+    <string name="House_number">门牌号</string>
+    <string name="Update_Address">修改地址</string>
+    <string name="Join_white_list">加入白名单</string>
+    <string name="Pay">付款</string>
+
+    <string name="Number_of_viewers">观看人数</string>
+    <string name="Live_card">直播卡</string>
+    <string name="One_to_one_video">一对一视频</string>
+    <string name="One_to_one_class">一对一</string>
+    <string name="Live_video">直播视频</string>
+    <string name="Modify_material">修改材料</string>
+    <string name="Total_revenue">总收益</string>
+    <string name="Course_Description">课程简介</string>
+    <string name="Picture_introduction">图片简介</string>
+    <string name="Please_enter_the_invitation_code">请输入邀请码(可以不填)</string>
+
+    <string name="Please_upload_the_picture_introduction">请上传图片简介</string>
+
+    <string name="Please_enter_the_course_introduction">请输入 课程简介</string>
+    <string name="Whether_there_is_a_syllabus">是否设置教学大纲</string>
+    <string name="watch_time_parmas">观看时长: %s分钟</string>
+    <string name="Paid_view_method_prams">付费观看方式: %s</string>
+    <string name="Base_material">基本材料</string>
+    <string name="Course_table">课程表</string>
+    <string name="Leave_your_brilliant_comments">留下您精彩的评论吧</string>
+
+    <string name="Minutes_per_class_hour">分钟/课时</string>
+    <string name="Minutes_per_class_hour_60param">60分钟/课时</string>
+    <string name="Please_enter_initial_sale">请输入 起售数</string>
+    <string name="yuan_per_class_hour">元/课时</string>
+    <string name="classroom">班级</string>
+    <string name="classname">班级名称</string>
+    <string name="classname_enter">请输入班级名称</string>
+    <string name="unfollow">取消关注</string>
+    <string name="Modify_teacher_identity">修改老师身份</string>
+    <string name="Appointment_mobile">预约手机号</string>
+
+    <string name="attention">关注</string>
+    <string name="attention_success">关注成功</string>
+    <string name="Waiting_for_the_teacher_to_confirm">等待老师确认</string>
+    <string name="Destroy_room">解散房间</string>
+    <string name="Continue_appointment">继续预约</string>
+    <string name="Recent_course">最近课程</string>
+    <string name="No_courses">暂无课程</string>
+    <string name="Settling_time_params">入驻时间: %s</string>
+    <string name="course_lessons_params">%s节</string>
+    <string name="Lessons">节</string>
+    <string name="changliao">畅聊</string>
+    <string name="Live_classroom_lecturer">直播课堂讲师</string>
+    <string name="Live_lecturer_details">直播讲师详情</string>
+
+    <string name="Curriculum">课节</string>
+    <string name="setting">设置</string>
+    <string name="Institutional_store_entry">机构门店入驻</string>
+    <string name="Mechanism_info">机构资料</string>
+    <string name="Individual_material">个人资料</string>
+    <string name="Course_evaluation">课程评价</string>
+    <string name="Course_summary">课程总结</string>
+    <string name="Switch_free_account">切换自由账号</string>
+    <string name="Switch_mechanism_account">切换机构账号</string>
+    <string name="Switch_identities">切换身份</string>
+    <string name="account_and_anquan">账户和安全</string>
+    <string name="new_msg_notify">新消息通知</string>
+    <string name="notify_permission_content">请设置允许显示通知，确保消息通知能够及时展示</string>
+    <string name="Notice">通知</string>
+    <string name="Commenting">待评论</string>
+    <string name="privacy">隐私</string>
+    <string name="common">通用</string>
+    <string name="Total_point">合计: </string>
+    <string name="about_we">关于我们</string>
+    <string name="close_account">注销账户</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="contact_wo">联系我们</string>
+    <string name="customer_service">客服</string>
+
+    <string name="Self_introduction_in_current_teaching_language">用当前教学语言自我介绍</string>
+
+    <string name="Feedback">意见反馈</string>
+    <string name="help_center">帮助中心</string>
+    <string name="feedback_tip">请具体描述您的建议或反馈，以使我们更好的帮助您处理</string>
+    <string name="exit_login">退出登录</string>
+    <string name="login">登录</string>
+    <string name="Sign_in_with_gift">登录有礼</string>
+    <string name="save_pic_to_camera">图片已保存到相册</string>
+    <string name="Uploading">正在上传</string>
+    <string name="Upload">上传</string>
+    <string name="Upload_up_to_6">最多上传6张</string>
+    <string name="Invitation_sent">邀请已发送</string>
+    <string name="no_invite_yourself">不能邀请自己</string>
+    <string name="Current_student_is_not_online">当前学员不在线</string>
+    <string name="Current_student_is_linkMacing">当前学员连麦中</string>
+    <string name="Sure_logout">确定要退出登录吗?</string>
+    <string name="Sure_close_account">确定要注销账户吗?</string>
+    <string name="Sure_clear_allcache">确定要清理缓存吗?</string>
+    <string name="Live_course_time_card">直播点卡</string>
+    <string name="Second_card_of_live_class">直播次卡</string>
+    <string name="use_order">使用顺序</string>
+    <string name="Verification">核销</string>
+    <string name="Show_volume_code">出示卷码</string>
+    <string name="startHM_endHM">%s-%s</string>
+    <string name="invate_linkmai_request_timeout">连麦邀请超时，该学生没有做出回应</string>
+
+    <string name="distance_params">%skm</string>
+    <string name="Complain">举报</string>
+    <string name="class_type">类型:%s</string>
+    <string name="Network_Error">网络错误</string>
+    <string name="Study_Card">学习卡</string>
+    <string name="Small_class">小班课</string>
+    <string name="Small_class_remaining_person">%s小班课,还差%s人就开课了</string>
+
+    <string name="My_study_ard">我的学习卡</string>
+    <string name="Study">学习</string>
+    <string name="small_class_signed_up_num">小班课,已有%s人报名</string>
+    <string name="please_enter_what_feedback">请输入要反馈的内容</string>
+    <string name="Study_card_for_teacher_assistant">外教学习卡</string>
+    <string name="Live_classroom_learning_card">直播课堂学习卡</string>
+    <string name="very_early_morning">凌晨</string>
+    <string name="early_morning">早上</string>
+    <string name="morning">上午</string>
+    <string name="midday">中午</string>
+    <string name="afternoon">下午</string>
+    <string name="night">晚上</string>
+    <string name="Cumulative_student">累计学生</string>
+    <string name="Accumulated_number_of_classes">累计上课</string>
+    <string name="please_select_studycard">请选择学习卡</string>
+
+    <string name="Today_course">今日课程</string>
+    <string name="Create_small_class">创建小班课</string>
+    <string name="discover">发现</string>
+    <string name="View_details">查看详情</string>
+    <string name="mine_summary_detail">总结详情</string>
+    <string name="Review_Order">查看订单</string>
+    <string name="Total_number_of_classes">累计上课数</string>
+
+    <string name="Content_point">内容点</string>
+    <string name="Key_words">关键单词</string>
+    <string name="Grammar">语法</string>
+    <string name="Recommend">建议</string>
+    <string name="study_center">学习中心</string>
+    <string name="Teaching_pay">教付保</string>
+    <string name="Courses_on_sale">在售课程</string>
+    <string name="Add_teacher">添加老师</string>
+    <string name="update_teacher">修改老师</string>
+    <string name="Teacher_strength">师资力量</string>
+    <string name="tab_personal_youngboys_mode">青少年模式</string>
+    <string name="mine_course">我的课程</string>
+    <string name="Purchased_courses">已购买课程</string>
+    <string name="History_courses">历史课程</string>
+    <string name="mine_class">我的班级</string>
+    <string name="Text_introduction">文字简介</string>
+    <string name="course_arrangement">课程安排</string>
+    <string name="course_arrangement_successful">课程安排成功</string>
+    <string name="Modify_course">修改课程</string>
+    <string name="install_permission_tip">安装应用需要打开未知来源权限，请去设置中开启权限</string>
+
+    <string name="You_have_not_installed_Baidu_map">您尚未安装百度地图</string>
+    <string name="You_have_not_installed_goldmap">您尚未安装高德地图</string>
+    <string name="chat_with_teacher">和%s老师的聊天室</string>
+    <string name="Selected_open_classes">精选直播课</string>
+    <string name="Private_education_nearby">附近私教</string>
+    <string name="Nearby_mechanisms">附近机构</string>
+
+    <string name="mine_summary_list">总结列表</string>
+    <string name="mine_comment">我的评论</string>
+    <string name="mine_teacher">我的老师</string>
+    <string name="The_other_party_has_refused">对方已拒绝</string>
+    <string name="Did_not_answer">未接听</string>
+    <string name="No_reply">对方未应答</string>
+    <string name="On_the_other_end_of_the_line">对方通话中</string>
+
+    <string name="teacher">老师</string>
+    <string name="Ordinary_course">普通课程</string>
+    <string name="Multimedia">多媒体</string>
+    <string name="Special_course">特约课程</string>
+    <string name="Course">课程</string>
+    <string name="Course_settlement">课程结算</string>
+    <string name="mechanism_history_course_statistics">课程总数:%s  外教课程:%s  直播课程总数:%s</string>
+
+    <string name="Mechanism_Detail">机构详情</string>
+    <string name="Please_enter_course_title">请输入 课程标题</string>
+
+    <string name="My_Subscriptions">我的订阅</string>
+    <string name="subscribe">订阅</string>
+    <string name="UnSubscribe">取消订阅</string>
+
+    <string name="Residual_Curriculum_Params">剩余课程 %s节</string>
+    <string name="Live_learning_curriculum_card">直播学习次卡</string>
+    <string name="lice_card">直播学习卡</string>
+    <string name="Live_learning_minute_card">直播学习点卡</string>
+    <string name="Number_of_courses_remaining">剩余课程次数 %s</string>
+    <string name="Remaining_course_time_params">剩余课程时间(分钟)  %s</string>
+    <string name="minutes_left">(剩余%s分钟)</string>
+    <string name="remaining_curriculum">(剩余%s次)</string>
+
+    <string name="tab_personal_teacher_center">教学中心</string>
+    <string name="You_are_not_a_student_assistant_yet">您还不是外教</string>
+    <string name="Course_num">课程数</string>
+
+    <string name="no_study_card">您还没有学习卡</string>
+    <string name="Go_to_buy">前往购买</string>
+    <string name="Go_to">前往</string>
+    <string name="Recommend_student_assistant">推荐私教</string>
+    <string name="Select_course_time">选择课程时间</string>
+    <string name="Course_appointment">课程预约</string>
+    <string name="Course_subscription">课程订阅</string>
+    <string name="Confirm_appointment">确定预约</string>
+    <string name="Student_Aid_Center">助学中心</string>
+    <string name="Upload_ID_card_front">上传身份证正面</string>
+    <string name="Upload_the_reverse_of_ID_card">上传身份证反面</string>
+
+    <string name="select">选择</string>
+    <string name="income">收益</string>
+    <string name="recommended_mechanism">我推荐的机构</string>
+
+    <string name="income_record">收益记录</string>
+    <string name="income_list">收益榜单</string>
+    <string name="income_center">收益中心</string>
+    <string name="Regulation">规则</string>
+    <string name="Foreign_teacher_Recruitment_Officer">外教招募官</string>
+    <string name="Agency_Referral_officer">机构推荐官</string>
+    <string name="broadcasting">正在直播</string>
+    <string name="no_live_card_goto_buy">您没有直播学习卡,请前往购买</string>
+    <string name="msg_center">消息中心</string>
+    <string name="Modify_information">修改信息</string>
+    <string name="Resident_language_tutor">入驻语言外教</string>
+    <string name="Professional_assistant">专业外教</string>
+    <string name="Professional_study_card">专业学习卡</string>
+    <string name="Professional_study_card_special">专业小班学习卡</string>
+    <string name="cross_border_study_card">跨境学习卡</string>
+    <string name="mother_tongue_study_card">母语学习卡</string>
+    <string name="cross_border_study_card_special">跨境小班学习卡</string>
+    <string name="mother_tongue_study_card_special">母语小班学习卡</string>
+
+    <string name="cross_border_assistant_teacher">跨境外教</string>
+    <string name="cross_border">跨境</string>
+    <string name="mother_tongue_assistant_teacher">母语外教</string>
+    <string name="mother_tongue">母语</string>
+    <string name="Target_language">目标语言(母语)</string>
+    <string name="Please_choose_Teaching_language">请选择 教学语言</string>
+    <string name="Please_select_mechanism_type">请选择 机构类型</string>
+    <string name="Course_price">课程价格</string>
+    <string name="Please_enter_course_price">请输入 课程价格</string>
+    <string name="Orig_price">原价</string>
+    <string name="School_syllabus">教学大纲</string>
+    <string name="Teacher_introduction">老师介绍</string>
+
+    <string name="Please_enter_mechanism_telephone">请输入机构电话</string>
+    <string name="Please_choose_the_language_mastered">请选择掌握语言</string>
+    <string name="private_education">私教</string>
+    <string name="Private">私教</string>
+    <string name="Change_account_password">修改账号密码</string>
+    <string name="Adjust_teacher_identity">调整老师身份</string>
+    <string name="Live">直播</string>
+    <string name="Appointment_private_education">预约私教</string>
+    <string name="Failed_to_create_classroom">创建课堂失败</string>
+    <string name="lessthanMaxRange">服务范围小于%skm</string>
+    <string name="Document_transcoding">文件转码</string>
+    <string name="H5_background">H5背景</string>
+
+    <string name="Transcode">转码</string>
+
+    <string name="Add_H5_file">添加h5文件</string>
+    <string name="Add">添加</string>
+    <string name="Brush_thickness">画笔粗细</string>
+    <string name="Tool_color">工具颜色</string>
+    <string name="font_color">字体颜色</string>
+    <string name="Jump_to_whiteboard">跳转白板页</string>
+    <string name="Jump">跳转</string>
+    <string name="Delete_file">删除文件</string>
+    <string name="Switch_files">切换文件</string>
+    <string name="Switch">切换</string>
+
+    <string name="Font_style">字体样式</string>
+    <string name="background_color">背景颜色</string>
+    <string name="background_picture">背景图片</string>
+    <string name="font_size">字体大小</string>
+    <string name="Recall">撤消</string>
+    <string name="Redo">重做</string>
+    <string name="Clear_coated_duck">清空涂鸭</string>
+    <string name="Clear">清空</string>
+    <string name="Reset_all">全部重置</string>
+
+    <string name="Board_graffiti">Board(涂鸭)</string>
+    <string name="Graffiti_switch">涂鸭开关</string>
+    <string name="Previous_page">前一页</string>
+    <string name="Next_page">下一页</string>
+    <string name="Previous_step">前一步</string>
+    <string name="Next_step">下一步</string>
+    <string name="New_whiteboard">新增白板</string>
+    <string name="Delete_whiteboard">删除白板页</string>
+
+    <string name="Syncing_to_others">涂鸭同步给其他人</string>
+    <string name="Pen_switch">笔锋开关</string>
+    <string name="Tu_duck_tools">涂鸭工具</string>
+    <string name="The_board_zoom">白板缩放</string>
+    <string name="Fill_mode">填充模式</string>
+
+    <string name="Audio_switches">音频开关</string>
+    <string name="Earphone">听筒</string>
+    <string name="Speaker">扬声器</string>
+    <string name="Camera_switch">摄像头开关</string>
+    <string name="Switch_between_inside_and_outside">切换内外音</string>
+
+    <string name="ppt_transcoding_h5">请输入PPT转码后的H5文件</string>
+    <string name="Please_input_H5_file">请输入H5文件地址</string>
+    <string name="Enter_the_classroom_successfully">进入课堂成功</string>
+    <string name="Failure_to_enter_the_classroom">进入课堂失败</string>
+    <string name="Quit_class_successfully">退出课堂成功</string>
+    <string name="Failed_to_quit_class">退出课堂失败</string>
+    <string name="Classroom_destroyed">课堂已销毁</string>
+    <string name="Class_destroyed_successfully">销毁课堂成功</string>
+    <string name="Failed_to_synchronize_recording_information">同步录制信息失败</string>
+    <string name="The_classroom_does_not_exist">课堂不存在</string>
+    <string name="The_teacher_allows_you_to_edit_the_whiteboard">老师允许你编辑白板</string>
+    <string name="The_teacher_forbids_you_to_edit_the_whiteboard">老师禁止你编辑白板</string>
+
+    <string name="Try_again">重试吗</string>
+    <string name="To_try_again">要重试</string>
+    <string name="Dont_try_again">不重试</string>
+    <string name="Video_disconnected">视频已断开连接</string>
+
+    <string name="Historical_data_synchronization_completed">历史数据同步完成</string>
+
+    <string name="near">周边</string>
+    <string name="Change">更换</string>
+    <string name="withdrawal_amount_param">可提现金额%s元</string>
+    <string name="Excess_of_cash_withdrawal_amount">超出可提现金额</string>
+    <string name="Amount_cannot_be_less_than_0">金额不能小于0</string>
+    <string name="Please_select_the_withdrawal_method">请选择提现方式</string>
+
+    <string name="Purchase_successful">购买成功</string>
+    <string name="settle_education">入驻私教</string>
+    <string name="Modify_private">修改私教</string>
+    <string name="In_use">使用中</string>
+    <string name="title_params">标题%s</string>
+    <string name="Add_exclusive_courses">添加专属课程</string>
+    <string name="Add_exclusive_Mechanism_courses">添加专属机构课程</string>
+    <string name="Add_Mechanism_courses">添加机构课程</string>
+    <string name="accumulative_student_count">累计学生人数 %s</string>
+    <string name="language_classify">语言分类</string>
+    <string name="shenhei_tip">视频仅供后台审核使用，绝不对外展示</string>
+    <string name="learning_treasure">学习宝典</string>
+    <string name="OneStopRecruitment">一站式招募</string>
+    <string name="TutorialGuide">外教攻略</string>
+    <string name="Details_of_private_education">私教详情</string>
+    <string name="Live_video_group_chat">视频直播群聊</string>
+    <string name="Voice_live_group_chat">语音直播群聊</string>
+    <string name="Under_discussion">讨论中</string>
+    <string name="Private_Course">私教课程</string>
+    <string name="Stay_in_class_today">今日待上课程</string>
+    <string name="Live_Course">直播课程</string>
+    <string name="Assistantship">外教课程</string>
+    <string name="Simplified_version">精简版</string>
+    <string name="Complete_version">完整版</string>
+    <string name="Language_level">语言等级</string>
+    <string name="over">已结束</string>
+    <string name="purchase_unlock_more_courses">需购买以解锁更多课程</string>
+    <string name="Knowledge_points_this_lesson">本节课的知识点：</string>
+    <string name="Not_arrange">暂未安排老师</string>
+    <string name="Hover_play">悬停播放</string>
+    <string name="click_to_buy">点击购买</string>
+    <string name="Send_to_ren_gift">送给%s %s</string>>
+    <string name="TotalCourse">共%s课时</string>
+    <string name="remainingCourse">剩余%s课时</string>
+    <string name="Distance_begins">距离开课 %s</string>
+    <string name="whole_members">全体成员</string>
+    <string name="In_the_member">在麦成员</string>
+    <string name="purchase_studyCard_tip">你还没有学习卡，是否前往购买？</string>
+    <string name="Distance_from_class">剩余%s</string>
+    <string name="Time_to_go">距离上门还剩</string>
+    <string name="There_is_still_room_for_class">距离上课还剩</string>
+    <string name="The_current_course_has_ended">当前课程已结束</string>
+    <string name="watch_recording_tip">继续观看需要扣%s猫币，是否继续?</string>
+    <string name="watch_live_tip">30秒免费结束，继续观看需要进入直播课堂，是否进入?</string>
+    <string name="Recorded_playback">录播回放</string>
+    <string name="no_authentication">未认证</string>
+    <string name="Confirm_finish_class">确认结课?</string>
+    <string name="Confirm_finish_class_content_tip">确认结课,代表您本人认同本次服务已结束</string>
+
+    <string name="Class_time_has_begun">开课时间已到</string>
+    <string name="Class_time_has_begun_start_class">开课时间已到，是否开始上课</string>
+    <string name="Live_Class">直播课堂</string>
+    <string name="next_time">下一次</string>
+    <string name="Go">前往</string>
+    <string name="Nearby">附近</string>
+    <string name="Subscription_successfully">订阅成功</string>
+    <string name="comfirm_pay">确认支付</string>
+    <string name="I_have_read_and_agree">我已经阅读并同意</string>
+    <string name="Please_agree_to_the_recharge_agreement">请同意充值协议</string>
+
+    <string name="pay_method">支付方式</string>
+    <string name="pay_bao_pay">支付宝支付</string>
+    <string name="weixin_pay">微信支付</string>
+    <string name="Not_bound">尚未绑定</string>
+    <string name="WeChat_friends">微信好友</string>
+    <string name="Sina_Microblog">新浪微博</string>
+    <string name="pingfen">评分</string>
+    <string name="Self_introduction">自我介绍</string>
+
+    <string name="cur_student">当前学生</string>
+    <string name="student">学生</string>
+    <string name="Translation_set">翻译设置</string>
+    <string name="invited_to_a_small_class">邀请您进入下班课堂</string>
+    <string name="small_class_waiting_invote">小班制请等待老师邀请</string>
+    <string name="_1v1_waiting_invote">1对1课程请等待老师邀请</string>
+    <string name="update_appointmentinfo_params">更改为: 《%s》 %s-%s</string>
+
+    <string name="Hot_private">热门私教</string>
+    <string name="Cooperation_unit">合作机构</string>
+    <string name="no_setsecurity_code">您尚未设置安全码</string>
+    <string name="please_enter_security_code">请输入安全码</string>
+    <string name="please_enter_security_code_again">请再次输入安全码</string>
+    <string name="You_have_not_bound_your_phone_number">您尚未绑定手机号</string>
+    <string name="Please_go_to_bind">请前往绑定</string>
+    <string name="Hot_mechanisms">热门机构</string>
+
+    <string name="evaluate">评价</string>
+    <string name="Accumulated_income">累计收益</string>
+    <string name="Accumulated_income_yuan">累计收益(元)</string>
+    <string name="Classes_today">今日待上课数</string>
+    <string name="Classes_to_be_attended">待上课数</string>
+    <string name="monthly_income">本月收益</string>
+    <string name="monthly_income_yuan">本月收益(元)</string>
+    <string name="monthly_PayCount">本月支出</string>
+    <string name="No_settlement">未结算</string>
+    <string name="Settled">已结算</string>
+    <string name="Teaching_identity">教学身份</string>
+    <string name="Please_select_identity">请选择 身份</string>
+    <string name="Is_it_allowed_to_modify_the_data">是否允许修改资料</string>
+
+    <string name="leiji_keshi">累计课时</string>
+    <string name="benyue_keshi">本月课时</string>
+    <string name="shengyu_keshi">剩余课时</string>
+    <string name="Settle_Mechanism">入驻机构</string>
+    <string name="Mechanism_logo">机构Logo</string>
+    <string name="Mechanism_advantages">机构优势</string>
+    <string name="Mechanism_management">机构中心</string>
+    <string name="All_the_goods">全部商品</string>
+    <string name="Mechanism_private">机构私教</string>
+    <string name="free_private_education">自由私教</string>
+    <string name="Door_private">上门私教</string>
+    <string name="Online_private">线上私教</string>
+
+    <string name="Mechanism_Name">机构名</string>
+    <string name="please_enter_Mechanism_Name">请输入机构名</string>
+    <string name="Please_select_the_picture_introduction">请选择图片简介</string>
+    <string name="Please_select_material_certificate">请选择材料证明</string>
+    <string name="please_enter_Mechanism_profile">请输入机构简介</string>
+    <string name="please_enter_Mechanism_advantages">总结几个关键内容，并用逗号隔开</string>
+    <string name="resident_assistant">入驻外教</string>
+    <string name="My_CatCoin">我的猫币</string>
+    <string name="Today_earnings">今日收益</string>
+    <string name="Today_earnings_yuan">今日收益(元)</string>
+    <string name="please_select_seal">请选择套餐</string>
+    <string name="add_jiner_yuan">金额：¥%s</string>
+    <string name="add_yuan_single_minute">%s元/分钟</string>
+    <string name="minute">分钟</string>
+    <string name="add_yuan_single_jie">%s元/节</string>
+    <string name="add_minute_course">%s分钟课程</string>
+    <string name="add_give_minute_num">送%s分钟</string>
+    <string name="add_course_num">%s节课程</string>
+    <string name="total_sessions">(%s节)</string>
+    <string name="add_give_course_num">送%s节</string>
+    <string name="course_sumarry">课程总结</string>
+    <string name="Summary">总结</string>
+    <string name="auth_failed">授权失败</string>
+    <string name="learning_language">学习语言</string>
+    <string name="theme">主题</string>
+    <string name="User_information_not_found">查询不到用户信息</string>
+    <string name="Cat_money_must_be_greater_than_0">猫币必须大于0</string>
+    <string name="Give_red_envelopers">发红包</string>
+    <string name="Copy_success">复制成功</string>
+    <string name="Sold_out_successful">下架成功</string>
+    <string name="Put_on_sale_successful">上架成功</string>
+    <string name="Application_Information_required">应用信息（必选）</string>
+
+    <string name="copy_to_add_course">请复制该网址至电脑端添加课程</string>
+    <string name="Order_center">订单中心</string>
+    <string name="window_title">%s的橱窗</string>
+    <string name="Sold_out">下架</string>
+    <string name="privacyUser">点击“同意”，即表示您同意上述内容以及</string>
+    <string name="privacyName">《外教超市用户隐私政策》</string>
+    <string name="Off_the_shelf">已下架</string>
+    <string name="Put_on_sale">上架</string>
+    <string name="Click_retry">点击重试</string>
+
+    <string name="Please_enter_the_title_name">请输入 标题名称</string>
+    <string name="Default_one_to_one">默认一对一</string>
+    <string name="Add_the_course">添加课程</string>
+    <string name="theme_tip">请选择 主题</string>
+    <string name="Please_enter_course_number">请输入 课节数</string>
+    <string name="Original_price">原价</string>
+    <string name="Please_enter_Original_price">请输入 原价</string>
+    <string name="Discount_price">折扣价</string>
+    <string name="Please_enter_the_label">请输入 标签</string>
+    <string name="Please_enter_Discount_price">请输入 折扣价</string>
+    <string name="Whether_one_pair_of_four">是否一对四</string>
+    <string name="Please_select_language_level">请选择 语言等级</string>
+    <string name="Please_select_language">请选择 语言</string>
+    <string name="tip_select_language_level">请选择 语言等级(可多选)</string>
+    <string name="Please_select_course_cover">请选择 课程封面</string>
+    <string name="Please_choose_your_favorite_teacher">请选择 喜欢的老师</string>
+    <string name="course_time">课程时间</string>
+    <string name="Upload_video">上传视频</string>
+
+    <string name="Please_upload_teaching_language_video">请上传教学语言视频</string>
+
+    <string name="rights_8">8大权益</string>
+    <string name="send_gift">发送礼物</string>
+    <string name="Book_successfully">预约成功</string>
+    <string name="Reservation_information">预约信息</string>
+    <string name="enlarge">放大</string>
+    <string name="Personal_details">个人详情</string>
+    <string name="Details_of_Assistantship">外教详情</string>
+    <string name="kitcked_out">踢下讲台</string>
+    <string name="Course_comment">课程评论</string>
+
+    <string name="live_lecturer">直播讲师</string>
+    <string name="cur_assistant_master_muti_teach_langue_please_select">该外教有多门教学语言，请根据已有学习卡选择语言</string>
+    <string name="Edit">编辑</string>
+    <string name="Teaching_Language">教学语言</string>
+    <string name="Teaching_Language_list">教学语言:%s</string>
+    <string name="edit_info">编辑信息</string>
+    <string name="Edit_head">编辑头像</string>
+    <string name="Curricula_time">开课时间</string>
+    <string name="Head_Image">头像</string>
+    <string name="Nick">昵称</string>
+    <string name="no_is_time_for_class">尚未到开课时间</string>
+    <string name="Upload_ID_photo">上传证件照</string>
+    <string name="Hometown">故乡</string>
+    <string name="Preference">个人偏好</string>
+    <string name="Save_to_album">保存到相册</string>
+    <string name="Share_it_with_friends">分享给朋友</string>
+    <string name="Share_it_with_wechatmoment">分享到朋友圈</string>
+    <string name="Share_to_Weibo">分享到微博</string>
+    <string name="Please_select_video_source">请选择视频来源</string>
+    <string name="Take">拍摄</string>
+    <string name="save">保存</string>
+    <string name="Company_name">公司名称</string>
+    <string name="tip_enter_company_name">请输入公司名称</string>
+    <string name="line_of_business">公司行业</string>
+    <string name="tip_enter_line_of_business">请输入公司行业</string>
+    <string name="time_quantum">时间段</string>
+    <string name="Duty">职务</string>
+    <string name="Company_experience">公司经历</string>
+    <string name="School_experience">学校经历</string>
+    <string name="School_Name">学校名称</string>
+    <string name="My_QR_code">我的二维码</string>
+    <string name="Making_friends">交友拍拖</string>
+    <string name="Order">订单</string>
+    <string name="Making_friends_right_arrow">交友拍拖 >></string>
+    <string name="Foreign_Language_Learning">外语学习</string>d
+    <string name="Failed_to_create_live_room_And_error_info">开播失败</string>
+    <string name="create_live_room">创建直播间</string>
+    <string name="Mobile_phone_binding">手机绑定</string>
+    <string name="Email_binding">邮箱绑定</string>
+    <string name="Phone_Number">手机号</string>
+    <string name="Add_white_list">添加白名单</string>
+    <string name="My_white_list">我的白名单</string>
+    <string name="Security_code_setting">安全码设置</string>
+    <string name="Set_password">设置密码</string>
+    <string name="E_mail">邮箱</string>
+    <string name="Please_select_sex">请选择性别</string>
+    <string name="GraduationSchool">毕业学校</string>
+    <string name="Please_enter_graduation_school">请输入 毕业学校</string>
+
+    <string name="Modify_email_address">修改邮箱地址</string>
+    <string name="Address">地址</string>
+    <string name="jointly_class">联名课程</string>
+    <string name="Offline_courses">线下课程</string>
+    <string name="Mechanism_Offline_courses">机构线下课程</string>
+    <string name="Mechanism_introduction">机构简介</string>
+
+    <!--im-->
+    <string name="im_title">消息</string>
+    <string name="The_air_on">即将开播</string>
+    <string name="In_the_air">开播中</string>
+    <string name="Not_on_air">未开播</string>
+    <string name="Live_playback">直播回放</string>
+    <string name="im_add_friend">添加好友</string>
+    <string name="im_search">用户名/手机号</string>
+
+    <string name="phone_and_email">手机号/邮箱</string>
+    <string name="add_friend">添加好友</string>
+    <string name="Set_course">套餐课程</string>
+    <string name="Non_payment">待付款</string>
+
+    <string name="Live_earnings">直播收益</string>
+
+    <string name="Third_party_logins">第三方登录</string>
+    <string name="Account">登录账号</string>
+    <string name="Individual_income">个人收益</string>
+
+    <string name="create_date_params">创建时间: %s</string>
+    <string name="For_the_crowd_Params">适合人群: %s</string>
+    <string name="classNumber_and_studentNum_parmas">开课数: %s    学员数：%s</string>
+
+    <string name="Class_details">班级详情</string>
+
+    <string name="The_current_time_has_been_booked">当前时间已被预约</string>
+    <string name="Courses_have_been_set_at_the_current_time">当前时间已设置课程</string>
+    <string name="apply_friend">申请好友</string>
+    <string name="im_apply_friend_tip">你需要发送验证申请，等待对方通过</string>
+    <string name="im_apply_friend_tipTitle">附加消息</string>
+    <string name="im_new_group">新建群聊</string>
+    <string name="Dynamic_collection">动态收藏</string>
+    <string name="maded_the_course">您已经预约过该课程</string>
+    <string name="im_scan_qr">扫一扫</string>
+    <string name="im_set_top">置顶</string>
+    <string name="im_cancel_set_top">取消置顶</string>
+    <string name="Use_time_card">使用点卡</string>
+    <string name="To_be_used">待使用</string>
+    <string name="Used">已使用</string>
+    <string name="Use_secondary_card">使用次卡</string>
+    <string name="im_delete">删除</string>
+    <string name="Please_select_your_study_card_type">请选择您的学习卡类型</string>
+    <string name="Use_learning_card_or_not">是否使用学习卡</string>
+    <string name="Confirm_Delete">确定删除吗?</string>
+    <string name="Friend_application">好友申请</string>
+    <string name="My_Account">我的账号</string>
+    <string name="Search_group">查找群</string>
+    <string name="Quick_Register">快速注册</string>
+
+    <string name="Scan_QR_code_business_card">扫描二维码名片</string>
+    <string name="contact_name">联系人姓名</string>
+    <string name="contactor_phone">联系人电话</string>
+    <string name="contact_phone">联系电话</string>
+    <string name="Yes">是</string>
+    <string name="No">否</string>
+    <string name="please_enter_contact_telephone">请输入联系人电话</string>
+
+
+    <string name="Contactor_position">联系人职位</string>
+    <string name="please_enter_contact_name">请输入联系人姓名</string>
+    <string name="please_enter_contactor_position">请输入联系人职位</string>
+
+    <string name="Verification_code_login">验证码登录</string>
+    <string name="Password_login">密码登录</string>
+    <string name="chat_group">群组</string>
+    <string name="Basic_materials">基础材料</string>
+    <string name="Dynamic">动态</string>
+    <string name="The_teacher_is_on">老师开课了</string>
+    <string name="Course_started_watch">课程已开启，观看</string>
+    <string name="watch">观看</string>
+    <string name="Course_time_is_up">课程时间已到</string>
+    <string name="teacher_leave_tip">老师暂时离开,请稍后</string>
+    <string name="The_anchor_has_been_dropped">主播已下播</string>
+    <string name="Course_end_tip">具体课程时间请听老师安排</string>
+    <string name="Chat_settings">聊天设置</string>
+    <string name="I_see">知道了</string>
+    <string name="Clear_Chat">清空聊天记录</string>
+    <string name="Friends_list">好友列表</string>
+    <string name="Choose">选择</string>
+    <string name="Chat_message">聊天消息</string>
+    <string name="Course_News">课程消息</string>
+    <string name="Visible_only_to_members_click_open_member">该内容仅对会员可见，请开通会员</string>
+    <string name="Send_msg">发消息</string>
+    <string name="Scan">扫描</string>
+    <string name="photo">图片</string>
+    <string name="Cancel_Course">取消课程</string>
+    <string name="Whether_to_cancel_the_course_or_not">是否取消课程</string>
+    <string name="Whether_to_subscribe_to_courses">是否订阅课程</string>
+
+
+    <string name="scan_tip">将二维码/条码放入框内，即可自动扫描</string>
+    <string name="no_scan_result">暂无搜索结果</string>
+    <string name="search">搜索</string>
+    <string name="My_treasure_chest">我的百宝箱</string>
+    <string name="Asset_Center">资产中心</string>
+    <string name="No_members_online">没有成员在线</string>
+    <string name="Open_Vip_now">立即开通VIP</string>
+    <string name="You_have_not_agreed">您还未同意</string>
+    <string name="Please_select_the_type_of_Resident_Tutor">请选择入驻外教类型</string>
+    <string name="search_params">搜索: </string>
+    <string name="im_address_book">通讯录</string>
+    <string name="im_group">群组</string>
+    <string name="im_interaction">互动</string>
+    <string name="topic_select">主题选择</string>
+    <string name="topic_exchange">话题</string>
+    <string name="scene">场景</string>
+    <string name="commit_success">提交成功</string>
+    <string name="wait_review">提交成功,请耐心等待审核！</string>
+    <string name="cancel_success">取消成功</string>
+    <string name="add_friend_tip_success">成功</string>
+    <string name="add_friend_tip_already">对方已是您的好友</string>
+    <string name="add_friend_tip_self_full">您的好友数已达系统上限</string>
+    <string name="add_friend_tip_opposite_full">对方的好友数已达系统上限</string>
+    <string name="add_friend_tip_opposite_in_black">被加好友在自己的黑名单中</string>
+    <string name="add_friend_tip_opposite_forbid">对方已禁止加好友</string>
+    <string name="add_friend_tip_in_black">您已被被对方设置为黑名单</string>
+    <string name="add_friend_tip_wait">等待好友审核同意</string>
+    <string name="quitGroup">退出群组成功</string>
+    <string name="pic">图片</string>
+    <string name="redPackage">红包</string>
+    <string name="Time_limit">限时</string>
+    <string name="Activity">活动</string>
+    <string name="gift">礼物</string>
+    <string name="Participate_in_activity_courses">参加活动课程</string>
+    <string name="video_chat">视频通话</string>
+    <string name="Participants">参与人数</string>
+    <string name="Watch_video_playback">观看录播</string>
+
+    <string name="Group_chat_settings">群聊设置</string>
+
+    <string name="shangKe">上课</string>
+    <string name="Retry">重试</string>
+
+    <string name="un_download">未下载</string>
+    <string name="downloaded">已下载</string>
+    <string name="downloading">下载中...</string>
+    <string name="update_download_failed">下载失败</string>
+    <string name="newest_version_params">最新版本: %s</string>
+    <string name="app_name_params">应用名称: %s</string>
+    <string name="New_version_found">发现新版本</string>
+    <string name="sended">已发送</string>
+    <string name="has_read">已读</string>
+    <string name="unread">未读</string>
+    <string name="Begin_Class">开始上课</string>
+    <string name="typing">正在输入...</string>
+    <string name="New_version_downloading">新版本下载中</string>
+    <string name="The_new_version_is_trying_to_update_please_wait">新版本正在努力更新中，请稍后</string>
+
+
+    <string name="chat_to_top">置顶聊天</string>
+
+    <string name="group_id">群ID</string>
+    <string name="no_setting_mother_togune">您没有设置母语，请前往设置</string>
+
+    <string name="group_name">群聊名称</string>
+    <string name="group_icon">修改群头像</string>
+    <string name="group_notice">群公告</string>
+    <string name="group_members">群成员</string>
+    <string name="group_type">群类型</string>
+    <string name="add_group_member">添加成员</string>
+    <string name="remove_group_member">移除成员</string>
+    <string name="join_group_type">加群方式</string>
+    <string name="in_group_nick_name">我的群昵称</string>
+    <string name="dissolve">解散该群</string>
+    <string name="modify_group_name">修改群名称</string>
+    <string name="modify_group_notice">修改群公告</string>
+    <string name="modify_nick_name_in_goup">修改我的群昵称</string>
+
+    <string name="group_detail">群聊详情</string>
+    <string name="accept">同意</string>
+    <string name="refuse">拒绝</string>
+    <string name="Terms_and_statements">条款与声明</string>
+    <string name="finish_class">结课</string>
+    <string name="wait_finish_class">待结课</string>
+
+    <string name="group_apply_members">群申请</string>
+    <string name="accepted">已同意</string>
+    <string name="refused">已拒绝</string>
+    <string name="not_pass">未通过</string>
+    <string name="group_apply_tips">%1$d 条入群申请</string>
+    <string name="group_apply_click_handle">点击处理</string>
+    <string name="group_remove_member">移出群聊</string>
+    <string name="group_join_type">加群方式</string>
+    <string name="modify_group_name_success">修改群名称成功</string>
+    <string name="modify_group_notice_success">修改群公告成功</string>
+    <string name="exit_group">退出群聊</string>
+    <string name="modify_nickname_success">修改昵称成功</string>
+    <string name="View_comments">查看评论</string>
+    <string name="From_qmore_note">来自外教超市我的动态</string>
+    <string name="Sharing_from_tmore">来自外教超市的分享</string>
+    <string name="Polite_invitation">邀请有礼</string>
+    <string name="Recruiting_foreign_teachers">招募外教</string>
+    <string name="Recommendation_institutions">推荐机构</string>
+    <string name="Please_select_class">请选择 班级</string>
+    <string name="Not_at_the_podium">未在讲台</string>
+    <string name="User_signature_expired">用户签名已过期</string>
+    <string name="Waiting_for_validation">等待验证</string>
+    <string name="Login_is_invalid_please_login_again">登录失效请重新登录</string>
+    <string name="logoff_tip">您的账号已在其他地方登录，如果不是本人操作请尽快修改密码。</string>
+
+    // 联系人相关
+    <string name="new_friend">新的联系人</string>
+    <string name="group">我的群聊</string>
+    <string name="blacklist">黑名单</string>
+    <string name="contact_title">好友列表</string>
+    <string name="conversation_title">消息</string>
+
+    // 好友资料
+    <string name="profile_detail">详细资料</string>
+    <string name="profile_id">帐号</string>
+    <string name="profile_add_wording">验证消息</string>
+    <string name="profile_remark">设置备注</string>
+    <string name="profile_black">拉入黑名单</string>
+    <string name="profile_remark_edit">修改备注</string>
+    <string name="profile_chat">发送消息</string>
+    <string name="profile_del">删除好友</string>
+    <!-- permission check-->
+    <string name="float_window_not_allow">悬浮窗权限未开启 请在应用-权限中打开悬浮窗权限</string>
+    <string name="wait_accept_invite">在等待对方接受邀请...</string>
+    <string name="Invite">邀请</string>
+    <string name="wait_teacher_Invite">请等待老师邀请</string>
+
+    <string name="meiyan">美颜</string>
+    <string name="No_appointment">暂无预约</string>
+    <string name="Invite_cash">邀请赚现金</string>
+    <string name="purchased_num">%s人购买</string>
+    <string name="Appointment">预约</string>
+    <string name="Booked">已预约</string>
+
+    <string name="teacher_master_mechanism">老师总数:%s 母语:%s 专业:%s 跨境:%s 直播:%s 私教:%s</string>
+
+    <string name="switch_shexiangtou">切换摄像头</string>
+    <string name="coming_invite">邀请你视频通话</string>
+    <string name="Prepose">前置</string>
+    <string name="Postposition">后置</string>
+    <string name="In_class_waiting_for_the_other_party_to_confirm">上课连线中，等待对方确认...</string>
+    <string name="Invite_you_into_class">邀请你进入课堂上课</string>
+    <string name="accept_listener">接听</string>
+    <string name="cat_money_total">猫币总额</string>
+    <string name="Online_service">线上服务</string>
+    <string name="Service_type">服务方式</string>
+    <string name="Service_Time">服务时间</string>
+    <string name="Enter_class">进入课堂</string>
+
+    <string name="Please_select_service_mode">请选择服务方式</string>
+
+    <string name="Door_to_door_service">上门服务</string>
+    <string name="Door_to_door_sign_in">上门签到</string>
+
+    <string name="Door_to_door_private_education">上门私教</string>
+
+    <string name="caiyuangungun">财源滚滚</string>
+    <string name="saiCatMoneyToRedPackage">塞猫币进红包</string>
+    <string name="wenhao">\?</string>
+    <string name="huizeng">回赠</string>
+    <string name="live">直播</string>
+    <string name="cancel_appointment_tip">确定要取消与%s预约%s</string>
+    <string name="student_cancel_appointment_tip">取消预约须等待对方确认，确定要取消与%s预约%s</string>
+
+    <!--支付宝sdk-->
+    <string name="confirm">确认</string>
+
+    <!--Dynamic-->
+    <string name="tab_gift_count">礼物 %s</string>
+    <string name="tab_share_count">分享 %s</string>
+    <string name="Roll_up">收回</string>
+    <string name="Unfold">展开</string>
+    <string name="tab_comment_count">评论 %s</string>
+    <string name="tab_like_count">点赞 %s</string>
+    <string name="enter_comment">输入评论</string>
+    <string name="fabu_diqiuquan">发布地球圈</string>
+    <string name="Release_dynamic">发布动态</string>
+    <string name="Dynamic_comment">动态评论</string>
+
+
+    <string name="fabu">发布</string>
+    <string name="note_insert_type_fengjing">风景</string>
+    <string name="note_insert_type_xisu">习俗</string>
+    <string name="note_insert_type_gaoxiao">搞笑</string>
+    <string name="note_insert_type_delicacy">美食</string>
+
+    <string name="note_insert_type_education">学历</string>
+    <string name="Please_enter_account">请输入账号</string>
+
+    <string name="Please_enter_the_maximum_number_of_students">请输入最大学生人数</string>
+    <string name="maximum_students_must_than_0">最大学生人数必须大于0</string>
+    <string name="Please_enter_the_scope_of_service_km">请输入最大服务距离（km）</string>
+    <string name="Service_distance_must_than_0">服务距离必须大于0</string>
+    <string name="Please_enter_the_service_duration">请输入服务时长</string>
+    <string name="Service_group">服务人群</string>
+    <string name="Please_enter_the_address">请输入地址</string>
+    <string name="note_insert_type_other">其他</string>
+    <string name="please_enter_note_content">请输入动态</string>
+    <string name="share_xinxiansth">分享点新鲜事</string>
+    <string name="haoqitype">好奇类别</string>
+    <string name="note_insert_xieyi_pre">发布地球圈即代表你同意</string>
+    <string name="note_insert_xieyi_after">外教超市分享发布协议</string>
+    <string name="update_info">修改资料</string>
+    <string name="Purchase_means_consent">购买即代表同意</string>
+    <string name="learning_card_purchase_agreement">《外教超市学习卡购买协议》</string>
+    <string name="Exceeding_service_distance">超过服务距离</string>
+    <string name="Geosphere_details">地球圈详情</string>
+    <string name="reply">回复</string>
+    <string name="Please_select_education">请选择学历</string>
+    <string name="Please_select_date">请选择日期</string>
+    <string name="Your_invitation_code">您的邀请码</string>
+    <string name="Distance_param">距离%skm</string>
+
+
+    <!--login or register-->
+    <string name="jump">跳过</string>
+    <!--dynamic-->
+    <string name="catcoin_count">%s猫币</string>
+    <string name="user_agreement_title">《用户协议》</string>
+    <string name="Privacy_policy_title">《隐私条款》</string>
+    <string name="user_agreement">用户协议</string>
+    <string name="Privacy_policy">隐私条款</string>
+
+    <string name="AgreementTipConetnt">感谢您下载并使用外教超市!我们非常重视您的个人信息和隐私保护。\n为了更好的保障您的权益，请认真阅读%s和%s的全部内容，同意并接受全部条款后开始我们的产品和服务。</string>
+
+    <string name="pri_dlg_msg_app">欢迎您使用“外教超市”。外教超市是一款综合性外语学习平台，包括直播课堂、在线课堂、私教课程、附近机构优惠课程等。为提供上述服务，本应用使用过程中，需要调用您设备的以下权限：联网、存储、电话、位置、通讯录、摄像头、麦克风、相册权限，并需收集、使用您的下列信息： \n
+● 联网：为了更好的使用app，所有显示信息需在联网状态下显示 \n
+● 储存：用于保存图片和视频 \n
+● 电话：用于拨打客服电话 \n
+● 位置：用于发布状态时使用，可以寻找附近好友，查看附近教培机构优惠课程信息 \n
+● 摄像头：为了直播课堂更好的互动，会申请摄像头权限 \n
+● 麦克风：为了直播课堂上跟直播讲师连麦互动 \n
+● 相册：可以设置头像，发布状态 \n
+● 通讯录：为了帮您发现更多好友，我们可能会申请通讯录权限。 \n
+● 我们尊重您的选择权，如果您不希望被推荐给他人，您可以在“我—设置—隐私设置”中随时关闭。 \n
+● 通讯录、精确地理位置、摄像头、麦克风、相册权限，均不会默认开启，只有经过您的明示授权才会在为实现特定功能或服务时使用，您也可以撤回授权。特别需要指出的是，即使经过您的授权，我们获得了这些敏感权限，也不会在相关功能或服务不需要时而收集您的信息。
+        \n若您不同意我们采集的上述信息，或不同意调用相关手机权限，将导致应用无法正常使用。</string>
+
+    <string name="pri_dlg_msg_sdk">本应用提供的消息推送功能由第三方提供技术支持。为了实现消息推送的实时性，以及实现基于用户画像的智能推送和基于线下位置信息的应景推送功能，本应用使用过程中，需要收集、使用您的下列信息：\n
+● 创建用户标识：为创建推送服务所需的用户标识，我们可能需要收集以下设备信息：如IMEI、Android ID、设备序列号、MAC、Android Advertisement ID、IMSI等。上述信息将被用于生成唯一的推送目标id，即CID。\n
+● 提高推送能力：为提供更好的推送服务和体验，如使用厂商系统推送能力等，我们可能需要收集以下设备信息：设备厂商、设备品牌、设备型号、Android版本、Rom信息。\n
+● 智能推送功能：为实现基于用户画像进行精细化推送运营，为您推荐更符合您需要的推送内容，我们可能需要收集以下应用信息：APP安装列表、APP活跃列表信息。\n
+● 应景推送功能：为实现基于用户的线下场景进行消息推送的能力，为您推荐更符合您需要的推送内容，我们可能需要收集以下用户信息：网络信息(包括IP地址、MAC信息、WIFI列表、基站信息)，以及位置相关信息(经纬度)。\n
+\n
+若您不同意我们采集的上述信息，或不同意调用相关手机权限，将导致部分功能无法正常使用。</string>
+    <string name="appupdate_datanull">数据为空</string>
+    <string name="appupdate_neterror">网络异常</string>
+    <string name="appupdate_loadfail">加载失败</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ToolType">
+        <item>Pencil</item>
+        <item>Rubber</item>
+        <item>Laser pointer</item>
+        <item>Straight line</item>
+        <item>Hollow ellipse</item>
+        <item>Hollow rectangle</item>
+        <item>Filled ellipse</item>
+        <item>Filled rectangle</item>
+        <item>Text</item>
+    </string-array>
+
+    <string-array name="VideoRes">
+        <item>Tencent cloud</item>
+    </string-array>
+
+</resources>

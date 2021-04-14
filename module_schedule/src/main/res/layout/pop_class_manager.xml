@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_radius_12_color_fff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pop_class_manager_tv_create"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center"
+        android:text="创建班级"
+        android:textColor="@color/mainColor"
+        android:textSize="@dimen/sp_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.33dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/pop_class_manager_tv_merge"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center"
+        android:text="合并班级"
+        android:textColor="@color/mainColor"
+        android:textSize="@dimen/sp_14" />
+</LinearLayout>

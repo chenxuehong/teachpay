@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_radius_5_color_ffffff"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/dialog_nav_tv_baiduMap"
+        android:text="@string/Baidu_Map"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/color_333333"
+        android:gravity="center"/>
+    <View
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"/>
+    <TextView
+        android:id="@+id/dialog_nav_tv_AMAP"
+        android:text="@string/AMAP"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/color_333333"
+        android:gravity="center"/>
+    <View
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_5"/>
+    <TextView
+        android:id="@+id/dialog_nav_tv_cancel"
+        android:text="@string/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/mainColor"
+        android:gravity="center"/>
+</LinearLayout>

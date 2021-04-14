@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.huihe.base_lib.ui.widget.AutoFitImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/reward_head_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/activity_my_reward_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:drawableRight="@mipmap/reward_wy"
+                    android:drawablePadding="@dimen/dp_9"
+                    android:text="可用积分"
+                    android:textColor="@color/color_F5F5F5"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/activity_my_reward_tv_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_my_reward_tv_title"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="0"
+                    android:textColor="@color/color_F5F5F5"
+                    android:textSize="27sp" />
+
+                <TextView
+                    android:id="@+id/activity_my_reward_tv_points_detail"
+                    android:textSize="@dimen/sp_12"
+                    android:text="使用明细"
+                    android:background="@drawable/shape_bg_radius_left_15_color_ffff5a00"
+                    android:textColor="#715D4C"
+                    android:gravity="center"
+                    android:layout_width="75dp"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dp_30" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_my_reward_signlist_card" />
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/activity_my_reward_SmartRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+                    android:layout_marginLeft="@dimen/dp_18"
+                    android:layout_marginRight="@dimen/dp_18"
+                    android:layout_marginBottom="@dimen/dp_18"
+                    android:id="@+id/activity_my_reward_RecyclerViewFixed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+         <!--   &lt;!&ndash;做任务赚积分&ndash;&gt;
+            <TextView
+                android:layout_marginLeft="@dimen/dp_18"
+                android:textSize="@dimen/sp_18"
+                android:layout_marginRight="@dimen/dp_18"
+                android:textColor="@color/color_333333"
+                android:drawablePadding="@dimen/dp_9"
+                android:text="做任务赚积分"
+                android:drawableLeft="@mipmap/reward_jx"
+                android:layout_marginTop="@dimen/dp_10"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"/>-->
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

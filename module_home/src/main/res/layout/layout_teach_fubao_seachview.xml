@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/layout_teach_fubao_searchview_fl_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/layout_teach_fubao_searchview_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_teach_fubao_searchview_ll_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/layout_teach_fubao_searchview_tv_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:drawableLeft="@mipmap/teach_fubao_loc"
+                android:drawablePadding="@dimen/dp_7"
+                android:text="杭州"
+                android:maxLength="8"
+                android:ellipsize="end"
+                android:textColor="@color/white"
+                android:layout_marginRight="@dimen/dp_17"
+                android:textSize="@dimen/sp_10" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_marginRight="@dimen/dp_17"
+                android:src="@mipmap/down_arrow_white" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/layout_teach_fubao_searchview_ll_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_radius_15_color_white"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/dp_40"
+            android:paddingLeft="@dimen/dp_12">
+            <TextView
+                android:textSize="@dimen/sp_13"
+                android:id="@+id/layout_teach_fubao_searchview_tv_searchHint"
+                android:textColor="@color/color_999999"
+                android:text="搜索机构名"
+                android:layout_width="wrap_content"
+                android:drawablePadding="9dp"
+                android:drawableLeft="@mipmap/search_icon"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+<!--        <androidx.appcompat.widget.SearchView-->
+<!--            android:id="@+id/layout_teach_fubao_searchview_search"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="@dimen/dp_40"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_weight="1"-->
+<!--            app:queryHint="@string/Search_org_name"-->
+<!--            android:background="@drawable/shape_bg_radius_15_color_white"-->
+<!--            app:defaultQueryHint="@string/Search_org_name" />-->
+
+        <TextView
+            android:id="@+id/layout_teach_fubao_searchview_tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_17"
+            android:drawablePadding="@dimen/dp_7"
+            android:text="杭州"
+            android:maxLength="5"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/dp_15"
+            android:textSize="@dimen/sp_10" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/layout_teach_fubao_searchview_line"
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="0.2dp"/>
+</LinearLayout>

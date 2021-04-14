@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_14">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Company_name"
+            android:textColor="@color/color_999999"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/company_experience_et_Company_name"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="@string/tip_enter_company_name"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_14">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/line_of_business"
+            android:textColor="@color/color_999999"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/company_experience_et_line_of_business"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="@string/tip_enter_line_of_business"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_14">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_quantum"
+            android:textColor="@color/color_999999"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:minWidth="@dimen/dp_30"
+            android:id="@+id/company_experience_tv_start_time"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:lines="1"
+            android:drawablePadding="@dimen/dp_3"
+            android:layout_gravity="center_vertical"
+            android:drawableRight="@mipmap/down_arrow"
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_999999"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textStyle="bold"
+            android:textColor="@color/color_999999"
+            android:textSize="16sp" />
+        <TextView
+            android:minWidth="@dimen/dp_30"
+            android:id="@+id/company_experience_tv_end_time"
+            android:lines="1"
+            android:gravity="right"
+            android:drawablePadding="@dimen/dp_3"
+            android:layout_gravity="center_vertical"
+            android:drawableRight="@mipmap/down_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_999999"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_14">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Duty"
+            android:textColor="@color/color_999999"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/company_experience_et_Duty"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/line" />
+
+    <LinearLayout
+        style="@style/ll_chat_group_style">
+
+        <TextView
+            android:layout_weight="1"
+            style="@style/tv_left_chat_group_style"
+            android:text="@string/publicStr" />
+
+        <Switch
+            android:id="@+id/company_experience_switch_public"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/switch_cdd7300_circle_selector"
+            android:track="@drawable/switch_selector_cdd7300" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/company_experience_tv_save"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@drawable/shape_bg_radius_5_color_pramary_color"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:text="@string/save"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"/>
+</LinearLayout>

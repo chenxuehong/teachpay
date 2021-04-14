@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/marker_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_3"
+        android:paddingBottom="@dimen/dp_3"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_10"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_bg_radius_12_color_47cecf" />
+
+    <FrameLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_6"
+        android:padding="@dimen/dp_8"
+        android:layout_width="wrap_content"
+        android:background="@mipmap/map_maker"
+        android:layout_height="wrap_content">
+        <com.huihe.base_lib.ui.widget.CircleImageView
+            android:id="@+id/marker_iv_icon"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"/>
+    </FrameLayout>
+
+</LinearLayout>

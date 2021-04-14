@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/edit_info_ll_edit_head"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp_12"
+    android:paddingTop="@dimen/dp_8"
+    android:paddingRight="@dimen/dp_12"
+    android:paddingBottom="@dimen/dp_8"
+    tools:showIn="@layout/activity_edit_info">
+
+    <com.huihe.base_lib.ui.widget.CircleImageView
+        android:id="@+id/edit_info_iv_edit_head"
+        android:layout_width="@dimen/dp_64"
+        android:layout_height="@dimen/dp_64"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/head_icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawableRight="@mipmap/right_arrow"
+        android:drawablePadding="@dimen/dp_15"
+        android:gravity="right"
+        android:text="@string/Edit_head"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_16" />
+</LinearLayout>

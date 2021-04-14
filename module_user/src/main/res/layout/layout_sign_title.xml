@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/layout_sign_title_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/dp_9"
+        android:drawableLeft="@mipmap/reward_jx"
+        android:textSize="@dimen/sp_18"
+        android:text="做任务赚积分"
+        android:textStyle="bold"
+        android:textColor="@color/color_333333"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_18" />
+</RelativeLayout>

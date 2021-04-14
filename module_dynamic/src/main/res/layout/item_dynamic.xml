@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <include layout="@layout/include_dynamic_user_info" />
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.ctetin.expandabletextviewlibrary.ExpandableTextView
+                    android:id="@+id/item_dynamic_tv_note_user_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:layout_marginRight="@dimen/dp_6"
+                    app:ep_contract_color="@color/colorAccent"
+                    app:ep_contract_text="@string/Roll_up"
+                    app:ep_end_color="@color/colorAccent"
+                    android:text="后悔何及哦亲地球地球人2额42235253636"
+                    app:ep_expand_color="@color/colorAccent"
+                    app:ep_expand_text="@string/Unfold"
+                    app:ep_max_line="5"
+                    app:ep_need_animation="true"
+                    app:ep_need_contract="true"
+                    app:ep_need_expand="true"
+                    app:ep_need_link="false" />
+
+                <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+                    android:id="@+id/item_dynamic_rv_note_user_imgs2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_radius_5"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/item_dynamic_tv_view_detail"
+                    android:background="@drawable/shape_bg_radius_6_color_ffe2ca"
+                    android:text="进入详情查看更多 >"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/dp_6"
+                    android:textSize="12sp"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:textColor="@color/mainColor"
+                    android:paddingTop="@dimen/dp_2"
+                    android:paddingBottom="@dimen/dp_2"
+                    android:paddingRight="@dimen/dp_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:layout_marginRight="@dimen/dp_6"
+                    android:id="@+id/item_dynamic_ll_like"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/like_dynamic" />
+
+                    <TextView
+                        android:id="@+id/item_dynamic_tv_like_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:descendantFocusability="blocksDescendants">
+
+                    <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+                        android:id="@+id/item_dynamic_rv_comments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include
+                layout="@layout/include_course_info" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:orientation="horizontal">
+            <com.huihe.base_lib.ui.widget.DrawableLeftCenterTextView
+                android:id="@+id/item_dynamic_tv_note_user_share_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_12"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/share_black"
+                android:drawablePadding="@dimen/dp_8"
+                android:text="0" />
+
+            <com.huihe.base_lib.ui.widget.DrawableLeftCenterTextView
+                android:id="@+id/item_dynamic_tv_note_user_comment_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/color_666666"
+                android:drawableLeft="@mipmap/comment_black"
+                android:drawablePadding="@dimen/dp_8"
+                android:text="0" />
+
+            <com.huihe.base_lib.ui.widget.DrawableLeftCenterTextView
+                android:id="@+id/item_dynamic_tv_note_user_dianzan_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/sp_12"
+                android:gravity="center_vertical"
+                android:drawableLeft="@mipmap/dianzan"
+                android:drawablePadding="@dimen/dp_8"
+                android:text="0" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

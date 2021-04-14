@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="420dp"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_12"
+    android:paddingRight="@dimen/dp_12"
+    android:paddingBottom="@dimen/dp_12">
+    <LinearLayout
+        android:background="@drawable/white_radius_12dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="48dp"
+            android:layout_width="wrap_content"
+            android:text="@string/Please_select_video_source"
+            android:textColor="#999999"
+            android:textSize="18sp" />
+
+        <View
+            android:background="@color/color_line"
+            android:layout_height="1dp"
+            android:layout_width="match_parent" />
+
+        <TextView
+            android:background="@drawable/white_radius_12dp"
+            android:gravity="center"
+            android:id="@+id/select_take"
+            android:layout_height="48dp"
+            android:layout_width="match_parent"
+            android:text="@string/Take"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <View
+            android:background="@color/color_line"
+            android:layout_height="1dp"
+            android:layout_width="match_parent" />
+
+        <TextView
+            android:background="@drawable/white_radius_12dp"
+            android:gravity="center"
+            android:id="@+id/select_pick"
+            android:layout_height="48dp"
+            android:layout_width="match_parent"
+            android:text="@string/Select_from_the_album"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:background="@drawable/white_radius_12dp"
+        android:gravity="center"
+        android:id="@+id/select_cancel"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:text="@string/cancel"
+        android:textColor="#999999"
+        android:textSize="18sp" />
+</LinearLayout>
