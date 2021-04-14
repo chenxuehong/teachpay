@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.huihe.base_lib.ui.widget.title.CommonTitle
+        android:id="@+id/fragment_teaching_pay_schedule_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:myshowStateBar="true"
+        app:mytitle="课程表"
+        app:mytitleTextColor="@color/color_333333"
+        app:mytitleTextSize="16sp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/fragment_teaching_pay_schedule_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        app:tabBackground="@color/white"
+        android:background="@color/white"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/color_FF7300"
+        app:tabIndicatorFullWidth="false"
+        app:tabRippleColor="@color/white"
+        app:tabSelectedTextColor="@color/color_FF7300"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@color/color_999999" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/fragment_teaching_pay_schedule_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/im_custom_bg">
+
+    <include layout="@layout/layout_search" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="12dp"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:paddingBottom="12dp">
+        
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_im_address_book"
+                android:src="@mipmap/ic_im_address_book"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"/>
+            <TextView
+                android:layout_marginTop="@dimen/dp_3"
+                android:layout_below="@+id/iv_im_address_book"
+                android:id="@+id/tv_im_address_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/im_address_book"
+                android:textColor="#999999"
+                android:textSize="12sp"
+                android:drawablePadding="@dimen/dp_3"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/tv_im_unread_ab"
+                style="@style/style_text_im_unread"
+                android:visibility="gone"
+                android:layout_alignRight="@id/iv_im_address_book"
+                android:layout_alignTop="@id/iv_im_address_book"
+                />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_im_group"
+                android:src="@mipmap/ic_im_group"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"/>
+            <TextView
+                android:layout_marginTop="@dimen/dp_3"
+                android:layout_below="@+id/iv_im_group"
+                android:id="@+id/tv_im_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/im_group"
+                android:textColor="#999999"
+                android:textSize="12sp"
+                android:drawablePadding="@dimen/dp_3"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/tv_im_unread_group"
+                style="@style/style_text_im_unread"
+                android:visibility="gone"
+                android:layout_alignRight="@id/iv_im_group"
+                android:layout_alignTop="@id/iv_im_group"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_im_interaction"
+                android:src="@mipmap/ic_im_interaction"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"/>
+            <TextView
+                android:layout_marginTop="@dimen/dp_3"
+                android:layout_below="@+id/iv_im_interaction"
+                android:id="@+id/tv_im_interaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/im_interaction"
+                android:textColor="#999999"
+                android:textSize="12sp"
+                android:drawablePadding="@dimen/dp_3"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/tv_im_unread_interaction"
+                style="@style/style_text_im_unread"
+                android:visibility="gone"
+                android:layout_alignRight="@id/iv_im_interaction"
+                android:layout_alignTop="@id/iv_im_interaction"
+                />
+
+        </RelativeLayout>
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

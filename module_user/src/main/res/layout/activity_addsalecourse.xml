@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<!--
+        <com.eghuihe.module_user.me.ItemBeanView
+            android:id="@+id/addsalecourse_ItemBeanView_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@color/white"
+            app:Item_right_title_color="@color/color_333333"
+            android:paddingLeft="@dimen/dp_7"
+            android:paddingRight="@dimen/dp_12"
+            app:Item_title_TextSize="@dimen/sp_15"
+            app:Item_right_title_TextSize="@dimen/sp_14"
+            app:Item_right_title="排课"
+            app:Item_title="课程类型" />-->
+
+        <com.eghuihe.module_user.me.ItemBeanView
+            android:id="@+id/addsalecourse_ItemBeanView_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:Item_title_TextSize="@dimen/sp_15"
+            app:Item_right_title_TextSize="@dimen/sp_14"
+            app:Item_right_title_color="@color/color_333333"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dp_7"
+            android:paddingRight="@dimen/dp_12"
+            app:Item_right_title="请选择 课程类目"
+            app:Item_title="课程类目" />
+        <LinearLayout
+            android:id="@+id/addsalecourse_ll_connect_peoplenum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="班级人数"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15" />
+
+            <EditText
+                android:id="@+id/addsalecourse_et_connect_peoplenum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请输入 班级人数"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addsalecourse_ll_course_cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="课程封面"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/real_name_identify_icon_1" />
+        </LinearLayout>
+
+        <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+            android:id="@+id/addsalecourse_rv_course_cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="标题"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15" />
+
+            <EditText
+                android:id="@+id/addsalecourse_et_theme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请输入 标题"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="标签"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15" />
+
+            <EditText
+                android:id="@+id/addsalecourse_et_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请输入 标签"
+                android:maxLength="6"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="使用期限"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15" />
+
+            <EditText
+                android:id="@+id/addsalecourse_et_duration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请输入 使用期限(月)"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="套餐价格"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15" />
+
+            <EditText
+                android:id="@+id/addsalecourse_et_original_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请输入 套餐价格(元)"
+                android:inputType="numberDecimal"
+                android:maxLength="9"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="课节"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15" />
+
+            <EditText
+                android:id="@+id/addsalecourse_et_courseNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请输入 课节"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addsalecourse_ll_classPrice"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="课节单价(元)"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15" />
+
+            <EditText
+                android:id="@+id/addsalecourse_et_classPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请勿超过(原价/课节数)*15%"
+                android:inputType="numberDecimal"
+                android:maxLength="9"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="学生数"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15" />
+
+            <EditText
+                android:id="@+id/addsalecourse_et_studentNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请输入 学生数"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/Discount_price"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15" />
+
+            <EditText
+                android:id="@+id/addsalecourse_et_Discount_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="@string/Please_enter_Discount_price"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="课程简介"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15" />
+
+            <EditText
+                android:id="@+id/addsalecourse_et_course_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@drawable/shape_bg_radius_5_color_e6e6e6"
+                android:gravity="top|left"
+                android:hint="请输入 课程简介"
+                android:padding="@dimen/dp_6"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_13"
+                android:thumb="@drawable/switch_cdd7300_circle_selector"
+                android:track="@drawable/switch_selector_cdd7300" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addsalecourse_ll_introduction_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="图片简介"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/real_name_identify_icon_1" />
+        </LinearLayout>
+
+        <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+            android:id="@+id/addsalecourse_rv_introduction_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/addsalecourse_switch_Whether_there_ll_attend_activities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="是否参加活动"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15" />
+
+            <Switch
+                android:id="@+id/addsalecourse_switch_Whether_there_is_attend_activities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:thumb="@drawable/switch_cdd7300_circle_selector"
+                android:track="@drawable/switch_selector_cdd7300" />
+        </LinearLayout>
+
+        <com.eghuihe.module_user.me.ItemBeanView
+            android:id="@+id/addsalecourse_ItemBeanView_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dp_7"
+            app:Item_title_TextSize="@dimen/sp_15"
+            app:Item_right_title_TextSize="@dimen/sp_14"
+            android:visibility="gone"
+            android:paddingRight="@dimen/dp_12"
+            app:Item_right_title="请选择开始时间"
+            app:Item_right_title_color="@color/color_333333"
+            app:Item_title="活动开始时间" />
+
+        <com.eghuihe.module_user.me.ItemBeanView
+            android:id="@+id/addsalecourse_ItemBeanView_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dp_7"
+            app:Item_title_TextSize="@dimen/sp_15"
+            app:Item_right_title_TextSize="@dimen/sp_14"
+            app:Item_right_title_color="@color/color_333333"
+            android:paddingRight="@dimen/dp_12"
+            app:Item_title="活动结束时间"
+            app:Item_right_title="请选择结束时间" />
+
+        <LinearLayout
+            android:id="@+id/addsalecourse_ll_activity_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="活动课程价格"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15" />
+
+            <EditText
+                android:id="@+id/addsalecourse_et_activity_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请输入 活动课程价格(元)"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <com.eghuihe.module_user.me.ItemBeanView
+            android:id="@+id/addsalecourse_ItemBeanView_syllabus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dp_7"
+            app:Item_title_TextSize="@dimen/sp_15"
+            android:visibility="gone"
+            app:Item_right_title_color="@color/color_333333"
+            app:Item_right_title_TextSize="@dimen/sp_14"
+            android:paddingRight="@dimen/dp_12"
+            app:Item_right_title="设置教学大纲"
+            app:Item_title="教学大纲" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="教学大纲"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15" />
+
+            <Switch
+                android:id="@+id/addsalecourse_switch_Whether_there_is_a_syllabus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:thumb="@drawable/switch_cdd7300_circle_selector"
+                android:track="@drawable/switch_selector_cdd7300" />
+        </LinearLayout>
+
+        <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+            android:id="@+id/addsalecourse_rv_syllabus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.33dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/addsalecourse_tv_save_as_draft"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_40"
+                android:layout_margin="@dimen/dp_24"
+                android:layout_weight="1"
+                android:background="@drawable/shape_radius_6_stroke_dp_1_color_maincolor"
+                android:gravity="center"
+                android:text="@string/Save_as_a_draft"
+                android:textColor="@color/mainColor"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/addsalecourse_tv_save"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_40"
+                android:layout_margin="@dimen/dp_24"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg_radius_6_color_ff7300"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

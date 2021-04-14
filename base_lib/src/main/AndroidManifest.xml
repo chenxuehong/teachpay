@@ -1,0 +1,93 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huihe.base_lib">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /><!--获取悬浮框权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- IMSDK 权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--<uses-permission android:name="android.permission.SET_DEBUG_APP" />-->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!--android 10.0-->
+    <uses-permission android:name=" android.permission.ACCESS_BACKGROUND_LOCATION"></uses-permission>
+    <!--android 9.0-->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- iBeancon功能所需权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!--这里的 com.tencent.qcloud.tim.tuikit 改成您的 App 的包名-->
+    <permission
+        android:name="com.eghuihe.teachpay.permission.PROCESS_PUSH_MSG"
+        android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.eghuihe.teachpay.permission.PROCESS_PUSH_MSG" />
+
+    <application>
+
+        <activity
+            android:name=".ui.activity.PhotoViewActivity"
+            android:theme="@style/trans_theme" />
+
+        <activity
+            android:name=".ui.activity.CitySelectActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.H5TitleActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".ui.activity.LocationActivity"
+            android:theme="@style/trans_theme"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Android 7.0 文件共享配置，1.7.0之前必须配置，1.7.0后不需要 -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!--百度地图的ak配置-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="iSIuLF1FiRSjzYQCKpSTpCcbKI8OyDll" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+        <service android:name=".ui.service.UpdateService" />
+        <meta-data
+            android:name="com.mob.mobpush.debugLevel"
+            android:value="4" />
+    </application>
+
+</manifest>

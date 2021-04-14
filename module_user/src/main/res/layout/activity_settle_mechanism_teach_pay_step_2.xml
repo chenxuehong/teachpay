@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_88e6e6e6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp_15"
+        android:orientation="vertical">
+
+        <com.huihe.base_lib.ui.widget.AutoFitImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_6"
+            android:src="@mipmap/mechanism_settled_step_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="@drawable/shape_bg_radius_10_color_fff"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="联系电话"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <EditText
+                    android:id="@+id/activity_settle_mechanism_teach_pay_step2_et_mechanism_tel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="填写机构联系电话"
+                    android:inputType="phone"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:id="@+id/activity_settle_mechanism_teach_pay_step2_ll_mechanism_trade_model"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="经营类别"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:id="@+id/activity_settle_mechanism_teach_pay_step2_tv_mechanism_trade_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@mipmap/down_pop"
+                    android:drawablePadding="@dimen/dp_6"
+                    android:hint="请选择 机构经营业务类别"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_15" />
+                <EditText
+                    android:id="@+id/activity_settle_mechanism_teach_pay_step2_et_mechanism_trade_model"
+                    android:background="@null"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:gravity="right"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/sp_15"
+                    android:hint="请输入机构经营业务类别"
+                    android:textColor="@color/color_999999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="机构负责人电话"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <EditText
+                    android:id="@+id/activity_settle_mechanism_teach_pay_step2_et_mechanism_contract_tel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="填写机构负责人电话"
+                    android:inputType="phone"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="机构负责人姓名"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <EditText
+                    android:id="@+id/activity_settle_mechanism_teach_pay_step2_et_mechanism_contract_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="填写机构负责人姓名"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="支付宝收款账号"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <EditText
+                    android:id="@+id/activity_settle_mechanism_teach_pay_step2_et_alipayAccount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="填写支付宝收款账号"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_15" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/shape_bg_radius_10_color_fff"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_12">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:gravity="center_vertical"
+                android:text="机构简介"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_15" />
+
+            <EditText
+                android:id="@+id/activity_settle_mechanism_teach_pay_step2_et_mechanism_desc"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/shape_bg_radius_7_color_fff_stroke_d3_color_bfbfbf"
+                android:gravity="top|left"
+                android:hint="请详细描述机构的相关介绍信息"
+                android:padding="@dimen/dp_12"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_13" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_33"
+            android:text="信息安全申明：所填信息仅用于门店入驻审核，请放心填写。"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/activity_settle_mechanism_teach_pay_step2_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_47"
+            android:layout_margin="@dimen/dp_28"
+            android:background="@drawable/shape_bg_radius_24_color_ff7300"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

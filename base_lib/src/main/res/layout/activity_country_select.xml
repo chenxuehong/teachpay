@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+        android:id="@+id/country_select_rv_country_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.huihe.base_lib.ui.widget.indexBar.widget.LetterSideBar
+        android:id="@+id/country_select_letterSideBar"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:layout_gravity="center_vertical|right" />
+
+
+    <TextView
+        android:id="@+id/country_tvSideBarHint"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_side_bar_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:visibility="gone" />
+</FrameLayout>

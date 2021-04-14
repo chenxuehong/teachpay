@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.huihe.base_lib.ui.widget.AutoFitImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/purchase_succ_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_22"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/purchase_succ_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/dialog_mechanism_course_buy_succ_tv_go_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_52"
+            android:layout_marginTop="@dimen/dp_11"
+            android:layout_marginRight="@dimen/dp_52"
+            android:background="@drawable/shape_bg_radius_10_color_fff"
+            android:gravity="center"
+            android:text="前往查看"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dialog_mechanism_course_buy_succ_tv_pin_group"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_52"
+            android:layout_marginTop="@dimen/dp_11"
+            android:layout_marginRight="@dimen/dp_52"
+            android:background="@drawable/shape_bg_radius_10_color_fff"
+            android:gravity="center"
+            android:text="拼团返现"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dialog_mechanism_course_buy_succ_iv_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        android:scaleType="center"
+        android:src="@mipmap/close" />
+</LinearLayout>

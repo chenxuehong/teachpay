@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40">
+
+    <TextView
+        android:id="@+id/item_mechanism_store_type_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/mechanism_store_type_bg_selector"
+        android:gravity="center"
+        android:text="学科类"
+        android:textColor="@color/mechanism_store_type_txtcolor_selector"
+        android:textSize="@dimen/sp_15" />
+</RelativeLayout>

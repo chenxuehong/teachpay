@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/teach_pay_info_bg">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.huihe.base_lib.ui.widget.AutoFitImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/teach_pay_info_head" />
+
+            <com.huihe.base_lib.ui.widget.AutoFitImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_20"
+                android:src="@mipmap/teach_pay_info_card1" />
+
+            <com.huihe.base_lib.ui.widget.AutoFitImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_20"
+                android:src="@mipmap/teach_pay_info_card2" />
+
+            <com.huihe.base_lib.ui.widget.AutoFitImageView
+                android:id="@+id/activity_teachpay_introduce_iv_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_20"
+                android:src="@mipmap/teach_pay_info_activity" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.huihe.base_lib.ui.widget.title.CommonTitle
+        android:id="@+id/activity_teachpay_introduce_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mybackgroundColor="@color/transparent"
+        app:myleftImg="@mipmap/returnback"
+        app:myshowLine="false"
+        app:mytitle="教付保介绍"
+        app:mytitleTextColor="@color/white"
+        app:mytitleTextSize="18sp" />
+</FrameLayout>

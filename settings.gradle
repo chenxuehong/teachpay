@@ -1,0 +1,2 @@
+include ':app', ':base_lib', ':daguerre', ':module_user', ':module_main', ':module_home', ':module_schedule', ':module_order', ':module_dynamic',':tuikit',':tuikit-live',"nicevideoplayer"
+rootProject.name='teachpay'

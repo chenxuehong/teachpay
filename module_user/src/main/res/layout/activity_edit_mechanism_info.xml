@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+            <com.eghuihe.module_user.me.ItemBeanView
+                android:id="@+id/edit_mechanism_info_itemBeanView_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:Item_right_title_TextSize="@dimen/sp_14"
+                app:Item_right_title_color="@color/color_333333"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_marginBottom="@dimen/dp_6"
+                app:Item_title="类目" />
+
+            <com.eghuihe.module_user.me.ItemBeanView
+                android:id="@+id/edit_mechanism_info_itemBeanView_categories_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:Item_right_title_TextSize="@dimen/sp_14"
+                android:layout_marginTop="@dimen/dp_6"
+                app:Item_right_title_color="@color/color_333333"
+                android:layout_marginBottom="@dimen/dp_6"
+                app:Item_title="经营类别" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/edit_mechanism_info_ll_categories_child"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="经营类别"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <EditText
+                    android:id="@+id/edit_mechanism_info_et_categories_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入经营类别"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="联系人姓名"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <EditText
+                    android:id="@+id/edit_mechanism_info_et_contacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入联系人姓名"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.33dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="联系人电话"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <EditText
+                    android:id="@+id/edit_mechanism_info_et_contact_telephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入联系人电话"
+                    android:inputType="phone"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+            <LinearLayout
+                android:id="@+id/edit_mechanism_info_ll_mechanism_logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="机构Logo"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableRight="@mipmap/icon_uploading"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:text="上传机构Logo"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+                android:id="@+id/edit_mechanism_info_rv_mechanism_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.33dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/edit_mechanism_info_ll_facade_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="机构门面照"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableRight="@mipmap/icon_uploading"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:text="上传机构门面照"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+                android:id="@+id/edit_mechanism_info_rv_facade_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.33dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="机构名"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <EditText
+                    android:id="@+id/edit_mechanism_info_et_mechanism_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入机构名"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.33dp"
+                android:background="@color/line" />
+
+            <com.eghuihe.module_user.me.ItemBeanView
+                android:id="@+id/edit_mechanism_info_itemBeanView_mechanism_addr"
+                android:layout_width="match_parent"
+                app:Item_right_title_TextSize="@dimen/sp_14"
+                app:Item_right_title_color="@color/color_333333"
+                android:layout_height="wrap_content"
+                app:Item_title="地址" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="联系电话"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <EditText
+                    android:id="@+id/edit_mechanism_info_et_mechanism_telephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入联系电话"
+                    android:inputType="phone"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.33dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bg_radius_10_color_fff"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:gravity="center_vertical"
+                    android:text="机构简介"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <EditText
+                    android:id="@+id/edit_mechanism_info_et_introduction_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/shape_bg_radius_7_color_fff_stroke_d3_color_bfbfbf"
+                    android:gravity="top|left"
+                    android:hint="请详细描述机构的相关介绍信息"
+                    android:padding="@dimen/dp_12"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_13" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.33dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/edit_mechanism_info_ll_introduction_pic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="图片简介"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableRight="@mipmap/icon_uploading"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:text="上传图片简介"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+                android:id="@+id/edit_mechanism_info_et_introduction_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.33dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/edit_mechanism_info_ll_support_means"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="相关证明材料"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableRight="@mipmap/icon_uploading"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:text="营业照和教学资格证必传"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+                android:id="@+id/edit_mechanism_info_rv_support_means"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:text="信息安全申明：所填信息仅用于门店入驻审核，请放心填写。"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/edit_mechanism_info_tv_commit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_margin="@dimen/dp_33"
+            android:background="@drawable/shape_bg_radius_24_color_ff7300"
+            android:gravity="center"
+            android:text="@string/commit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

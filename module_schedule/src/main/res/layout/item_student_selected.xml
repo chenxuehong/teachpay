@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_radius_5_color_fff"
+    android:padding="@dimen/dp_12"  >
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.huihe.base_lib.ui.widget.CircleImageView
+            android:id="@+id/item_student_selected_iv_head"
+            android:layout_width="@dimen/dp_44"
+            android:layout_height="@dimen/dp_44"/>
+        <TextView
+            android:id="@+id/item_student_selected_tv_nickName"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/color_333333"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/sp_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</FrameLayout>

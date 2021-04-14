@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="80dp"
+    android:background="@drawable/shape_bg_radius_dp_7_color_white">
+
+    <ImageView
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/live_layout_good_iv_faceUrl"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/item_audience_shopping_tv_is_Teaching"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@id/live_layout_good_iv_faceUrl"
+        app:layout_constraintLeft_toLeftOf="@id/live_layout_good_iv_faceUrl"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_bg_bottom_radius_3_color_maincolor"
+        android:layout_width="60dp"
+        android:textSize="@dimen/sp_10"
+        android:text="讲解中"
+        android:layout_height="@dimen/dp_18"/>
+
+    <TextView
+        android:id="@+id/live_layout_good_tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="【30】节少儿钢琴课"
+        android:textColor="#333333"
+        app:layout_constraintLeft_toRightOf="@id/live_layout_good_iv_faceUrl"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/live_layout_good_iv_close"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/live_btn_close_circle"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+    <TextView
+        android:id="@+id/live_layout_good_tv_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:textSize="13sp"
+        android:layout_marginLeft="10dp"
+        android:text="288/节"
+        android:textStyle="bold"
+        android:textColor="#FF4C61"
+        app:layout_constraintTop_toBottomOf="@id/live_layout_good_tv_title"
+        app:layout_constraintLeft_toRightOf="@id/live_layout_good_iv_faceUrl"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/live_layout_good_tv_payNum"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:text="已售398"
+        android:layout_margin="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

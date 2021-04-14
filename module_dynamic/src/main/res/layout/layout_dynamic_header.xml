@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/dynamic_head_fl_background_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/dynamic_head_background_pic"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginBottom="@dimen/dp_32"
+            android:scaleType="fitXY" />
+        <FrameLayout
+            android:id="@+id/dynamic_head_fl_background_pic_cover"
+            android:background="@drawable/shape_bg_radius_top_5_color_66333333"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/dp_32"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_64"
+        android:layout_alignRight="@+id/dynamic_head_fl_background_pic"
+        android:layout_alignBottom="@+id/dynamic_head_fl_background_pic"
+        android:layout_marginRight="@dimen/dp_12"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dynamic_head_user_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_32"
+            android:lines="1"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/dp_5"
+            android:text="可口可乐"
+            android:textColor="@color/color_FEFEFE"
+            android:textSize="@dimen/sp_16" />
+
+        <com.huihe.base_lib.ui.widget.CircleImageView
+            android:id="@+id/dynamic_head_user_head"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="@dimen/dp_64"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="@dimen/dp_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dynamic_head_ll_new_msgs"
+        android:layout_width="115dp"
+        android:layout_height="@dimen/dp_30"
+        android:layout_below="@+id/dynamic_head_fl_background_pic"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_bg_radius_15_color_ff000000"
+        android:visibility="gone">
+
+        <com.huihe.base_lib.ui.widget.CircleImageView
+            android:id="@+id/dynamic_head_iv_new_msgs_head"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_3" />
+
+        <TextView
+            android:id="@+id/dynamic_head_tv_new_msgs_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+</RelativeLayout>

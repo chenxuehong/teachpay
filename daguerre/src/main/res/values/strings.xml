@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="daguerre_all">All</string>
+    <string name="Album">Album</string>
+    <string name="daguerre_not_found_camera_app">Camera App not found</string>
+    <string name="daguerre_max_select">Select %1$d items at most</string>
+    <string name="daguerre_select">Selected %1$d items</string>
+    <string name="daguerre_albums_member_count">%1$d items</string>
+    <string name="selector_image">Picture</string>
+    <string name="selector_send">Sure</string>
+    <string name="preview">Preview</string>
+</resources>

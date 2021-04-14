@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyVideoPlayer">
+        <attr name="autoPlay" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="empty">
+        <attr name="img" format="reference" />
+        <attr name="msg" format="string" />
+        <attr name="msg2" format="string" />
+        <attr name="loading" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="StickyFlagView">
+        <attr name="flagColor" format="color" />
+        <attr name="flagTextColor" format="color" />
+        <attr name="flagTextSize" format="dimension" />
+        <attr name="flagRadius" format="dimension" />
+        <attr name="flagDrawable" format="reference" />
+        <attr name="maxStickRadius" format="dimension" />
+        <attr name="minStickRadius" format="dimension" />
+        <attr name="maxDistance" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CourseTableLayoutStyle">
+        <attr name="rowNumber" format="integer" />
+        <attr name="columnNumber" format="integer" />
+        <attr name="courseArrangeName" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="customer_title">
+        <attr name="leftImg" format="reference" />
+        <attr name="leftVisible" format="boolean" />
+        <attr name="leftText" format="string" />
+        <attr name="leftTextColor" format="color" />
+        <attr name="titleTextColor" format="color" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="rightVisible" format="boolean" />
+        <attr name="title" format="string" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="rightText" format="string" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="rightImg" format="reference" />
+        <attr name="rightImg2" format="reference" />
+        <attr name="rightImg3" format="reference" />
+        <attr name="showStateBar" format="boolean" />
+        <attr name="showLine" format="boolean" />
+        <attr name="statusBarColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="common_title">
+        <attr name="myleftImg" format="reference" />
+        <attr name="myleftImgVisible" format="boolean" />
+
+        <attr name="myleftText" format="string" />
+        <attr name="myleftTextColor" format="color" />
+
+        <attr name="mytitle" format="string" />
+        <attr name="mytitleTextColor" format="color" />
+        <attr name="mytitleTextSize" format="dimension" />
+
+        <attr name="mybackgroundColor" format="color" />
+
+        <attr name="myrightImg1" format="reference" />
+        <attr name="myrightImg2" format="reference" />
+        <attr name="myrightImg3" format="reference" />
+
+
+        <attr name="myrightText" format="string" />
+        <attr name="myrightTextColor" format="color" />
+
+        <attr name="myshowStateBar" format="boolean" />
+        <attr name="mystatusBarColor" format="color" />
+
+        <attr name="myshowLine" format="boolean" />
+        <attr name="mylineColor" format="color" />
+    </declare-styleable>
+
+    <item name="xbanner_pointId" type="id" />
+    <declare-styleable name="XBanner">
+        <attr name="isAutoPlay" format="boolean" />
+        <attr name="isHandLoop" format="boolean" />
+        <attr name="AutoPlayTime" format="integer|reference" />
+        <attr name="pointNormal" format="reference" />
+        <attr name="pointSelect" format="reference" />
+        <attr name="indicatorDrawable" format="reference" />
+        <attr name="pointsVisibility" format="boolean" />
+        <attr name="isTipsMarquee" format="boolean" />
+        <attr name="pointsPosition" format="enum">
+            <enum name="LEFT" value="0" />
+            <enum name="CENTER" value="1" />
+            <enum name="RIGHT" value="2" />
+        </attr>
+        <attr name="pointsContainerBackground" format="reference|color" />
+        <attr name="pointContainerPosition" format="enum">
+            <enum name="TOP" value="10" />
+            <enum name="BOTTOM" value="12" />
+        </attr>
+        <!-- 指示点容器左右内间距 -->
+        <attr name="pointContainerLeftRightPadding" format="dimension" />
+        <!-- 指示点上下内间距 -->
+        <attr name="pointTopBottomPadding" format="dimension" />
+        <!-- 指示点左右内间距 -->
+        <attr name="pointLeftRightPadding" format="dimension" />
+        <!-- 提示文案的文字颜色 -->
+        <attr name="tipTextColor" format="reference|color" />
+        <!-- 提示文案的文字大小 -->
+        <attr name="tipTextSize" format="dimension" />
+        <!--是否是数字指示器-->
+        <attr name="isShowNumberIndicator" format="boolean" />
+        <!-- 数字指示器背景 -->
+        <attr name="numberIndicatorBacgroud" format="reference" />
+        <!-- 当只有一页数据时是否显示指示器，默认值为false -->
+        <attr name="isShowIndicatorOnlyOne" format="boolean" />
+        <!-- 图片切换速度 -->
+        <attr name="pageChangeDuration" format="integer" />
+        <!--图片轮播框架展占位图-->
+        <attr name="placeholderDrawable" format="reference" />
+        <!--是否开启一屏显示多个模式 默认不开启-->
+        <attr name="isClipChildrenMode" format="boolean" />
+        <!--一屏显示多个左右间距-->
+        <attr name="clipChildrenLeftRightMargin" format="dimension" />
+        <!--一屏显示多个上下间距-->
+        <attr name="clipChildrenTopBottomMargin" format="dimension" />
+        <!--设置viewpager间距-->
+        <attr name="viewpagerMargin" format="dimension" />
+        <!--少于三张是否支持一屏多显模式-->
+        <attr name="isClipChildrenModeLessThree" format="boolean" />
+        <!--是否展示提示文案-->
+        <attr name="isShowTips" format="boolean" />
+        <!--banner轮播区域底部margin-->
+        <attr name="bannerBottomMargin" format="dimension" />
+        <!--设置viewPager ClipChildren-->
+        <attr name="viewPagerClipChildren" format="boolean" />
+        <!-- 占位图缩放模式 -->
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="RatioLayout">
+        <attr name="radio2" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="BounceScrollView">
+        <attr name="is_width_fix_drawable_size_ratio" format="boolean" />
+        <attr name="is_height_fix_drawable_size_ratio" format="boolean" />
+        <attr name="height_to_width_ratio" format="float" />
+        <attr name="width_to_width_ratio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="AutoFitImageView">
+        <attr name="autoFitWidth" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="StateView">
+        <attr name="bindId" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ShadowLayout">
+        <attr name="sl_cornerRadius" format="dimension" />
+        <attr name="sl_shadowRadius" format="dimension" />
+        <attr name="sl_shadowColor" format="color" />
+        <attr name="sl_dx" format="dimension" />
+        <attr name="sl_dy" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="IndexBar">
+        <attr name="indexBarTextSize" />
+        <attr name="indexBarPressBackground" format="color" />
+    </declare-styleable>
+    <declare-styleable name="DoubleSlideSeekBar">
+        <attr name="lineHeight" format="dimension" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="inColor" format="color" />
+        <attr name="outColor" format="color" />
+        <attr name="imageLow" format="reference" />
+        <attr name="imageBig" format="reference" />
+        <attr name="imagewidth" format="dimension" />
+        <attr name="imageheight" format="dimension" />
+        <attr name="hasRule" format="boolean" />
+        <attr name="ruleColor" format="color" />
+        <attr name="ruleTextColor" format="color" />
+        <attr name="unit" format="string" />
+        <attr name="equal" format="integer" />
+        <attr name="ruleUnit" format="string" />
+        <attr name="ruleTextSize" format="dimension" />
+        <attr name="ruleLineHeight" format="dimension" />
+        <attr name="bigValue" format="integer" />
+        <attr name="smallValue" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleTextView">
+        <attr name="backColor" format="color" />
+        <attr name="borderColor" format="color" />
+        <attr name="android_textColor" format="color" />
+        <attr name="android_textSize" format="dimension" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="textPadding" format="dimension" />
+        <attr name="android_text" format="string" />
+        <attr name="borderOverlay" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SlideDetailsLayout">
+        <!-- float value for indicate the moment of switch panel-->
+        <attr name="percent" format="float" />
+        <!-- how long the animation keep-->
+        <attr name="duration" format="integer" />
+        <!-- default panel to show after init-->
+        <attr name="default_panel" format="enum">
+            <enum name="front" value="0" />
+            <enum name="behind" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="LabelView">
+        <attr name="backGroundColor" format="color" />
+        <attr name="textTitleColor" format="color" />
+        <attr name="textContentColor" format="color" />
+
+        <attr name="textTitle" format="string" />
+        <attr name="textContent" format="string" />
+
+        <attr name="textTitleSize" format="dimension" />
+        <attr name="textContentSize" format="dimension" />
+
+        <attr name="labelTopPadding" format="dimension" />
+        <attr name="labelCenterPadding" format="dimension" />
+        <attr name="labelBottomPadding" format="dimension" />
+        <attr name="labelTopDistance" format="dimension" />
+
+        <attr name="textTitleStyle">
+            <enum name="normal" value="0" />
+            <enum name="italic" value="1" />
+            <enum name="bold" value="2" />
+        </attr>
+
+        <attr name="textContentStyle">
+            <enum name="normal" value="0" />
+            <enum name="italic" value="1" />
+            <enum name="bold" value="2" />
+        </attr>
+
+        <attr name="direction">
+            <enum name="leftTop" value="-45" />
+            <enum name="rightTop" value="45" />
+        </attr>
+
+    </declare-styleable>
+    <declare-styleable name="HwLoadingView">
+        <!--控件大小-->
+        <attr name="hlv_size" format="dimension" />
+        <!--控件颜色-->
+        <attr name="hlv_color" format="color" />
+        <!--转一圈花费时长-->
+        <attr name="hlv_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MyCircleTextView">
+        <attr name="circleTint" format="color" />
+    </declare-styleable>
+    <!--自定义加载框-->
+    <declare-styleable name="LVCircularRing">
+        <attr name="bgColor" format="color" />
+        <attr name="barColor" format="color" />
+    </declare-styleable>
+    <!--自定义加载框-->
+    <declare-styleable name="RatioLinearLayout">
+        <attr name="childCount" format="integer" />
+        <attr name="padding" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TabTitleRecyclerView">
+        <attr name="TabTitle" format="string" />
+        <attr name="title_color" format="color" />
+        <attr name="title_TextSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ItemBeanView">
+        <attr name="Item_title" format="string" />
+        <attr name="Item_title_color" format="color" />
+        <attr name="Item_title_TextSize" format="dimension" />
+        <attr name="Item_right_title" format="string" />
+        <attr name="Item_right_title_color" format="color" />
+        <attr name="Item_right_title_TextSize" format="dimension" />
+        <attr name="Item_leftIcon" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="MyBanner">
+        <attr name="ratio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="CalendarView">
+        <!--是否显示农历-->
+        <attr name="show_lunar" format="boolean" />
+        <!--是否显示上月和下月-->
+        <attr name="show_last_next" format="boolean" />
+        <!--是否显示节假日-->
+        <attr name="show_holiday" format="boolean" />
+        <!--是否显示节气-->
+        <attr name="show_term" format="boolean" />
+        <!--阳历的日期颜色-->
+        <attr name="solar_color" format="color" />
+        <!--阳历的日期尺寸-->
+        <attr name="solar_size" format="integer" />
+        <!--农历的日期颜色-->
+        <attr name="lunar_color" format="color" />
+        <!--农历的日期尺寸-->
+        <attr name="lunar_size" format="integer" />
+        <!--节日文字颜色-->
+        <attr name="holiday_color" format="color" />
+        <!--选中的日期文字颜色-->
+        <attr name="choose_color" format="color" />
+        <!--选中的日期背景-->
+        <attr name="day_bg" format="reference" />
+        <!--单选时切换月份，是否选中上次的日期-->
+        <attr name="switch_choose" format="boolean" />
+        <!--设置单选、多选-->
+        <attr name="choose_type" format="enum">
+            <enum name="single" value="0" />
+            <enum name="multi" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="WeekView">
+        <!--周的表示形式（x.x.x.x.x.x.x）-->
+        <attr name="week_str" format="string" />
+        <!--周的文字颜色-->
+        <attr name="week_color" format="color" />
+        <!--周的文字大小-->
+        <attr name="week_size" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect"/>
+        <attr name="max_select"/>
+    </declare-styleable>
+</resources>

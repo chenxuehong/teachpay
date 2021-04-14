@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_teach_schedule_day_tv_week"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_9"
+        android:gravity="center"
+        android:text="一"
+        android:textColor="@color/color_FF7300"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/item_teach_schedule_day_tv_day"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp_9"
+        android:textColor="@color/day_txt_color_selector"
+        android:background="@drawable/day_bg_selector"
+        android:gravity="center"
+        android:text="10"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

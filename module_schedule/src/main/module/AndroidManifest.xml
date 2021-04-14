@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eghuihe.module_schedule" >
+    <application android:theme="@style/BaseTheme">
+        <activity android:name=".ui.mechanism.activity.ArrangeMechanismCourseActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity android:name=".ui.mechanism.activity.MechanismCourseListActivity"/>
+        <activity android:name=".ui.mechanism.activity.SelectStudentListActivity"/>
+        <activity android:name=".ui.mechanism.activity.SummaryActivity"/>
+        <activity android:name=".ui.mechanism.activity.ArrangeFixedMechanismCourseActivity"/>
+        <activity android:name=".ui.mechanism.activity.ArrangeSchedulingMechanismCourseActivity"/>
+        <activity android:name=".ui.mechanism.activity.ClassManagerActivity"/>
+        <activity android:name=".ui.mechanism.activity.SelectClassListActivity"/>
+        <activity android:name=".ui.mechanism.activity.TeachingPayMechanismArrangeScheduleFixActivity"/>
+        <activity android:name=".ui.mechanism.activity.StudentListActivity"/>
+        <activity android:name=".ui.student.activity.ScheduleCommentActivity"/>
+        <activity android:name=".ui.student.activity.TeachPayStudentSchedulePackageDetailListActivity"/>
+        <activity android:name=".ui.student.activity.TeachPayStudentAppointmentScheduleActivity"/>
+        <activity android:name=".ui.student.activity.CourseAppointmentPayActivity"/>
+        <activity android:name=".ui.student.activity.CourseOnTimePayActivity"/>
+        <activity android:name=".ui.student.activity.TeachPayStudentSchedulePackageActivity"/>
+    </application>
+</manifest>

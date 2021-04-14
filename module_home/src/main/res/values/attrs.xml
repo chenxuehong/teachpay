@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--搜索样式-->
+    <declare-styleable name="TeachingPaySearchView">
+        <attr name="height" format="dimension" />
+        <attr name="search_hint" format="string" />
+        <attr name="status_color" format="color" />
+        <attr name="search_background" format="reference" />
+        <attr name="search_height" format="dimension" />
+        <attr name="locTextSize" format="dimension" />
+        <attr name="locCityTextSize" format="dimension" />
+        <attr name="locText" format="string" />
+        <attr name="locTextColor" format="color" />
+    </declare-styleable>
+</resources>

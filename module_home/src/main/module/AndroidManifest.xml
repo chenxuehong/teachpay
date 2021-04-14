@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.eghuihe.module_home">
+
+    <application
+        android:name=".common.HomeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".home.activity.NewestMechanismListActivity"/>
+        <activity android:name=".home.activity.MechanismQueryListActivity"/>
+        <activity android:name=".home.activity.NearMechanismListActivity"/>
+        <activity android:name=".home.activity.MechanismListByQueryActivity"/>
+        <activity android:name=".home.activity.MechanismListByTypeActivity"/>
+        <activity android:name=".home.activity.TeachPayCourseListActivity"/>
+        <activity android:name=".home.activity.TeachPayMechanismCourseListActivity"/>
+        <activity android:name=".home.activity.ActivityDetailActivity"/>
+        <activity android:name=".home.activity.NewActivityDetailActivity"/>
+    </application>
+
+</manifest>

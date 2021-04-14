@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mTitleBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingRight="@dimen/dp_5">
+
+    <View
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:id="@+id/container_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_below="@id/status"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/mImgLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="19dp"
+            android:paddingTop="7dp"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="7dp"
+            android:src="@mipmap/icon_back"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txt_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/content_color"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_44"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/sp_16" />
+        <ImageView
+            android:id="@+id/mImgRight3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp_22"
+            android:padding="4dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/mImgRight2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="13dp"
+            android:padding="4dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/mImgRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="13dp"
+            android:padding="4dp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/mTxtRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:paddingTop="@dimen/dp_3"
+                android:paddingRight="@dimen/dp_8"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/title_color"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_im_unread"
+                style="@style/style_text_im_unread"
+                android:visibility="gone"
+                android:layout_gravity="top|right"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mMainTitle"
+        android:layout_centerInParent="true"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/dp_44"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/sp_16" />
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/container_title"
+        android:background="@color/line" />
+</RelativeLayout>

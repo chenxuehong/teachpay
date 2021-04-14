@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_radius_12_color_fff"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_12">
+
+    <EditText
+        android:id="@+id/dialog_getcoupon_et_nickName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:background="@drawable/shape_bg_radius_22_color_fff_stroke_dp_d33"
+        android:hint="请输入宝宝姓名"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/dialog_getcoupon_tv_sex"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_9"
+        android:background="@drawable/shape_bg_radius_22_color_fff_stroke_dp_d33"
+        android:drawableRight="@mipmap/down_pop"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_14"
+        android:hint="请选择宝宝性别"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16" />
+
+    <TextView
+        android:id="@+id/dialog_getcoupon_tv_relationships"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_9"
+        android:background="@drawable/shape_bg_radius_22_color_fff_stroke_dp_d33"
+        android:drawableRight="@mipmap/down_pop"
+        android:gravity="center_vertical"
+        android:hint="请选择宝宝关系"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_14"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16" />
+
+    <EditText
+        android:id="@+id/dialog_getcoupon_et_age"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_9"
+        android:background="@drawable/shape_bg_radius_22_color_fff_stroke_dp_d33"
+        android:gravity="center_vertical"
+        android:hint="请输入宝宝年龄"
+        android:inputType="number"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_14"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16" />
+
+    <EditText
+        android:id="@+id/dialog_getcoupon_et_preference"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_9"
+        android:background="@drawable/shape_bg_radius_22_color_fff_stroke_dp_d33"
+        android:hint="请输入宝宝偏好"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_14" />
+
+    <EditText
+        android:id="@+id/dialog_getcoupon_et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_9"
+        android:background="@drawable/shape_bg_radius_22_color_fff_stroke_dp_d33"
+        android:hint="请输入手机号"
+        android:paddingLeft="@dimen/dp_16"
+        android:inputType="phone"
+        android:paddingRight="@dimen/dp_16"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_9">
+
+        <EditText
+            android:id="@+id/dialog_getcoupon_et_code"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_30"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_radius_22_color_fff_stroke_dp_d33"
+            android:hint="请输入验证码"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/dialog_getcoupon_tv_Getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:text="获取验证码"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_22"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30">
+
+        <TextView
+            android:id="@+id/dialog_getcoupon_tv_cancel"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="取消"
+            android:gravity="center"
+            android:background="@drawable/shape_radius_5_stroke_dp_3_color_maincolor"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/sp_14"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/dialog_getcoupon_tv_getCoupon"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:text="领取"
+            android:background="@drawable/shape_bg_radius_5_color_pramary_color"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

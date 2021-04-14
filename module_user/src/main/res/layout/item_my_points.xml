@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_12">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/item_my_points_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_60"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="【20节】1V1升学规划课"
+                android:textColor="#414141"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/item_my_points_tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0"
+                android:textColor="#484848"
+                android:textSize="@dimen/sp_13" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_my_points_tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="2020-12-28 15:07"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_13" />
+    </LinearLayout>
+    <View
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.33dp"/>
+</LinearLayout>

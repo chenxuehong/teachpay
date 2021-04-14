@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_bg_radius_12_color_fff"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_15">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/item_teachpay_student_schedule_package_detail_tv_title"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/color_333333"
+            android:textStyle="bold"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/item_teachpay_student_schedule_package_detail_tv_status"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/color_999999"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="尚未排课"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_teachpay_student_schedule_package_detail_tv_appointment"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/color_FF7300"
+        android:text="预约"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:gravity="center"
+        android:background="@drawable/shape_radius_dp_9_stroke_dp_d33_color_ff7300"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_24"/>
+</LinearLayout>

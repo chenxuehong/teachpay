@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.huihe.base_lib.ui.widget.AutoFitImageView
+                android:id="@+id/acivity_single_lesson_pay_activity_iv_bg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/single_pay_bg_1" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.huihe.base_lib.ui.widget.AutoFitImageView
+                        android:id="@+id/acivity_single_lesson_pay_activity_iv_bg2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/single_pay_bg_2" />
+
+                    <com.huihe.base_lib.ui.widget.AutoFitImageView
+                        android:id="@+id/acivity_single_lesson_pay_activity_iv_bg3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/single_pay_bg_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--活动须知-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_15"
+                        android:background="@drawable/shape_bg_radius_15_color_white"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_10">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_40"
+                            android:gravity="center"
+                            android:text="购买须知"
+                            android:textColor="@color/mainColor"
+                            android:textSize="@dimen/sp_15" />
+
+                        <TextView
+                            android:id="@+id/acivity_single_lesson_pay_activity_tv_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="5dp"
+                            android:text="1. 点击我要报名即可参加活动\n2. 每节课可以先上课后付费，上一节付一节。\n3. 可使用优惠券支付本次活动最终解释权归教付保所有。"
+                            android:textColor="@color/color_666666"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+                    <!--新春活动支付按钮-->
+                    <LinearLayout
+                        android:id="@+id/acivity_single_lesson_pay_activity_ll_experience_specials_pay"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_margin="@dimen/dp_15"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/acivity_single_lesson_pay_activity_tv_77_pay"
+                            android:layout_marginLeft="@dimen/dp_15"
+                            android:layout_weight="1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_14"
+                            android:gravity="center"
+                            android:background="@drawable/shape_bg_radius_15_color_maincolor"
+                            android:text="77元随心选"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_40"/>
+
+                        <TextView
+                            android:id="@+id/acivity_single_lesson_pay_activity_tv_177_pay"
+                            android:layout_marginLeft="@dimen/dp_15"
+                            android:gravity="center"
+                            android:layout_marginRight="@dimen/dp_15"
+                            android:layout_weight="1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_14"
+                            android:background="@drawable/shape_bg_radius_15_color_maincolor"
+                            android:text="177元随心选"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_40"/>
+                    </LinearLayout>
+                    <!--附近单节支付商品-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_15"
+                        android:background="@drawable/shape_bg_radius_15_color_white"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp_10">
+
+                        <TextView
+                            android:id="@+id/acivity_single_lesson_pay_activity_tv_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_40"
+                            android:gravity="center"
+                            android:text="附近单节支付商品"
+                            android:textColor="@color/mainColor"
+                            android:textSize="@dimen/sp_15" />
+
+                        <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+                            android:id="@+id/acivity_single_lesson_pay_activity_rv_courseList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.huihe.base_lib.ui.widget.DragFloatActionButton
+        android:id="@+id/acivity_single_lesson_pay_activity_dragFloatActionBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_44"
+        android:src="@mipmap/icon_consult_48pt"
+        app:backgroundTint="@color/transparent"
+        app:backgroundTintMode="screen"
+        app:borderWidth="10dp"
+        app:elevation="0dp"
+        app:maxImageSize="@dimen/dp_65"
+        app:rippleColor="@color/white" />
+</FrameLayout>
+
+

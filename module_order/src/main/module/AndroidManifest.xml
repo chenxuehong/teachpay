@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eghuihe.module_order" >
+    <application
+        android:name=".common.OrderApplication">
+        <activity android:name=".ui.mechanism.TeachingPayMechanismOrderActivity"/>
+        <activity android:name=".ui.student.TeachingPayStudentOrderActivity"/>
+    </application>
+</manifest>

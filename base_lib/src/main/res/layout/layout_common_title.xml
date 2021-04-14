@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--用来填充状态栏-->
+    <View
+        android:id="@+id/layout_common_title_view_statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--title-->
+        <LinearLayout
+            android:id="@+id/layout_common_title_ll_background"
+            style="@style/title_style"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+            <ImageView
+                android:id="@+id/layout_common_title_iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_back" />
+
+            <TextView
+                android:id="@+id/layout_common_title_tv_back"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_5"
+                android:text="@string/title_back"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_16" />
+
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/layout_common_title_iv_rightIcon1"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dp_8"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/layout_common_title_iv_rightIcon2"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dp_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/layout_common_title_iv_rightIcon3"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dp_8"
+                    android:src="@mipmap/living"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_40"/>
+
+                <TextView
+                    android:id="@+id/layout_common_title_tv_rightTitle"
+                    android:visibility="gone"
+                    android:padding="@dimen/dp_5"
+                    android:gravity="center"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/layout_common_title_tv_title"
+            android:layout_width="wrap_content"
+            android:lines="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+           android:maxWidth="150dp"
+            android:text="1111111111111111111"
+            android:ellipsize="end"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_16"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <!--line-->
+    <View
+        android:id="@+id/layout_common_title_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+</LinearLayout>

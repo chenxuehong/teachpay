@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.huihe.base_lib.ui.widget.fitViewPager.NoScrollViewPager
+        android:id="@+id/act_teaching_pay_main_noScrollViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></com.huihe.base_lib.ui.widget.fitViewPager.NoScrollViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@android:color/darker_gray"></View>
+
+    <com.huihe.base_lib.ui.widget.bottomTabLayout.BottomBarLayoutWithVP
+        android:id="@+id/act_teaching_pay_main_bottomBarLayout"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_49" />
+
+</LinearLayout>

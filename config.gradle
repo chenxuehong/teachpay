@@ -1,0 +1,148 @@
+/**
+ *  全局统一配置文件
+ */
+ext {
+
+    //true 每个业务Module可以单独开发
+    //false 每个业务Module以lib的方式运行
+    //修改之后需要Sync方可生效
+    isModule = false
+    //版本号
+    versions = [
+            applicationId           : "com.eghuihe.teachpay",        //应用ID
+            versionCode             : 5,                    //版本号
+            versionName             : "1.0.4",              //版本名称
+            compileSdkVersion       : 29,
+            buildToolsVersion       : "29.0.2",
+            minSdkVersion           : 21,
+            targetSdkVersion        : 29,
+            androidSupportSdkVersion: "28.0.0",
+            constraintLayoutVersion : "1.1.3",
+            flowlayout              : "1.1.2",
+            HMSSDKVer               : "2.6.1.301",
+            leakcanaryVersion       : "1.6.3",
+            getuiVersion            : "4.3.8.0",
+            junitVersion            : "4.12",
+            runnerVersion           : "1.0.2",
+            espressoVersion         : "3.0.2",
+            swipebacklayoutVersion  : "1.1.0",
+            glideVersion            : "4.9.0",
+            fastjsonVersion         : "1.2.10",
+            okhttpVersion         : "3.11.0",
+            retrofitVersion         : "2.3.0",
+            gsonVersion         : "2.3.0",
+            rxjava2Version         : "2.3.0",
+            StatusBarCompatVersion         : "2.1.3",
+            butterknifeVersion         : "10.2.3",
+            multidexVersion         : "1.0.2",
+            orhanobutloggerVersion         : "2.2.0",
+            notificationLibVersion         : "1.0.2",
+            rxpermissionsVersion         : "0.9.4",
+            rxjavaVersion         : "2.1.5",
+            rxandroidVersion         : "2.0.1",
+            pinyin4jVersion         : "2.5.1",
+            eventbusVersion         : "3.0.0",
+            zxingVersion         : "2.2",
+            plistVersion         : "1.16",
+            roundedimageviewVersion         : "2.3.0",
+            SmartRefreshLayoutVersion         : "1.1.0",
+            ExpandableTextViewVersion         : "v1.6.1",
+            photoviewVersion         : "1.4.1",
+            qiniuVersion         : "7.2.+",
+            arouterCompilerVersion  : "1.2.1",
+            arouterApiVersion  : "1.4.0",
+            arouterannotationVersion  : "1.0.4",
+            imagepickerVersion  : "v2.5.9",
+            TEduBoardSdkVersion  : "2.5.3.65",
+            recyclerviewxSdkVersion  : "1.0.0",
+            javaxVersion            : "1.2",
+            lombokVersion           : "1.16.6",
+            gif_drawableVersion           : "1.2.19",
+
+    ]
+
+    dependencies = [
+
+            //公用的
+            "appcompat_v7"                  : 'androidx.appcompat:appcompat:1.0.0',
+            "support-v4"                    : 'androidx.legacy:legacy-support-v4:1.0.0',
+            "constraintLayoutVersion"       : 'androidx.constraintlayout:constraintlayout:1.1.3',
+
+            "junit"                         : "junit:junit:${versions["junitVersion"]}",
+            "runner"                        : 'androidx.test.ext:junit:1.1.1',
+            "espresso"                      : 'androidx.test.espresso:espresso-core:3.1.0',
+            "design"                      : 'com.google.android.material:material:1.0.0',
+
+            /*模块间通信、跳转*/
+            "arouter_api"         : "com.alibaba:arouter-api:${versions["arouterApiVersion"]}",
+            "arouter_compiler"    : "com.alibaba:arouter-compiler:${versions["arouterCompilerVersion"]}",
+            "arouter_annotation"  : "com.alibaba:arouter-annotation:${versions["arouterannotationVersion"]}",
+
+            /*网络框架*/
+            // 图片加载框架
+            "glide"                         : "com.github.bumptech.glide:glide:${versions["glideVersion"]}",
+            "glide_compiler"                         : "com.github.bumptech.glide:compiler:${versions["glideVersion"]}",
+            // 数据解析框架
+            "fastjson"                      : "com.alibaba:fastjson:${versions["fastjsonVersion"]}",
+            // 网络加载框架
+            "okhttp"                      : "com.squareup.okhttp3:okhttp:${versions["okhttpVersion"]}",
+            "retrofit"                      : "com.squareup.retrofit2:retrofit:${versions["retrofitVersion"]}",
+            "gson"                      : "com.squareup.retrofit2:converter-gson:${versions["gsonVersion"]}",
+            "rxjava2"                      : "com.squareup.retrofit2:adapter-rxjava2:${versions["rxjava2Version"]}",
+            "rxjava"                      : "io.reactivex.rxjava2:rxjava:${versions["rxjavaVersion"]}",
+            "rxandroid"                      : "io.reactivex.rxjava2:rxandroid:${versions["rxandroidVersion"]}",
+
+            "umeng_integration"                      : "com.umeng.analytics:analytics:latest.integration",
+
+            // 黄油刀
+            "butterknife"                     : "com.jakewharton:butterknife:${versions["butterknifeVersion"]}",
+            "butterknife_compiler"                     : "com.jakewharton:butterknife-compiler:${versions["butterknifeVersion"]}",
+
+            "eventbus"                     : "org.greenrobot:eventbus:${versions["eventbusVersion"]}",
+            "recyclerview-v7"                     : "androidx.recyclerview:recyclerview:${versions["recyclerviewxSdkVersion"]}",
+
+            "zxing"                     : "cn.yipianfengye.android:zxing-library:${versions["zxingVersion"]}",
+            "plist"                     : "com.googlecode.plist:dd-plist:${versions["plistVersion"]}",
+            "roundedimageview"                     : "com.makeramen:roundedimageview:${versions["roundedimageviewVersion"]}",
+
+            // 下拉刷新框架
+            "SmartRefreshLayout"                     : "com.scwang.smartrefresh:SmartRefreshLayout:${versions["SmartRefreshLayoutVersion"]}",
+            "SmartRefreshHeader"                     : "com.scwang.smartrefresh:SmartRefreshHeader:${versions["SmartRefreshLayoutVersion"]}",
+
+            // 可展开和折叠的textview
+            "ExpandableTextView"                     : "com.github.MZCretin:ExpandableTextView:${versions["ExpandableTextViewVersion"]}",
+            "photoview"                     : "com.bm.photoview:library:${versions["photoviewVersion"]}",
+
+            // 七牛云用来存储图片
+            "qiniu"                     : "com.qiniu:qiniu-java-sdk:${versions["qiniuVersion"]}",
+
+            // 分包
+            "multidex"                     : 'androidx.multidex:multidex:2.0.0',
+
+            "orhanobutlogger"                     : "com.orhanobut:logger:${versions["orhanobutloggerVersion"]}@aar",
+            "notificationLib"                     : "cn.yc:notificationLib:${versions["notificationLibVersion"]}",
+            "rxpermissions"                     : "com.tbruyelle.rxpermissions2:rxpermissions:${versions["rxpermissionsVersion"]}@aar",
+            "pinyin4j"                     : "com.belerweb:pinyin4j:${versions["pinyin4jVersion"]}",
+
+            // 卡片
+            "cardview-v7"                   : 'androidx.cardview:cardview:1.0.0',
+
+            "swipebacklayout"               : "me.imid.swipebacklayout.lib:library:${versions["swipebacklayoutVersion"]}",
+
+            "flowlayout-lib"                : "com.hyman:flowlayout-lib:${versions["flowlayout"]}",
+
+            // 内存泄漏检测工具
+            "leakcanarydebug"               : "com.squareup.leakcanary:leakcanary-android:${versions["leakcanaryVersion"]}",
+            "leakcanaryrelease"             : "com.squareup.leakcanary:leakcanary-android-no-op:${versions["leakcanaryVersion"]}",
+            "leakcanarySupportfragmentdebug": "com.squareup.leakcanary:leakcanary-support-fragment:${versions["leakcanaryVersion"]}",
+            // 个推
+            "getui"                         : "com.getui:sdk-for-google-play:${versions["getuiVersion"]}",
+            "imagepicker"                         : "com.github.LuckSiege.PictureSelector:picture_library:${versions["imagepickerVersion"]}",
+            "TEduBoardSdk"                         :"com.tencent.teduboard:TEduBoardSdk:${versions["TEduBoardSdkVersion"]}",
+            //lombok
+            "lombokJavax"         : "javax.annotation:javax.annotation-api:${versions["javaxVersion"]}",
+            "lombok"              : "org.projectlombok:lombok:${versions["lombokVersion"]}",
+            "gif_drawable"              : "pl.droidsonroids.gif:android-gif-drawable:${versions["gif_drawableVersion"]}",
+    ]
+
+}

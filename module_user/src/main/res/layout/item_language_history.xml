@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_history_tv_language"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_radius_5_color_e6e6e6"
+    android:gravity="center"
+    android:textSize="@dimen/sp_12"
+    android:textColor="@color/color_666666"
+    android:paddingLeft="@dimen/dp_12"
+    android:paddingTop="@dimen/dp_3"
+    android:paddingRight="@dimen/dp_12"
+    android:paddingBottom="@dimen/dp_3"
+    android:text="中文" />

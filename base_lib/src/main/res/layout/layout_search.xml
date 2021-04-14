@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_search_bar"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/shape_bg_im_search"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/tv_search"
+        android:src="@mipmap/ic_im_search"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dp" />
+
+</RelativeLayout>

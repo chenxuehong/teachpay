@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+       代表 context.getFileDir()
+       文件保存路径为：/data/应用包名/files/
+       Uri：content://com.winfo.update.provider/fileDir/weixin667android1320.apk
+   -->
+    <files-path
+        name="qmore"
+        path="." />
+    <external-path
+        name="qmore"
+        path="." />
+
+    <external-cache-path
+        name="qmore"
+        path="." />
+
+    <!--
+        代表 context.getExternalFilesDir()
+        文件保存路径为：/storage/emulated/0/Android/data/应用包名/files/
+        Uri：content://com.winfo.update.provider/filePath/weixin667android1320.apk
+    -->
+    <external-files-path
+        name="qmore"
+        path="." />
+
+    <!--    &lt;!&ndash;-->
+    <!--        代表 context.getCacheDir()-->
+    <!--        文件保存路径为：/data/应用包名/cache/-->
+    <!--        Uri：content://com.winfo.update.provider/cache-path/weixin667android1320.apk-->
+    <!--    &ndash;&gt;-->
+    <!--    &lt;!&ndash;name自定义   .为根路径&ndash;&gt;-->
+    <cache-path
+        name="qmore"
+        path="." />
+
+    <!--    &lt;!&ndash;-->
+    <!--        代表 getExternalCacheDir()-->
+    <!--        文件保存路径为：/storage/emulated/0/Android/data/应用包名/cache/-->
+    <!--        Uri:content://com.winfo.update.provider/external-cache-path/weixin667android1320.apk-->
+    <!--    &ndash;&gt;-->
+    <!--    &lt;!&ndash;name自定义  .为SDCard/Android/data/应用包名/cache/&ndash;&gt;-->
+    <external-cache-path
+        name="qmore"
+        path="." />
+
+    <!--    &lt;!&ndash;-->
+    <!--        自定义getExternalCacheDir()-->
+    <!--        文件保存路径为：/storage/emulated/0/Android/data/应用包名/cache/update/weixin667android1320.apk-->
+    <!--        Uri:content://com.winfo.update.provider/external-cache-custom-path/weixin667android1320.apk-->
+    <!--    &ndash;&gt;-->
+    <!--    &lt;!&ndash;name自定义  update_file为SDCard/Android/data/应用包名/cache/update/和gettExternalCacheDirectory对应创建的文件夹保持一致&ndash;&gt;-->
+    <external-cache-path
+        name="qmore"
+        path="." />
+
+    <!--    &lt;!&ndash;-->
+    <!--        代表 Environment.getExternalStorageDirectory()-->
+    <!--        文件保存路径为：/storage/emulated/0/updateFile/-->
+    <!--        Uri为：content://com.winfo.update.provider/sdcard_root_externalStorageDirectory/weixin667android1320.apk-->
+    <!--    &ndash;&gt;-->
+    <external-path
+        name="qmore"
+        path="." />
+    <!--  &lt;!&ndash;path要和代码中Environment.getExternalStorageDirectory(), "update" 保持一致否则异常-->
+    <!--        java.lang.IllegalArgumentException: Failed to find configured root that contains /storage/emulated/0/update/weixin667android1320.apk&ndash;&gt;&ndash;&gt;-->
+
+
+    <files-path
+        name="qmore"
+        path="." />    <!--代表 context.getFileDir()-->
+
+    <cache-path
+        name="qmore"
+        path="." />    <!--代表 context.getCacheDir()-->
+
+    <external-path
+        name="qmore"
+        path="." />    <!-- 代表 Environment.getExternalStorageDirectory()-->
+
+    <external-files-path
+        name="qmore"
+        path="." />   <!--代表 context.getExternalFilesDir()-->
+
+    <external-cache-path
+        name="qmore"
+        path="." />   <!--代表 getExternalCacheDir()-->
+
+
+</paths>

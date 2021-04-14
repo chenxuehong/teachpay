@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/include_course_info_ll_courseinfo"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingLeft="@dimen/dp_6"
+    android:layout_marginLeft="@dimen/dp_6"
+    android:layout_marginRight="@dimen/dp_6"
+    android:paddingRight="@dimen/dp_6"
+    android:background="@drawable/shape_bg_course_info"
+    android:layout_marginTop="@dimen/dp_6"
+    android:orientation="horizontal">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/include_course_info_iv_CourseCover"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_vertical"
+        app:riv_border_color="@color/line"
+        app:riv_border_width="0.33dp"
+        app:riv_corner_radius="@dimen/dp_6" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp_16">
+
+        <TextView
+            android:id="@+id/include_course_info_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="【40节】少儿芭蕾课"
+            android:textColor="@color/color_333333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_6"
+            android:id="@+id/include_course_info_tv_discount_amount"
+            android:layout_below="@id/include_course_info_tv_title"
+            android:textColor="@color/mainColor"
+            android:textSize="12sp"
+            android:text="0/节"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/include_course_info_tv_amount"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_toRightOf="@id/include_course_info_tv_discount_amount"
+            android:layout_below="@id/include_course_info_tv_title"
+            android:textColor="@color/color_999999"
+            android:textSize="9sp"
+            android:text="0/节"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

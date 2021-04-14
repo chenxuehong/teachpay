@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_viewpager_tablayout"/>
+    <com.huihe.base_lib.ui.widget.DragFloatActionButton
+        android:id="@+id/activity_live_manager_dragFloatActionBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_44"
+        app:backgroundTint="@color/transparent"
+        app:backgroundTintMode="screen"
+        app:borderWidth="10dp"
+        android:layout_gravity="center_vertical|right"
+        android:src="@mipmap/start_live"
+        app:elevation="0dp"
+        app:maxImageSize="@dimen/dp_65"
+        app:rippleColor="@color/white" />
+</FrameLayout>

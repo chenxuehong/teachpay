@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/teaching_pay_home_SmartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed
+            android:id="@+id/teaching_pay_home_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <com.eghuihe.module_home.TeachingPaySearchView
+        android:id="@+id/teaching_pay_home_teachingPaySearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:height="@dimen/dp_60"
+        app:locTextColor="@color/white"
+        app:locCityTextSize="@dimen/sp_14"
+        app:locTextSize="@dimen/sp_12"
+        app:search_background="@drawable/shape_bg_radius_15_color_white"
+        app:search_height="@dimen/dp_30"
+        app:search_hint="搜索机构名" />
+</FrameLayout>

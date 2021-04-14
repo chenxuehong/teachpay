@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.huihe.base_lib.ui.widget.AutoFitImageView
+        android:id="@+id/layout_activityes_iv_activities"
+        android:layout_width="match_parent"
+        android:src="@mipmap/cj_clickable"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
