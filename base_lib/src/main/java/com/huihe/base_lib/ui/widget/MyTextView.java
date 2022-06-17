@@ -32,7 +32,7 @@ public class MyTextView extends AppCompatTextView {
             GifDrawable gifDrawable = new GifDrawable(context.getResources(), id);
             gifDrawable.setBounds(0, 0, gifDrawable.getIntrinsicWidth(), gifDrawable.getIntrinsicHeight());
             //用这个drawable对象代替字符串easy
-            ImageSpan span = new ImageSpan(gifDrawable, ImageSpan.ALIGN_CENTER);
+            ImageSpan span = new ImageSpan(gifDrawable, ImageSpan.ALIGN_BASELINE);
             //包括0但是不包括"easy".length()即：4。[0,4)。值得注意的是当我们复制这个图片的时候，实际是复制了"easy"这个字符串。
             ss.setSpan(span, 0, "icon".length(), Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
             append(ss);
@@ -52,7 +52,7 @@ public class MyTextView extends AppCompatTextView {
             int width = intrinsicWidth * height / intrinsicHeight;
             gifDrawable.setBounds(0, 0, width, height);
             //用这个drawable对象代替字符串easy
-            ImageSpan span = new ImageSpan(gifDrawable, ImageSpan.ALIGN_CENTER);
+            ImageSpan span = new ImageSpan(gifDrawable, ImageSpan.ALIGN_BASELINE);
             //包括0但是不包括"easy".length()即：4。[0,4)。值得注意的是当我们复制这个图片的时候，实际是复制了"easy"这个字符串。
             ss.setSpan(span, 0, "icon".length(), Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
             append(ss);

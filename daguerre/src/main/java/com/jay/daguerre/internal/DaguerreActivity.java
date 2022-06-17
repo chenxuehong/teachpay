@@ -68,7 +68,7 @@ public class DaguerreActivity extends AppCompatActivity
     private static final String DATA = MediaStore.MediaColumns.DATA;
     private static final String DISPLAY_NAME = MediaStore.MediaColumns.DISPLAY_NAME;
     private static final String MIME_TYPE = MediaStore.MediaColumns.MIME_TYPE;
-    private static final String BUCKET_DISPLAY_NAME =  MediaStore.MediaColumns.BUCKET_DISPLAY_NAME;
+    private static final String BUCKET_DISPLAY_NAME =  MediaStore.Images.ImageColumns.BUCKET_DISPLAY_NAME;
     private static final String[] COLUMNS_NAME = {
             _ID,
             DATA,

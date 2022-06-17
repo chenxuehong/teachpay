@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/include_appupdate_1"
+    tools:showIn="@layout/dialog_apk_update">
+
+    <com.huihe.base_lib.ui.widget.AutoFitImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/apk_update_bg" />
+
+    <TextView
+        android:id="@+id/dialog_apk_update_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="39dp"
+        android:textColor="@color/color_333333"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dialog_apk_update_tv_versionInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="39dp"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/color_333333"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/dialog_apk_update_tv_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_28"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="@dimen/dp_14"
+        android:background="@drawable/shape_bg_radius_12_color_46cecf"
+        android:gravity="center"
+        android:text="@string/version_update"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"></TextView>
+</LinearLayout>

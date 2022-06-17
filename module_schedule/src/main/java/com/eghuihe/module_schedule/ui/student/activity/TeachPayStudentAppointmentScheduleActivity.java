@@ -32,6 +32,7 @@ import com.huihe.base_lib.utils.DateUtils;
 import com.huihe.base_lib.utils.DialogUtils;
 import com.huihe.base_lib.utils.JsonUtil;
 import com.huihe.base_lib.utils.ToastUtils;
+import com.huihe.entities_lib.rep.schedule.ScheduleItemBean;
 
 import org.greenrobot.eventbus.Subscribe;
 
@@ -237,7 +238,7 @@ public class TeachPayStudentAppointmentScheduleActivity extends BaseMvpTitleActi
 
     @Override
     public void onMechanismOfflineAppointmentSchedule(List<MechanismOfflineScheduleEntity> mechanismOfflineScheduleEntities) {
-        List<DateScheduleView.ItemBean> itemBeans = convertModel(mechanismOfflineScheduleEntities);
+        List<ScheduleItemBean> itemBeans = convertModel(mechanismOfflineScheduleEntities);
         dateScheduleView.setOnScheduleListener(itemBeans,
                 new DateScheduleView.OnScheduleListener<MechanismOfflineScheduleEntity>() {
                     @Override
@@ -313,12 +314,12 @@ public class TeachPayStudentAppointmentScheduleActivity extends BaseMvpTitleActi
                 });
     }
 
-    private List<DateScheduleView.ItemBean> convertModel(List<MechanismOfflineScheduleEntity> mechanismOfflineScheduleEntities) {
-        List<DateScheduleView.ItemBean> itemBeans = new ArrayList<>();
+    private List<ScheduleItemBean> convertModel(List<MechanismOfflineScheduleEntity> mechanismOfflineScheduleEntities) {
+        List<ScheduleItemBean> itemBeans = new ArrayList<>();
         List<MechanismOfflineScheduleEntity> amList = new ArrayList<>();
         List<MechanismOfflineScheduleEntity> pmList = new ArrayList<>();
-        DateScheduleView.ItemBean amitemBeans = new DateScheduleView.ItemBean(true, amList);
-        DateScheduleView.ItemBean pmitemBeans = new DateScheduleView.ItemBean(false, pmList);
+        ScheduleItemBean amitemBeans = new ScheduleItemBean(true, amList);
+        ScheduleItemBean pmitemBeans = new ScheduleItemBean(false, pmList);
         if (mechanismOfflineScheduleEntities != null) {
             for (int i = 0; i < mechanismOfflineScheduleEntities.size(); i++) {
                 MechanismOfflineScheduleEntity mechanismOfflineScheduleEntity = mechanismOfflineScheduleEntities.get(i);

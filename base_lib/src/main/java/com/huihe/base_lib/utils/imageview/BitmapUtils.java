@@ -241,11 +241,11 @@ public class BitmapUtils {
         contentValues.put(MediaStore.Images.Media.DISPLAY_NAME, filename);
         contentValues.put(MediaStore.Images.Media.DESCRIPTION, filename);
         //兼容Android Q和以下版本
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+        if (Build.VERSION.SDK_INT >= 29) {
             //android Q中不再使用DATA字段，而用RELATIVE_PATH代替
             //RELATIVE_PATH是相对路径不是绝对路径
             //DCIM是系统文件夹，关于系统文件夹可以到系统自带的文件管理器中查看，不可以写没存在的名字
-            contentValues.put(MediaStore.Images.Media.RELATIVE_PATH, "DCIM/" + context.getPackageName());
+            contentValues.put("relative_path", "DCIM/" + context.getPackageName());
 
         } else {
             contentValues.put(MediaStore.Images.Media.DATA, context.getExternalFilesDir("").getAbsolutePath() + filename + ".JPEG");

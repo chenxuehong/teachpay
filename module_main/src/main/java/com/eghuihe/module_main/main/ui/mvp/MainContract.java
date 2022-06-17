@@ -1,8 +1,6 @@
 package com.eghuihe.module_main.main.ui.mvp;
 
 import com.huihe.base_lib.api.NetworkSubscriber;
-import com.huihe.base_lib.model.ApkVersion.VersionIterationModel;
-import com.huihe.base_lib.model.UserInfoEntity;
 import com.huihe.base_lib.model.personal.InsertInfoResultModel;
 import com.huihe.base_lib.model.personal.UserInfoModel;
 import com.huihe.base_lib.ui.IStateView;
@@ -23,15 +21,10 @@ public class MainContract {
                 String unique_id,
                 String teach_pay_token,
                 NetworkSubscriber<InsertInfoResultModel> subscriber);
-        DisposableObserver versionIteration(
-                String version,
-                String platform,
-                NetworkSubscriber<VersionIterationModel> subscriber);
     }
 
     public interface View extends IStateView {
-        void onUserInfo(UserInfoEntity userInfoEntity);
-        void onVersionIteration(VersionIterationModel.VersionIterationEntity versionIterationEntity);
+
     }
 
     public interface Presenter {
@@ -44,8 +37,5 @@ public class MainContract {
                 String user_id,
                 String unique_id,
                 String teach_pay_token);
-        void versionIteration(
-                String version,
-                String platform);
     }
 }

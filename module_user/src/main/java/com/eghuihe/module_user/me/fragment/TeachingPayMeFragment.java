@@ -130,19 +130,23 @@ public class TeachingPayMeFragment extends BaseMvpFragment<TeachingPayMePresente
     @Override
     protected void initData() {
         List<ItemViewBean> itemViewBeans = new ArrayList<>();
-        if (Utils.TYPE_STUDENT.equals(Utils.getIdentityType())) {
-            // 学生
-            initStudentItemViews(itemViewBeans);
-        } else if (Utils.TYPE_MECHANISM.equals(Utils.getIdentityType())) {
-            // 机构
-            commonTitle.setRightTitleText(getResources().getString(R.string.Switch_identities));
-            if (Utils.isSwitchMechanismIdentity()) {
-                initMechanismItemViews(itemViewBeans);
-            } else {
+        switch (Utils.getIdentityType()) {
+            case Utils.IdentityType.IS_MECHANISM:
+                // 机构
+                commonTitle.setRightTitleText(getResources().getString(R.string.Switch_identities));
+                if (Utils.isSwitchMechanismIdentity()) {
+                    // 课程表、排课表、收益、我的
+                    initMechanismItemViews(itemViewBeans);
+                } else {
+                    initStudentItemViews(itemViewBeans);
+                }
+                break;
+            case Utils.IdentityType.IS_MECHANISM_TEACHER:
+                initTeacherItemViews(itemViewBeans);
+                break;
+            case Utils.IdentityType.IS_STUDENT:
                 initStudentItemViews(itemViewBeans);
-            }
-        } else {
-            initTeacherItemViews(itemViewBeans);
+                break;
         }
         ItemViewBeanRvAdapter itemViewBeanRvAdapter = new ItemViewBeanRvAdapter(
                 R.layout.item_teaching_pay_me_item,
@@ -207,7 +211,7 @@ public class TeachingPayMeFragment extends BaseMvpFragment<TeachingPayMePresente
     }
 
     private void initStudentItemViews(List<ItemViewBean> itemViewBeans) {
-        if (Utils.TYPE_STUDENT.equals(Utils.getIdentityType())) {
+        if (Utils.getIdentityType() == Utils.IdentityType.IS_STUDENT) {
             itemViewBeans.add(new ItemViewBean(
                     R.mipmap.teaching_pay_me_mechanism_settlement,
                     getResources().getString(R.string.institution_settlement)
@@ -231,20 +235,23 @@ public class TeachingPayMeFragment extends BaseMvpFragment<TeachingPayMePresente
         TextView tvEditInfo = headUserInfoView.findViewById(R.id.layout_userinfo_view_tv_info);
         rvCardViews = headUserInfoView.findViewById(R.id.layout_userinfo_view_rv_cards);
         UserInfoEntity userInfoEntity = LoginHelper.getLoginInfo().getUserInfoEntity();
-        if (!Utils.TYPE_MECHANISM.equals(Utils.getIdentityType()) || !Utils.isSwitchMechanismIdentity()) {
+        if (Utils.getIdentityType() != Utils.IdentityType.IS_MECHANISM
+                || !Utils.isSwitchMechanismIdentity()) {
             GlideTools.loadImage(getContext(), userInfoEntity.getAvatar(), ivHead);
             tvName.setText(userInfoEntity.getNick_name());
             tvCity.setText(userInfoEntity.getCity());
             tvEditInfo.setText(getResources().getString(R.string.Individual_material));
         }
-        if (Utils.TYPE_STUDENT.equals(Utils.getIdentityType()) || !Utils.isSwitchMechanismIdentity()) {
+        if (Utils.IdentityType.IS_STUDENT == Utils.getIdentityType()
+                || !Utils.isSwitchMechanismIdentity()) {
             // 是学生才显示：我的订单、我的卡卷、我的积分
             initCardViews(rvCardViews, new UserStatisticsModel.UserStatisticsEntity("0", "0", "0"));
         }
         headUserInfoView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (Utils.TYPE_MECHANISM.equals(Utils.getIdentityType()) && Utils.isSwitchMechanismIdentity()) {
+                if (Utils.IdentityType.IS_MECHANISM == Utils.getIdentityType()
+                        && Utils.isSwitchMechanismIdentity()) {
                     // 编辑机构信息
                     startActivity(EditMechanismInfoActivity.class);
                 } else {
@@ -266,7 +273,8 @@ public class TeachingPayMeFragment extends BaseMvpFragment<TeachingPayMePresente
             TextView tvName = headUserInfoView.findViewById(R.id.layout_userinfo_view_tv_name);
             TextView tvCity = headUserInfoView.findViewById(R.id.layout_userinfo_view_tv_city);
             TextView tvEditInfo = headUserInfoView.findViewById(R.id.layout_userinfo_view_tv_info);
-            if (!Utils.TYPE_MECHANISM.equals(Utils.getIdentityType()) || !Utils.isSwitchMechanismIdentity()) {
+            if (Utils.IdentityType.IS_MECHANISM!=Utils.getIdentityType()
+                    || !Utils.isSwitchMechanismIdentity()) {
                 GlideTools.loadImage(getContext(), userInfoEntity.getAvatar(), ivHead);
                 tvName.setText(userInfoEntity.getNick_name());
                 tvCity.setText(userInfoEntity.getCity());
@@ -360,7 +368,8 @@ public class TeachingPayMeFragment extends BaseMvpFragment<TeachingPayMePresente
             TextView tvName = headUserInfoView.findViewById(R.id.layout_userinfo_view_tv_name);
             TextView tvCity = headUserInfoView.findViewById(R.id.layout_userinfo_view_tv_city);
             TextView tvEditInfo = headUserInfoView.findViewById(R.id.layout_userinfo_view_tv_info);
-            if (Utils.TYPE_MECHANISM.equals(Utils.getIdentityType()) && Utils.isSwitchMechanismIdentity()) {
+            if (Utils.IdentityType.IS_MECHANISM == Utils.getIdentityType()
+                    && Utils.isSwitchMechanismIdentity()) {
                 String mechanism_name = masterMechanismEntity.getMechanism_name();
                 String mechanism_logo = masterMechanismEntity.getMechanism_logo();
                 String mechanism_addr = masterMechanismEntity.getMechanism_addr();
@@ -388,7 +397,7 @@ public class TeachingPayMeFragment extends BaseMvpFragment<TeachingPayMePresente
             // 课程总结
         } else if (itemViewBean.iconResId == R.mipmap.teachingpay_me_order) {
             // 订单
-            if (Utils.TYPE_MECHANISM.equals(Utils.getIdentityType()) && Utils.isSwitchMechanismIdentity()) {
+            if (Utils.IdentityType.IS_MECHANISM == Utils.getIdentityType() && Utils.isSwitchMechanismIdentity()) {
                 ActivityToActivity.toActivity(ARouterConfig.ORDER_TEACHINGPAYMECHANISMORDER);
             } else {
                 ActivityToActivity.toActivity(ARouterConfig.ORDER_TEACHINGPAYSTUDENTORDER);

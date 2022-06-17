@@ -10,6 +10,8 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.text.TextUtils;
 
+import com.huihe.base_lib.R;
+
 import java.io.IOException;
 
 /**

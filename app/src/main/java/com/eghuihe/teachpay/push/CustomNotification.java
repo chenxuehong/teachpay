@@ -20,10 +20,6 @@ import com.mob.MobSDK;
 import com.mob.pushsdk.MobPushNotifyMessage;
 import com.mob.pushsdk.MobPushTailorNotification;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-
 public class CustomNotification extends MobPushTailorNotification {
     // 代码格式：常量名所有字母大写，单词间以下划线分割，待修改
     private static final String CHANNELID = "CHANNEL_TEACHPAY_NOTIFY";

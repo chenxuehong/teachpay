@@ -1,6 +1,5 @@
 package com.eghuihe.teachpay;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
@@ -31,7 +30,6 @@ import com.huihe.base_lib.utils.ActivityToActivity;
 import com.huihe.base_lib.utils.EventBusUtils;
 import com.huihe.base_lib.utils.JsonUtil;
 import com.huihe.base_lib.utils.LogUtils;
-import com.huihe.base_lib.utils.SPUtils;
 import com.huihe.base_lib.utils.ToastUtils;
 import com.huihe.base_lib.utils.manager.AppManager;
 import com.huihe.base_lib.utils.manager.LoginHelper;

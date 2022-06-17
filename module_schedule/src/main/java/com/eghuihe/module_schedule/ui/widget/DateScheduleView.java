@@ -5,7 +5,6 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -15,6 +14,7 @@ import androidx.annotation.Nullable;
 import com.eghuihe.module_schedule.R;
 import com.huihe.base_lib.ui.activity.BaseApplication;
 import com.huihe.base_lib.utils.DensityUtils;
+import com.huihe.entities_lib.rep.schedule.ScheduleItemBean;
 
 import java.util.List;
 
@@ -150,12 +150,12 @@ public class DateScheduleView<T> extends LinearLayout {
 
     private OnScheduleListener onScheduleListener;
 
-    private List<ItemBean> itemBeans;
+    private List<ScheduleItemBean> itemBeans;
 
     public List<T> getDataList(boolean isAm) {
         if (itemBeans != null) {
             for (int i = 0; i < itemBeans.size(); i++) {
-                ItemBean itemBean = itemBeans.get(i);
+                ScheduleItemBean itemBean = itemBeans.get(i);
                 if (itemBean.isAm == isAm) {
                     return itemBean.tList;
                 }
@@ -164,7 +164,7 @@ public class DateScheduleView<T> extends LinearLayout {
         return null;
     }
 
-    public void setOnScheduleListener(List<ItemBean> itemBeans, OnScheduleListener<T> onScheduleListener) {
+    public void setOnScheduleListener(List<ScheduleItemBean> itemBeans, OnScheduleListener<T> onScheduleListener) {
         this.itemBeans = itemBeans;
         this.onScheduleListener = onScheduleListener;
         initView();
@@ -174,13 +174,4 @@ public class DateScheduleView<T> extends LinearLayout {
         void onScheduleItem(FrameLayout itemView, T t);
     }
 
-    public static class ItemBean<T> {
-        public boolean isAm;
-        public List<T> tList;
-
-        public ItemBean(boolean isAm, List<T> tList) {
-            this.isAm = isAm;
-            this.tList = tList;
-        }
-    }
 }

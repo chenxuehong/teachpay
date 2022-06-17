@@ -1,14 +1,9 @@
 package com.eghuihe.teachpay.share;
 
-import android.Manifest;
 import android.view.View;
 
-import com.eghuihe.teachpay.R;
 import com.huihe.base_lib.ui.activity.H5TitleActivity;
-import com.huihe.base_lib.utils.ImageUtil;
-import com.huihe.base_lib.utils.MPermission;
 import com.huihe.base_lib.utils.ToastUtils;
-import com.huihe.base_lib.utils.manager.AppManager;
 
 import java.util.HashMap;
 

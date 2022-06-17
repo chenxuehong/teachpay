@@ -1505,4 +1505,7 @@ Name authentication, will not be anyone to see, easy exit platform will protect 
 ● Situational push function: In order to realize the ability to push messages based on users\' offline scenes and recommend push content more suitable for your needs, we may need to collect the following user information: network information (including IP address, MAC information, WIFI list, base station information), and location related information (longitude and latitude).\n
 \n
 If you do not agree with the above information collected by us, or do not agree to call the relevant mobile permissions, some functions will not be able to be used normally.</string>
+    <string name="appupdate_neterror">Net error</string>
+    <string name="appupdate_datanull">Data is null</string>
+    <string name="appupdate_loadfail">Load fail</string>
 </resources>

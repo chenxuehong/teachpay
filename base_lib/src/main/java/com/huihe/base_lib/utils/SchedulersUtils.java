@@ -14,4 +14,10 @@ public class SchedulersUtils {
                 .unsubscribeOn(Schedulers.io())
                 .subscribe(subscriber);
     }
+    public static <T> Observable<T> getObservable(Observable observable) {
+        return observable.subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .unsubscribeOn(Schedulers.io());
+
+    }
 }

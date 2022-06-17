@@ -37,7 +37,6 @@ import com.huihe.base_lib.utils.DensityUtils;
 import com.huihe.base_lib.utils.DialogUtils;
 import com.huihe.base_lib.utils.EventBusUtils;
 import com.huihe.base_lib.utils.JsonUtil;
-import com.huihe.base_lib.utils.StringUtils;
 import com.huihe.base_lib.utils.ToastUtils;
 import com.huihe.base_lib.utils.glide.GlideTools;
 import com.huihe.base_lib.utils.manager.AppManager;

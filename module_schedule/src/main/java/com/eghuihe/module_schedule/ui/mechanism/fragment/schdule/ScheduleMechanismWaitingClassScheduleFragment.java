@@ -9,8 +9,7 @@ import com.eghuihe.module_schedule.R;
 import com.eghuihe.module_schedule.ui.mechanism.fragment.scheduling.BaseSchedulingFragment;
 import com.eghuihe.module_schedule.ui.mechanism.mvp.MechanismScheduleContract;
 import com.eghuihe.module_schedule.ui.mechanism.mvp.MechanismSchedulePresenter;
-import com.eghuihe.module_schedule.ui.mechanism.mvp.MechanismSchedulingContract;
-import com.eghuihe.module_schedule.ui.mechanism.mvp.MechanismSchedulingPresenter;
+import com.eghuihe.module_schedule.ui.utils.DataConverter;
 import com.eghuihe.module_schedule.ui.widget.DateScheduleView;
 import com.huihe.base_lib.constants.EventAction;
 import com.huihe.base_lib.model.MechanismOfflineScheduleEntity;
@@ -20,10 +19,10 @@ import com.huihe.base_lib.utils.DateUtils;
 import com.huihe.base_lib.utils.DialogUtils;
 import com.huihe.base_lib.utils.ToastUtils;
 import com.huihe.base_lib.utils.manager.LoginHelper;
+import com.huihe.entities_lib.rep.schedule.ScheduleItemBean;
 
 import org.greenrobot.eventbus.Subscribe;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -70,7 +69,8 @@ public class ScheduleMechanismWaitingClassScheduleFragment extends BaseSchedulin
 
     @Override
     public void onMechanismOfflineScheduleList(List<MechanismOfflineScheduleEntity> mechanismOfflineScheduleEntities) {
-        List<DateScheduleView.ItemBean> itemBeans = convertModel(mechanismOfflineScheduleEntities);
+
+        List<ScheduleItemBean> itemBeans = DataConverter.convertModel(mechanismOfflineScheduleEntities);
         dateScheduleView.setOnScheduleListener(itemBeans,
                 new DateScheduleView.OnScheduleListener<MechanismOfflineScheduleEntity>() {
                     @Override
@@ -128,30 +128,5 @@ public class ScheduleMechanismWaitingClassScheduleFragment extends BaseSchedulin
     public void onDeleteCourseSuccess() {
         reLoadData();
         ToastUtils.showShortToast(getContext(),"取消成功");
-    }
-
-    private List<DateScheduleView.ItemBean> convertModel(List<MechanismOfflineScheduleEntity> mechanismOfflineScheduleEntities) {
-        List<DateScheduleView.ItemBean> itemBeans = new ArrayList<>();
-        List<MechanismOfflineScheduleEntity> amList = new ArrayList<>();
-        List<MechanismOfflineScheduleEntity> pmList = new ArrayList<>();
-        DateScheduleView.ItemBean amitemBeans = new DateScheduleView.ItemBean(true, amList);
-        DateScheduleView.ItemBean pmitemBeans = new DateScheduleView.ItemBean(false, pmList);
-        if (mechanismOfflineScheduleEntities != null) {
-            for (int i = 0; i < mechanismOfflineScheduleEntities.size(); i++) {
-                MechanismOfflineScheduleEntity mechanismOfflineScheduleEntity = mechanismOfflineScheduleEntities.get(i);
-                if (mechanismOfflineScheduleEntity != null) {
-                    String start_time = mechanismOfflineScheduleEntity.getStart_time();
-                    String apm = DateUtils.getApm(start_time, DateUtils.YMDHMSFormatStr);
-                    if ("上午".equals(apm)) {
-                        amList.add(mechanismOfflineScheduleEntity);
-                    } else {
-                        pmList.add(mechanismOfflineScheduleEntity);
-                    }
-                }
-            }
-        }
-        itemBeans.add(amitemBeans);
-        itemBeans.add(pmitemBeans);
-        return itemBeans;
     }
 }

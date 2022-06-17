@@ -14,16 +14,9 @@ import com.baidu.mapapi.CoordType;
 import com.baidu.mapapi.SDKInitializer;
 import com.huihe.base_lib.BuildConfig;
 import com.huihe.base_lib.R;
-import com.huihe.base_lib.db.LanguageEntity;
-import com.huihe.base_lib.db.MySQLiteDBDao;
-import com.huihe.base_lib.db.MySQLiteOpenHelper;
-import com.huihe.base_lib.net.HttpEngineCore;
-import com.huihe.base_lib.ui.service.LocationService;
 import com.huihe.base_lib.ui.widget.MyRefreshHeader;
 import com.huihe.base_lib.utils.LogUtils;
 import com.huihe.base_lib.utils.MultiLanguageUtil;
-import com.huihe.base_lib.utils.PListParserUtils;
-import com.huihe.base_lib.utils.SPUtils;
 import com.huihe.base_lib.utils.manager.AppManager;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.DefaultRefreshFooterCreator;
@@ -32,8 +25,6 @@ import com.scwang.smartrefresh.layout.api.RefreshFooter;
 import com.scwang.smartrefresh.layout.api.RefreshHeader;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.footer.ClassicsFooter;
-
-import java.util.List;
 
 
 public class BaseApplication extends Application {
@@ -142,5 +133,11 @@ public class BaseApplication extends Application {
         AppManager.getInstance().finishAllActivity();
         android.os.Process.killProcess(android.os.Process.myPid());
         System.exit(0);
+    }
+
+    @Override
+    public void onTerminate() {
+        super.onTerminate();
+        BaseApplication.getHandler().removeCallbacksAndMessages(null);
     }
 }

@@ -2,41 +2,22 @@ package com.eghuihe.module_user.me.adapter;
 
 import android.content.Context;
 import android.text.TextUtils;
-import android.view.View;
-import android.widget.TextView;
 
 import com.eghuihe.module_user.R;
-import com.huihe.base_lib.api.NetworkSubscriber;
-import com.huihe.base_lib.api.impl.UserServiceImpl;
 import com.huihe.base_lib.model.LoginResultEntity;
-import com.huihe.base_lib.model.MasterSetPriceEntity;
 import com.huihe.base_lib.model.UserInfoEntity;
-import com.huihe.base_lib.model.personal.AppointmentinfoBean;
 import com.huihe.base_lib.model.personal.CommentEntity;
-import com.huihe.base_lib.model.personal.InsertInfoResultModel;
-import com.huihe.base_lib.model.personal.MasterAppointmentEntity;
-import com.huihe.base_lib.ui.activity.BaseActivity;
-import com.huihe.base_lib.ui.adapter.CommonRVAdapter;
 import com.huihe.base_lib.ui.adapter.EmptyRVAdapter;
 import com.huihe.base_lib.ui.holder.ViewHolder;
 import com.huihe.base_lib.ui.widget.CircleImageView;
-import com.huihe.base_lib.ui.widget.OnDoubleClickListener;
-import com.huihe.base_lib.ui.widget.PopWindow.CustomPopupWindow;
-import com.huihe.base_lib.ui.widget.emoji.ContainsEmojiEditText;
 import com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed;
-import com.huihe.base_lib.utils.ColorAndSizeTextUtil;
 import com.huihe.base_lib.utils.ConvertUtils;
 import com.huihe.base_lib.utils.DateUtils;
 import com.huihe.base_lib.utils.DensityUtils;
-import com.huihe.base_lib.utils.DialogUtils;
-import com.huihe.base_lib.utils.KeyBoardUtils;
-import com.huihe.base_lib.utils.PopWindow.PopWindowUtils;
 import com.huihe.base_lib.utils.ToastUtils;
-import com.huihe.base_lib.utils.TranslateTheme;
 import com.huihe.base_lib.utils.glide.GlideTools;
 import com.huihe.base_lib.utils.manager.LoginHelper;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class CommentRVAdapter extends EmptyRVAdapter<CommentEntity> {

@@ -1,7 +1,6 @@
 package com.eghuihe.module_schedule.ui.student.activity;
 
 import android.content.Intent;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -16,7 +15,6 @@ import com.huihe.base_lib.constants.ARouterConfig;
 import com.huihe.base_lib.constants.ArgumentsConfig;
 import com.huihe.base_lib.constants.EventAction;
 import com.huihe.base_lib.model.MasterSetPriceEntity;
-import com.huihe.base_lib.model.MechanismOfflineScheduleEntity;
 import com.huihe.base_lib.model.event.Event;
 import com.huihe.base_lib.model.personal.WxPayModel;
 import com.huihe.base_lib.ui.activity.BaseMvpActivity;

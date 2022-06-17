@@ -24,8 +24,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.TimeZone;
 
-import retrofit2.http.POST;
-
 /**
  * 日期工具类
  * Created by bob on 2015/2/28.

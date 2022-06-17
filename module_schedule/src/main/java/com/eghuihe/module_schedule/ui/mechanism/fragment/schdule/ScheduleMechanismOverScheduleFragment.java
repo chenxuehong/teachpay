@@ -9,29 +9,21 @@ import com.eghuihe.module_schedule.R;
 import com.eghuihe.module_schedule.ui.mechanism.fragment.scheduling.BaseSchedulingFragment;
 import com.eghuihe.module_schedule.ui.mechanism.mvp.MechanismScheduleContract;
 import com.eghuihe.module_schedule.ui.mechanism.mvp.MechanismSchedulePresenter;
-import com.eghuihe.module_schedule.ui.mechanism.mvp.MechanismSchedulingContract;
-import com.eghuihe.module_schedule.ui.mechanism.mvp.MechanismSchedulingPresenter;
 import com.eghuihe.module_schedule.ui.widget.DateScheduleView;
-import com.huihe.base_lib.constants.ARouterConfig;
-import com.huihe.base_lib.constants.ArgumentsConfig;
 import com.huihe.base_lib.constants.EventAction;
-import com.huihe.base_lib.model.MasterSetPriceEntity;
 import com.huihe.base_lib.model.MechanismOfflineScheduleEntity;
 import com.huihe.base_lib.model.UserInfoEntity;
 import com.huihe.base_lib.model.event.Event;
-import com.huihe.base_lib.utils.ActivityToActivity;
 import com.huihe.base_lib.utils.DateUtils;
 import com.huihe.base_lib.utils.DialogUtils;
-import com.huihe.base_lib.utils.JsonUtil;
 import com.huihe.base_lib.utils.ToastUtils;
 import com.huihe.base_lib.utils.manager.LoginHelper;
+import com.huihe.entities_lib.rep.schedule.ScheduleItemBean;
 
 import org.greenrobot.eventbus.Subscribe;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @desc 已结束
@@ -77,7 +69,7 @@ public class ScheduleMechanismOverScheduleFragment extends BaseSchedulingFragmen
 
     @Override
     public void onMechanismOfflineScheduleList(List<MechanismOfflineScheduleEntity> mechanismOfflineScheduleEntities) {
-        List<DateScheduleView.ItemBean> itemBeans = convertModel(mechanismOfflineScheduleEntities);
+        List<ScheduleItemBean> itemBeans = convertModel(mechanismOfflineScheduleEntities);
         dateScheduleView.setOnScheduleListener(itemBeans,
                 new DateScheduleView.OnScheduleListener<MechanismOfflineScheduleEntity>() {
                     @Override
@@ -137,12 +129,12 @@ public class ScheduleMechanismOverScheduleFragment extends BaseSchedulingFragmen
         ToastUtils.showShortToast(getContext(), "取消成功");
     }
 
-    private List<DateScheduleView.ItemBean> convertModel(List<MechanismOfflineScheduleEntity> mechanismOfflineScheduleEntities) {
-        List<DateScheduleView.ItemBean> itemBeans = new ArrayList<>();
+    private List<ScheduleItemBean> convertModel(List<MechanismOfflineScheduleEntity> mechanismOfflineScheduleEntities) {
+        List<ScheduleItemBean> itemBeans = new ArrayList<>();
         List<MechanismOfflineScheduleEntity> amList = new ArrayList<>();
         List<MechanismOfflineScheduleEntity> pmList = new ArrayList<>();
-        DateScheduleView.ItemBean amitemBeans = new DateScheduleView.ItemBean(true, amList);
-        DateScheduleView.ItemBean pmitemBeans = new DateScheduleView.ItemBean(false, pmList);
+        ScheduleItemBean amitemBeans = new ScheduleItemBean(true, amList);
+        ScheduleItemBean pmitemBeans = new ScheduleItemBean(false, pmList);
         if (mechanismOfflineScheduleEntities != null) {
             for (int i = 0; i < mechanismOfflineScheduleEntities.size(); i++) {
                 MechanismOfflineScheduleEntity mechanismOfflineScheduleEntity = mechanismOfflineScheduleEntities.get(i);

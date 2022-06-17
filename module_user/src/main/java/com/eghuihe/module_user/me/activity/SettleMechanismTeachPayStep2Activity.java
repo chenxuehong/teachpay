@@ -12,7 +12,6 @@ import com.eghuihe.module_user.bean.params.SettleMechanismTeachPayStep2Bean;
 import com.huihe.base_lib.model.ExtraEntity;
 import com.huihe.base_lib.ui.activity.BaseTitleActivity;
 import com.huihe.base_lib.ui.widget.picker.MultiplePicker;
-import com.huihe.base_lib.ui.widget.picker.SinglePicker;
 import com.huihe.base_lib.ui.widget.title.CustomerTitle;
 import com.huihe.base_lib.utils.DataLoader;
 import com.huihe.base_lib.utils.StringUtils;

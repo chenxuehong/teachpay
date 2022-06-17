@@ -1,10 +1,7 @@
 package com.huihe.base_lib.utils;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Context;
-import android.os.Handler;
-import android.os.Message;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +13,6 @@ import android.widget.Toast;
 import com.huihe.base_lib.R;
 import com.huihe.base_lib.ui.activity.BaseApplication;
 
-import java.lang.reflect.Field;
 import java.util.Timer;
 import java.util.TimerTask;
 

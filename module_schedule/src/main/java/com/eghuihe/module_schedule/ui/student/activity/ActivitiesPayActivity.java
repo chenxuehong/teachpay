@@ -1,9 +1,7 @@
 package com.eghuihe.module_schedule.ui.student.activity;
 
 import android.content.Intent;
-import android.text.TextUtils;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -19,10 +17,8 @@ import com.huihe.base_lib.constants.EventAction;
 import com.huihe.base_lib.model.event.Event;
 import com.huihe.base_lib.model.personal.WxPayModel;
 import com.huihe.base_lib.ui.activity.BaseMvpActivity;
-import com.huihe.base_lib.ui.widget.dialog.BaseDialog;
 import com.huihe.base_lib.utils.EventBusUtils;
 import com.huihe.base_lib.utils.ToastUtils;
-import com.huihe.base_lib.utils.manager.AppManager;
 import com.huihe.base_lib.utils.manager.LoginHelper;
 import com.huihe.base_lib.utils.pay.alipay.AlipayUtils;
 

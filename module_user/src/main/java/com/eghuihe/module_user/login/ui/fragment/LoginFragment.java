@@ -23,7 +23,6 @@ import com.huihe.base_lib.model.UserInfoEntity;
 import com.huihe.base_lib.model.event.Event;
 import com.huihe.base_lib.model.login.WeiXinAccessTokenModel;
 import com.huihe.base_lib.model.login.WxLoginUserEntity;
-import com.huihe.base_lib.model.login.WxOpenidAppVerModel;
 import com.huihe.base_lib.ui.activity.BaseApplication;
 import com.huihe.base_lib.ui.activity.BaseMvpFragment;
 import com.huihe.base_lib.ui.widget.OnDoubleClickListener;

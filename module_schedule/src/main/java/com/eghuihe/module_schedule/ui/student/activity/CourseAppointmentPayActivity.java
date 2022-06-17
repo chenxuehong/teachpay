@@ -24,7 +24,6 @@ import com.huihe.base_lib.model.event.Event;
 import com.huihe.base_lib.ui.activity.BaseMvpActivity;
 import com.huihe.base_lib.ui.holder.ViewHolder;
 import com.huihe.base_lib.ui.widget.recyclerview.RecyclerViewFixed;
-import com.huihe.base_lib.utils.EventBusUtils;
 import com.huihe.base_lib.utils.JsonUtil;
 import com.huihe.base_lib.utils.NumberUtils;
 import com.huihe.base_lib.utils.ToastUtils;

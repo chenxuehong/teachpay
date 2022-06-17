@@ -31,7 +31,6 @@ import com.huihe.base_lib.utils.DialogUtils;
 import com.huihe.base_lib.utils.EventBusUtils;
 import com.huihe.base_lib.utils.MPermission;
 import com.huihe.base_lib.utils.PopWindow.PopWindowUtils;
-import com.huihe.base_lib.utils.StringUtils;
 import com.huihe.base_lib.utils.ToastUtils;
 import com.huihe.base_lib.utils.manager.LoginHelper;
 import com.huihe.base_lib.utils.select.PhotoSelectUtils;

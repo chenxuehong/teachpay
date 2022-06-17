@@ -66,10 +66,10 @@ public class TeachingPayMePresenter extends BasePresenter<TeachingPayMeContract.
                                 @Override
                                 public void onComplete() {
                                     UserInfoEntity userInfoEntity = LoginHelper.getLoginInfo().getUserInfoEntity();
-                                    if (Utils.TYPE_STUDENT.equals(Utils.getIdentityType())) {
+                                    if (Utils.IdentityType.IS_STUDENT == Utils.getIdentityType()) {
                                         // 学生
                                        queryUserInfo(userInfoEntity.getUser_id());
-                                    } else if (Utils.TYPE_MECHANISM.equals(Utils.getIdentityType())) {
+                                    } else if (Utils.IdentityType.IS_MECHANISM == Utils.getIdentityType()) {
                                         // 机构
                                         if (Utils.isSwitchMechanismIdentity()) {
                                             queryMechanismInfo(userInfoEntity.getUser_id(), null, "teach_paypal");
@@ -124,7 +124,8 @@ public class TeachingPayMePresenter extends BasePresenter<TeachingPayMeContract.
 
                                 @Override
                                 public void onComplete() {
-                                    if (Utils.TYPE_STUDENT.equals(Utils.getIdentityType()) || !Utils.isSwitchMechanismIdentity()) {
+                                    if (Utils.IdentityType.IS_STUDENT == Utils.getIdentityType()
+                                            || !Utils.isSwitchMechanismIdentity()) {
                                         queryTeachPayUserStatistics(LoginHelper.getLoginInfo().getUserInfoEntity().getUser_id());
                                     } else {
                                         TeachingPayMeContract.View view = getView();
@@ -202,7 +203,8 @@ public class TeachingPayMePresenter extends BasePresenter<TeachingPayMeContract.
 
                                 @Override
                                 public void onComplete() {
-                                    if (Utils.TYPE_STUDENT.equals(Utils.getIdentityType()) || !Utils.isSwitchMechanismIdentity()) {
+                                    if (Utils.IdentityType.IS_STUDENT==Utils.getIdentityType()
+                                            || !Utils.isSwitchMechanismIdentity()) {
                                         queryTeachPayUserStatistics(LoginHelper.getLoginInfo().getUserInfoEntity().getUser_id());
                                     } else {
                                         TeachingPayMeContract.View view = getView();

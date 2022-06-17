@@ -25,7 +25,6 @@ import com.huihe.base_lib.utils.DateUtils;
 import com.huihe.base_lib.utils.EventBusUtils;
 import com.huihe.base_lib.utils.EventUtils;
 import com.huihe.base_lib.utils.LogUtils;
-import com.huihe.base_lib.utils.glide.GlideTools;
 import com.umeng.analytics.MobclickAgent;
 
 import butterknife.ButterKnife;

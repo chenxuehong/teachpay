@@ -51,6 +51,9 @@ public abstract class BaseDialog extends Dialog {
     private View root;
     protected Context mContext;
 
+    public View getRoot() {
+        return root;
+    }
 
     /**
      * 设置点击返回键是否dismiss

@@ -31,14 +31,11 @@ import com.huihe.base_lib.utils.ActivityToActivity;
 import com.huihe.base_lib.utils.DialogUtils;
 import com.huihe.base_lib.utils.EventBusUtils;
 import com.huihe.base_lib.utils.LogUtils;
-import com.huihe.base_lib.utils.SPUtils;
 import com.huihe.base_lib.utils.ToastUtils;
 import com.huihe.base_lib.utils.glide.GlideTools;
 import com.huihe.base_lib.utils.manager.LoginHelper;
 import com.tencent.qcloud.tim.uikit.TUIKit;
 import com.tencent.qcloud.tim.uikit.base.IUIKitCallBack;
-
-import org.greenrobot.eventbus.Subscribe;
 
 import java.util.List;
 

@@ -1,1 +1,1 @@
-{"jetified-arouter-compiler-1.2.1.jar (com.alibaba:arouter-compiler:1.2.1)":false,"butterknife-compiler-10.2.3.jar (com.jakewharton:butterknife-compiler:10.2.3)":true,"auto-service-1.0-rc2.jar (com.google.auto.service:auto-service:1.0-rc2)":false,"lombok-1.16.6.jar (org.projectlombok:lombok:1.16.6)":false}
+{"jetified-arouter-compiler-1.2.1.jar (com.alibaba:arouter-compiler:1.2.1)":false,"jetified-butterknife-compiler-10.2.3.jar (com.jakewharton:butterknife-compiler:10.2.3)":true,"jetified-auto-service-1.0-rc2.jar (com.google.auto.service:auto-service:1.0-rc2)":false}

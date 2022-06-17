@@ -1653,5 +1653,7 @@
 ● 应景推送功能：为实现基于用户的线下场景进行消息推送的能力，为您推荐更符合您需要的推送内容，我们可能需要收集以下用户信息：网络信息(包括IP地址、MAC信息、WIFI列表、基站信息)，以及位置相关信息(经纬度)。\n
 \n
 若您不同意我们采集的上述信息，或不同意调用相关手机权限，将导致部分功能无法正常使用。</string>
-
+    <string name="appupdate_datanull">数据为空</string>
+    <string name="appupdate_neterror">网络异常</string>
+    <string name="appupdate_loadfail">加载失败</string>
 </resources>

@@ -1,7 +1,5 @@
 package com.eghuihe.module_dynamic.ui.fragment.detail;
 
-import android.view.View;
-
 import com.eghuihe.module_dynamic.R;
 import com.huihe.base_lib.api.NetworkSubscriber;
 import com.huihe.base_lib.api.impl.UserServiceImpl;
@@ -11,7 +9,6 @@ import com.huihe.base_lib.model.UserInfoEntity;
 import com.huihe.base_lib.model.dynamic.NoteUserEntity;
 import com.huihe.base_lib.model.dynamic.ShareHistoryListModel;
 import com.huihe.base_lib.model.event.Event;
-import com.huihe.base_lib.model.event.RefreshDynamicDetailShareListEvent;
 import com.huihe.base_lib.ui.adapter.EmptyRVAdapter;
 import com.huihe.base_lib.ui.fragment.BaseRVRefreshFragment;
 import com.huihe.base_lib.ui.holder.ViewHolder;

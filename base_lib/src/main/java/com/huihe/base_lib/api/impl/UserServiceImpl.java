@@ -70,8 +70,9 @@ import okhttp3.RequestBody;
 
 public class UserServiceImpl {
 
+    private final static UserService userService = HttpEngineCore.getRetrofit().create(UserService.class);
     private static UserService getUserService() {
-        return HttpEngineCore.getRetrofit().create(UserService.class);
+        return userService;
     }
 
     public static DisposableObserver userDeviceInsert(

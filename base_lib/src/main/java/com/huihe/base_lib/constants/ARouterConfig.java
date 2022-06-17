@@ -66,4 +66,8 @@ public interface ARouterConfig {
     String ORDER_TEACHINGPAYSTUDENTORDER = "/order/TeachingPayStudentOrder";
 
     //*************************************im腾讯云*****************************************/
+
+    interface SERVICE {
+        String SELF_UPDATE_SERVICE = "/appstore/selfupdate/SelfUpdateService";
+    }
 }

@@ -2,7 +2,6 @@ package com.eghuihe.module_main.main.ui.mvp;
 
 import com.huihe.base_lib.api.NetworkSubscriber;
 import com.huihe.base_lib.api.impl.UserServiceImpl;
-import com.huihe.base_lib.model.ApkVersion.VersionIterationModel;
 import com.huihe.base_lib.model.personal.InsertInfoResultModel;
 import com.huihe.base_lib.model.personal.UserInfoModel;
 
@@ -37,15 +36,4 @@ public class MainModel implements MainContract.Model {
         );
     }
 
-    @Override
-    public DisposableObserver versionIteration(
-            String version,
-            String platform,
-            NetworkSubscriber<VersionIterationModel> subscriber) {
-        return UserServiceImpl.versionIteration(
-                version,
-                platform,
-                subscriber
-        );
-    }
 }

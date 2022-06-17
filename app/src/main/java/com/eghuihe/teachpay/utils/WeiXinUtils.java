@@ -1,20 +1,12 @@
 package com.eghuihe.teachpay.utils;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-
 import com.eghuihe.teachpay.AppApplication;
-import com.eghuihe.teachpay.R;
 import com.huihe.base_lib.model.personal.WxPayModel;
 import com.huihe.base_lib.utils.ToastUtils;
 import com.huihe.base_lib.utils.manager.AppManager;
 import com.tencent.mm.opensdk.modelmsg.SendAuth;
-import com.tencent.mm.opensdk.modelmsg.SendMessageToWX;
 import com.tencent.mm.opensdk.modelpay.PayReq;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
-
-import cn.sharesdk.wechat.utils.WXMediaMessage;
-import cn.sharesdk.wechat.utils.WXMiniProgramObject;
 
 public class WeiXinUtils {
     /**

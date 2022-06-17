@@ -2,12 +2,9 @@ package com.tencent.qcloud.tim.uikit;
 
 import android.content.Context;
 import android.content.Intent;
-import android.text.TextUtils;
 
-import com.huihe.base_lib.constants.AppConfigs;
 import com.huihe.base_lib.constants.ArgumentsConfig;
 import com.huihe.base_lib.model.CourseMessageBean;
-import com.huihe.base_lib.model.MasterSetPriceEntity;
 import com.huihe.base_lib.model.SchedulingMessageBean;
 import com.huihe.base_lib.utils.JsonUtil;
 import com.huihe.base_lib.utils.ToastUtils;

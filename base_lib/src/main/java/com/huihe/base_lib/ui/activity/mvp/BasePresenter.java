@@ -106,6 +106,10 @@ public abstract class BasePresenter<M extends IBaseModel, V extends IStateView> 
      */
     public abstract void start();
 
+    public void unDo() {
+
+    }
+
 
     /**
      * View代理类  防止 页面关闭P异步操作调用V 方法 空指针问题

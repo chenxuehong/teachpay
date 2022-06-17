@@ -1,0 +1,154 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.tencent.qcloud.tim.uikit" >
+5
+6    <uses-sdk
+7        android:minSdkVersion="21"
+7-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml
+8        android:targetSdkVersion="30" />
+8-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml
+9
+10    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+10-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:5:5-79
+10-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:5:22-76
+11    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+11-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:6:5-76
+11-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:6:22-73
+12    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+12-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:7:5-75
+12-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:7:22-72
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:8:5-81
+13-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:8:22-78
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:9:5-80
+14-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:9:22-77
+15    <uses-permission android:name="android.permission.VIBRATE" />
+15-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:10:5-66
+15-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:10:22-63
+16
+17    <application android:theme="@style/BaseTheme" >
+17-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:12:5-74:19
+17-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:13:9-41
+18        <activity
+18-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:14:9-16:52
+19            android:name="com.tencent.qcloud.tim.uikit.component.video.CameraActivity"
+19-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:15:13-59
+20            android:screenOrientation="portrait" />
+20-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:16:13-49
+21        <activity
+21-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:17:9-19:52
+22            android:name="com.tencent.qcloud.tim.uikit.component.activity.ChatActivity"
+22-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:18:13-60
+23            android:screenOrientation="portrait" />
+23-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:19:13-49
+24        <activity
+24-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:20:9-22:77
+25            android:name="com.tencent.qcloud.tim.uikit.component.video.VideoViewActivity"
+25-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:21:13-62
+26            android:configChanges="keyboardHidden|orientation|screenSize" />
+26-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:22:13-74
+27        <activity
+27-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:23:9-25:52
+28            android:name="com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewActivity"
+28-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:24:13-66
+29            android:screenOrientation="portrait" />
+29-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:25:13-49
+30        <activity
+30-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:26:9-28:52
+31            android:name="com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoActivity"
+31-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:27:13-65
+32            android:screenOrientation="portrait" />
+32-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:28:13-49
+33        <activity
+33-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:29:9-32:52
+34            android:name="com.tencent.qcloud.tim.uikit.modules.group.info.StartGroupMemberSelectActivity"
+34-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:30:13-78
+35            android:launchMode="singleInstance"
+35-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:31:13-48
+36            android:screenOrientation="portrait" />
+36-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:32:13-49
+37        <activity
+37-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:33:9-35:52
+38            android:name="com.tencent.qcloud.tim.uikit.component.SelectionActivity"
+38-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:34:13-56
+39            android:screenOrientation="portrait" />
+39-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:35:13-49
+40        <activity
+40-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:36:9-39:73
+41            android:name="com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyManagerActivity"
+41-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:37:13-74
+42            android:screenOrientation="portrait"
+42-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:38:13-49
+43            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+43-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:39:13-70
+44        <activity
+44-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:40:9-43:73
+45            android:name="com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyMemberActivity"
+45-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:41:13-73
+46            android:screenOrientation="portrait"
+46-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:42:13-49
+47            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+47-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:43:13-70
+48        <activity
+48-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:44:9-46:45
+49            android:name="com.tencent.qcloud.tim.uikit.component.activity.ContractsListActivity"
+49-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:44:19-75
+50            android:launchMode="singleTop"
+50-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:46:13-43
+51            android:screenOrientation="portrait" />
+51-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:45:13-49
+52        <activity
+52-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:47:9-52:63
+53            android:name="com.tencent.liteav.trtcvideocalldemo.ui.SelectContactActivity"
+53-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:48:13-89
+54            android:launchMode="singleTop"
+54-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:49:13-43
+55            android:screenOrientation="portrait"
+55-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:50:13-49
+56            android:theme="@style/Theme.AppCompat.NoActionBar"
+56-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:51:13-63
+57            android:windowSoftInputMode="stateAlwaysHidden" />
+57-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:52:13-60
+58        <activity
+58-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:53:9-57:66
+59            android:name="com.tencent.liteav.trtcaudiocalldemo.ui.TRTCAudioCallActivity"
+59-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:54:13-89
+60            android:launchMode="singleTop"
+60-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:55:13-43
+61            android:screenOrientation="portrait"
+61-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:56:13-49
+62            android:theme="@style/Theme.AppCompat.NoActionBar" />
+62-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:57:13-63
+63        <activity
+63-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:58:9-62:66
+64            android:name="com.tencent.liteav.trtcvideocalldemo.ui.TRTCVideoCallActivity"
+64-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:59:13-89
+65            android:launchMode="singleTop"
+65-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:60:13-43
+66            android:screenOrientation="portrait"
+66-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:61:13-49
+67            android:theme="@style/Theme.AppCompat.NoActionBar" />
+67-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:62:13-63
+68
+69        <provider
+69-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:64:9-72:20
+70            android:name="com.tencent.qcloud.tim.uikit.utils.TUIKitFileProvider"
+70-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:65:13-53
+71            android:authorities="com.tencent.qcloud.tim.uikit.fileprovider"
+71-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:66:13-76
+72            android:exported="false"
+72-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:67:13-37
+73            android:grantUriPermissions="true" >
+73-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:68:13-47
+74            <meta-data
+74-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:69:13-71:61
+75                android:name="android.support.FILE_PROVIDER_PATHS"
+75-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:70:17-67
+76                android:resource="@xml/file_paths_public" />
+76-->D:\Program Files\project\huihe\teachPay\teachpay\tuikit\src\main\AndroidManifest.xml:71:17-58
+77        </provider>
+78    </application>
+79
+80</manifest>

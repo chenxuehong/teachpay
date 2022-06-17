@@ -1,10 +1,8 @@
 package com.tencent.qcloud.tim.tuikit.live.modules.liveroom.ui.mvp;
 
 import com.huihe.base_lib.api.NetworkSubscriber;
-import com.huihe.base_lib.model.ApkVersion.VersionIterationModel;
 import com.huihe.base_lib.model.MasterSetPriceDisplayModel;
 import com.huihe.base_lib.model.MasterSetPriceEntity;
-import com.huihe.base_lib.model.masterSetPriceDisplayEntity;
 import com.huihe.base_lib.model.personal.InsertInfoResultModel;
 import com.huihe.base_lib.ui.IStateView;
 import com.huihe.base_lib.ui.activity.mvp.IBaseModel;
