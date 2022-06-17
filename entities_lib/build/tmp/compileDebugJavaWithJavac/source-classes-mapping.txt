@@ -1,0 +1,29 @@
+com/huihe/entities_lib/rep/home/BusinessActivityTypeEntity.java
+ com.huihe.entities_lib.rep.home.BusinessActivityTypeEntity
+com/huihe/entities_lib/rep/schedule/MasterSetPriceEntity.java
+ com.huihe.entities_lib.rep.schedule.MasterSetPriceEntity
+ com.huihe.entities_lib.rep.schedule.MasterSetPriceEntity$Map
+ com.huihe.entities_lib.rep.schedule.MasterSetPriceEntity$Map$PriceEntity
+com/huihe/entities_lib/rep/user/UserInfoEntity.java
+ com.huihe.entities_lib.rep.user.UserInfoEntity
+ com.huihe.entities_lib.rep.user.UserInfoEntity$MapBean
+ com.huihe.entities_lib.rep.user.UserInfoEntity$SearchParam
+com/huihe/entities_lib/rep/schedule/MechanismAppointmentEntity.java
+ com.huihe.entities_lib.rep.schedule.MechanismAppointmentEntity
+ com.huihe.entities_lib.rep.schedule.MechanismAppointmentEntity$MapBean
+com/huihe/entities_lib/other/MainTabBean.java
+ com.huihe.entities_lib.other.MainTabBean
+com/huihe/entities_lib/BuildConfig.java
+ com.huihe.entities_lib.BuildConfig
+com/huihe/entities_lib/rep/home/ActivityEntity.java
+ com.huihe.entities_lib.rep.home.ActivityEntity
+com/huihe/entities_lib/rep/user/MasterMechanismEntity.java
+ com.huihe.entities_lib.rep.user.MasterMechanismEntity
+ com.huihe.entities_lib.rep.user.MasterMechanismEntity$Map
+com/huihe/entities_lib/rep/user/MasterinfoBean.java
+ com.huihe.entities_lib.rep.user.MasterinfoBean
+com/huihe/entities_lib/rep/schedule/MecsOfflineScheduleEntity.java
+ com.huihe.entities_lib.rep.schedule.MecsOfflineScheduleEntity
+ com.huihe.entities_lib.rep.schedule.MecsOfflineScheduleEntity$Map
+com/huihe/entities_lib/rep/schedule/ScheduleItemBean.java
+ com.huihe.entities_lib.rep.schedule.ScheduleItemBean
